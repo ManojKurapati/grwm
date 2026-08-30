@@ -1,0 +1,9 @@
+{
+  "slug": "jewellery",
+  "archetypeId": "gold-signet-ring",
+  "sourceUrl": "https://www.monicavinader.com/us/shop/rings",
+  "extractedAt": "2026-08-30T08:40:50.989Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": []
+}

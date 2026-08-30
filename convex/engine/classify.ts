@@ -40,18 +40,20 @@ const SUBCATEGORY_RULES: SubcategoryRule[] = [
   { subcategory: "sandals", category: "shoes", patterns: [/sandal/, /slide/, /flip[- ]?flop/, /espadrille/], formality: 3, styleTags: ["relaxed", "mediterranean", "comfort"], occasionTags: ["casual", "brunch"], weatherTags: ["hot", "warm"], seasonTags: ["summer"] },
 
   // --- layers ------------------------------------------------------------
-  { subcategory: "blazer", category: "layer", patterns: [/blazer/, /sport coat/, /suit jacket/], formality: 8, styleTags: ["tailored", "elevated", "business casual", "sharp"], occasionTags: ["client-dinner", "office", "dinner", "gallery", "wedding", "date"], weatherTags: ["mild", "cool", "warm"], seasonTags: ["spring", "autumn", "winter"] },
+  { subcategory: "blazer", category: "layer", patterns: [/blazer/, /sport coat/, /suit jacket/, /tailored jacket/], formality: 8, styleTags: ["tailored", "elevated", "business casual", "sharp"], occasionTags: ["client-dinner", "office", "dinner", "gallery", "wedding", "date"], weatherTags: ["mild", "cool", "warm"], seasonTags: ["spring", "autumn", "winter"] },
   { subcategory: "coat", category: "layer", patterns: [/overcoat/, /trench/, /\bcoat\b/, /parka/, /puffer/], formality: 7, styleTags: ["tailored", "minimal", "elevated"], occasionTags: ["office", "dinner", "casual", "gallery"], weatherTags: ["cold", "cool"], seasonTags: ["winter", "autumn"] },
   { subcategory: "overshirt", category: "layer", patterns: [/overshirt/, /chore (jacket|coat)/, /shacket/, /work jacket/], formality: 5, styleTags: ["relaxed", "minimal", "smart casual", "streetwear"], occasionTags: ["casual", "brunch", "airport", "date", "office"], weatherTags: ["mild", "cool", "warm"], seasonTags: ["spring", "autumn"] },
   { subcategory: "cardigan", category: "layer", patterns: [/cardigan/, /zip[- ]?through knit/], formality: 5.5, styleTags: ["relaxed", "minimal", "comfort"], occasionTags: ["casual", "brunch", "office", "airport"], weatherTags: ["cool", "mild"], seasonTags: ["autumn", "winter", "spring"] },
   { subcategory: "jacket", category: "layer", patterns: [/bomber/, /denim jacket/, /\bjacket\b/, /gilet/, /vest\b/], formality: 5, styleTags: ["relaxed", "streetwear", "minimal"], occasionTags: ["casual", "night-out", "airport", "brunch"], weatherTags: ["mild", "cool"], seasonTags: ["spring", "autumn"] },
 
   // --- tops --------------------------------------------------------------
+  // Order matters: "t-shirt" must be tested before "shirt", because /shirt/
+  // happily matches inside "T-Shirt" and would misfile every tee as a shirt.
   { subcategory: "polo", category: "top", patterns: [/polo/], formality: 6, styleTags: ["minimal", "elevated", "smart casual"], occasionTags: ["date", "rooftop-date", "dinner", "brunch", "office", "gallery"], weatherTags: ["warm", "mild", "hot"], seasonTags: ["spring", "summer"] },
+  { subcategory: "hoodie", category: "top", patterns: [/hoodie/, /sweatshirt/, /crewneck/], formality: 2.5, styleTags: ["relaxed", "streetwear", "comfort"], occasionTags: ["casual", "airport"], weatherTags: ["cool", "mild"], seasonTags: ["autumn", "winter"] },
+  { subcategory: "t-shirt", category: "top", patterns: [/t[- ]?shirt/, /\btee\b/, /tank top/], formality: 3, styleTags: ["relaxed", "minimal", "streetwear"], occasionTags: ["casual", "brunch", "airport", "night-out"], weatherTags: ["hot", "warm", "mild"], seasonTags: ["summer", "spring"] },
   { subcategory: "knit", category: "top", patterns: [/sweater/, /jumper/, /knitwear/, /\bknit\b/, /turtleneck/, /roll neck/], formality: 6, styleTags: ["minimal", "elevated", "comfort"], occasionTags: ["dinner", "date", "office", "casual", "gallery"], weatherTags: ["cool", "mild", "cold"], seasonTags: ["autumn", "winter"] },
   { subcategory: "shirt", category: "top", patterns: [/shirt/, /button[- ]?(down|up)/, /oxford/], formality: 6, styleTags: ["minimal", "smart casual", "tailored"], occasionTags: ["date", "rooftop-date", "dinner", "brunch", "office", "client-dinner", "gallery"], weatherTags: ["warm", "mild", "hot"], seasonTags: ["all-season"] },
-  { subcategory: "t-shirt", category: "top", patterns: [/t[- ]?shirt/, /\btee\b/, /tank top/], formality: 3, styleTags: ["relaxed", "minimal", "streetwear"], occasionTags: ["casual", "brunch", "airport", "night-out"], weatherTags: ["hot", "warm", "mild"], seasonTags: ["summer", "spring"] },
-  { subcategory: "hoodie", category: "top", patterns: [/hoodie/, /sweatshirt/, /crewneck/], formality: 2.5, styleTags: ["relaxed", "streetwear", "comfort"], occasionTags: ["casual", "airport"], weatherTags: ["cool", "mild"], seasonTags: ["autumn", "winter"] },
 
   // --- bottoms -----------------------------------------------------------
   { subcategory: "jeans", category: "bottom", patterns: [/\bjean/, /\bdenim (pant|trouser)/], formality: 4, styleTags: ["relaxed", "minimal", "streetwear"], occasionTags: ["casual", "brunch", "night-out", "date", "airport"], weatherTags: ["mild", "cool", "warm"], seasonTags: ["all-season"] },
@@ -148,15 +150,30 @@ function findPattern(text: string): string {
   return "solid";
 }
 
-function matchRule(text: string, name: string): SubcategoryRule {
-  // Match on the name first — it is the least noisy field.
-  for (const source of [name.toLowerCase(), text]) {
-    for (const rule of SUBCATEGORY_RULES) {
-      if (rule.patterns.some((p) => p.test(source))) return rule;
+/**
+ * `confidence` matters: an unrecognised page (an FAQ, a gift card, a product
+ * whose name is just a model number) must not be silently classified as a
+ * t-shirt. Callers that are curating data reject low confidence outright;
+ * callers evaluating a user-supplied URL surface it as a caveat instead.
+ */
+function matchRule(
+  text: string,
+  name: string,
+): { rule: SubcategoryRule; confidence: "high" | "medium" | "low" } {
+  // The name is the least noisy field, so a hit there is high confidence.
+  for (const rule of SUBCATEGORY_RULES) {
+    if (rule.patterns.some((p) => p.test(name.toLowerCase()))) {
+      return { rule, confidence: "high" };
     }
   }
-  // Unknown garment: treat it as a mid-formality top rather than failing.
-  return SUBCATEGORY_RULES.find((r) => r.subcategory === "t-shirt")!;
+  for (const rule of SUBCATEGORY_RULES) {
+    if (rule.patterns.some((p) => p.test(text))) return { rule, confidence: "medium" };
+  }
+  // Genuinely unknown. Fall back, but say so.
+  return {
+    rule: SUBCATEGORY_RULES.find((r) => r.subcategory === "t-shirt")!,
+    confidence: "low",
+  };
 }
 
 /** Signals in the copy that shift formality up or down from the rule default. */
@@ -179,9 +196,14 @@ const STYLE_SIGNALS: Array<[RegExp, string[]]> = [
   [/technical|performance|active|training/, ["athleisure"]],
 ];
 
-export function classifyProduct(product: ExtractedProduct): GarmentSpec {
+export type Classification = GarmentSpec & {
+  /** how sure we are that this page really is the garment we think it is */
+  confidence: "high" | "medium" | "low";
+};
+
+export function classifyProduct(product: ExtractedProduct): Classification {
   const text = haystack(product);
-  const rule = matchRule(text, product.name);
+  const { rule, confidence } = matchRule(text, product.name);
   const { primary, secondary } = findColors(text, product.name);
   const material = findMaterial(text);
   const pattern = findPattern(text);
@@ -208,6 +230,7 @@ export function classifyProduct(product: ExtractedProduct): GarmentSpec {
   }
 
   return {
+    confidence,
     category: rule.category,
     subcategory: rule.subcategory,
     primaryColor: primary,

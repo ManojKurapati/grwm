@@ -118,8 +118,9 @@ export function suggestInsteadOf(
     if (wardrobe.some((item) => isRedundantWith(archetype.spec, item.spec))) continue;
     const candidate = archetypeAsItem(archetype);
     const result = evaluateCandidate(wardrobe, candidate, profile, lifeContexts);
-    // Prefer a suggestion in the same category so the advice is actionable.
-    const categoryBonus = excludeCategory && archetype.spec.category === excludeCategory ? 12 : 0;
+    // Strongly prefer the same category: if someone is shopping for shoes, the
+    // useful answer is "buy these shoes instead", not "buy a belt".
+    const categoryBonus = excludeCategory && archetype.spec.category === excludeCategory ? 30 : 0;
     const score = result.wardrobeCompatibility + result.newOutfitsUnlocked * 0.6 + categoryBonus;
     if (!best || score > best.score) best = { archetype, score };
   }

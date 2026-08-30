@@ -1,0 +1,320 @@
+{
+  "slug": "belts-2",
+  "archetypeId": "black-leather-belt",
+  "sourceUrl": "https://www.charleskeith.com/us/accessories/belts",
+  "extractedAt": "2026-08-30T08:53:44.883Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "XL Calla Tote Bag",
+      "description": "This XL Calla tote bag is made with faux suede and features double handles, a detachable pouch, a magnetic closure and a capacious interior. It contains recycled material and is designed for a striking yet understated look when paired with tonal separates.",
+      "price": 159,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Handle drop length 27 cm",
+        "Strap drop length 27 cm",
+        "Strap length 61.5 cm",
+        "Weight 796 g",
+        "Width 22-50 cm",
+        "Depth 11.6 cm",
+        "Height 30 cm"
+      ],
+      "features": [
+        "Made with faux suede",
+        "Double handles",
+        "Detachable pouch",
+        "Magnetic closure",
+        "Capacious interior",
+        "Contains recycled material"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "tote bag",
+        "faux suede",
+        "recycled material",
+        "magnetic closure",
+        "detachable pouch",
+        "XL size",
+        "stone grey"
+      ],
+      "sku": "CK2-30671782-1_STO.GR",
+      "url": "https://www.charleskeith.com/us/CK2-30671782-1_STO.GR.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/506cabb9-32f6-48d1-a97d-2490c3cb5684.jpg",
+      "images": []
+    },
+    {
+      "name": "Leoi Chunky Knee-High Boots",
+      "description": "These Leoi knee-high boots in black feature a minimalist design, fitted shafts, chunky ridged soles, covered round toes and back zips for easy wear. They are made of natural PU material and designed to complement minimalist dresses for versatile fall outfits that look polished and intentionally assembled.",
+      "price": 149,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe width 3.6 in",
+        "Heel height 2.4 in",
+        "Shaft height 14.2 in",
+        "Shaft circumference 13.8 in",
+        "Ankle circumference 9.1 in"
+      ],
+      "features": [
+        "Minimalist design",
+        "Fitted shafts",
+        "Chunky ridged soles",
+        "Covered round toes",
+        "Back zips for easy wear",
+        "Material: Natural PU",
+        "Sole material: PU",
+        "Shoe weight (1 pair): 980 g"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "knee-high boots",
+        "black boots",
+        "chunky boots",
+        "fall footwear",
+        "minimalist design"
+      ],
+      "sku": "CK1-90380188_BLACK",
+      "url": "https://www.charleskeith.com/us/CK1-90380188_BLACK.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/2005979b-bda5-4992-aa87-b41fa47840f1.jpg",
+      "images": []
+    },
+    {
+      "name": "Aislin Hobo Bag",
+      "description": "The Aislin Hobo Bag in pecan brown is made with recycled suede leather and features a softly structured trapeze silhouette, polished gold-tone accents, a magnetic closure, and an adjustable shoulder strap. It can fit a 13-inch laptop, making it both stylish and practical. This product contains recycled material.",
+      "price": 139,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Width: 13.2 in",
+        "Depth: 4.1 in",
+        "Height: 11.0 in",
+        "Strap drop length: 13.4-21.9 in",
+        "Strap length: 11.8-29.5 in"
+      ],
+      "features": [
+        "Made with recycled suede leather",
+        "Softly structured trapeze silhouette",
+        "Polished gold-tone accents",
+        "Magnetic closure",
+        "Adjustable and detachable shoulder strap",
+        "Fits a 13-inch laptop",
+        "Contains recycled material",
+        "Inner compartment: 1 pouch, 1 zip compartment, 2 inner folds"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "hobo bag",
+        "recycled material",
+        "suede leather",
+        "adjustable strap",
+        "magnetic closure",
+        "laptop compatible",
+        "pecan brown"
+      ],
+      "sku": "CK2-40782908-1_PEC.BR",
+      "url": "https://www.charleskeith.com/us/CK2-40782908-1_PEC.BR.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/5847fe15-9579-435b-aa27-1aa96c19a860.jpg",
+      "images": []
+    },
+    {
+      "name": "Apfra Quilted Shoulder Bag",
+      "description": "The Apfra Quilted Shoulder Bag in stone grey is made with recycled faux suede leather featuring a quilted finish, a front-flap design, and a trapeze silhouette. It has double braided-chain handles and a magnetic closure, designed to add tactility and visual interest to all-day outfits. This product contains recycled material.",
+      "price": 139,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Width: 10.2 in",
+        "Depth: 4.3 in",
+        "Height: 6.7 in",
+        "Strap drop length: 10.0-19.3 in",
+        "Strap length: 23.6-40.9 in",
+        "Weight: 413 g"
+      ],
+      "features": [
+        "Made with recycled faux suede leather",
+        "Quilted finish",
+        "Front-flap design",
+        "Trapeze silhouette",
+        "Double braided-chain handles",
+        "Magnetic closure",
+        "1 inner fold compartment",
+        "1 zip compartment",
+        "Non-detachable strap",
+        "Non-adjustable strap"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "quilted",
+        "shoulder bag",
+        "stone grey",
+        "faux suede",
+        "recycled material",
+        "magnetic closure",
+        "braided-chain handles"
+      ],
+      "sku": "CK2-90151648-1_STO.GR",
+      "url": "https://www.charleskeith.com/us/CK2-90151648-1_STO.GR.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/621b0c1e-254c-474f-b830-a793e7498f17.jpg",
+      "images": []
+    },
+    {
+      "name": "Noane Side-Pocket Two-Way Bucket Bag",
+      "description": "This Noane bucket bag in dark brown features a soft, slouchy silhouette, a geometric top flap with a magnetic closure, a polished silver-tone chain handle, two side pockets and detachable shoulder straps that allow the bag to be converted into a backpack. It is made of natural PU and designed for functional use with a stylish look.",
+      "price": 119,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Width: 10.8 in",
+        "Depth: 4.7 in",
+        "Height: 6.7 in",
+        "Strap drop length: 13.0-22.0 in",
+        "Strap length: 26.8-44.5 in"
+      ],
+      "features": [
+        "Soft, slouchy silhouette",
+        "Geometric top flap with magnetic closure",
+        "Polished silver-tone chain handle",
+        "Two side pockets",
+        "Detachable and adjustable shoulder straps",
+        "Convertible into a backpack",
+        "Material: Natural PU",
+        "1 inner fold compartment",
+        "1 zip compartment",
+        "2 flap pockets on the outside"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "bucket bag",
+        "two-way",
+        "dark brown",
+        "convertible",
+        "detachable strap",
+        "magnetic closure",
+        "natural PU"
+      ],
+      "sku": "CK2-10160273-A_DK.BRW",
+      "url": "https://www.charleskeith.com/us/CK2-10160273-A_DK.BRW.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/550cf0b5-c7e8-4190-a7b6-67c3c31c549e.jpg",
+      "images": []
+    },
+    {
+      "name": "Aether Lace-Up Split-Toe Mary Jane Flats",
+      "description": "These Aether Mary Janes in brown feature a burnished effect, lace-tie details, striking split toes, secure self-fastening straps across the insteps, gently rounded toes and comfortable soles. They are made of burnished PU with fabric lining and sole, and have a Velcro fastening. Ideal for effortless everyday outfits.",
+      "price": 99,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 328 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 0.4 in"
+      ],
+      "features": [
+        "Burnished PU material",
+        "Fabric lining",
+        "Fabric sole material",
+        "Velcro fastening",
+        "Lace-tie details",
+        "Split-toe design",
+        "Gently rounded toes",
+        "Comfortable soles"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "brown",
+        "mary janes",
+        "flats",
+        "lace-up",
+        "split-toe",
+        "velcro",
+        "burnished PU"
+      ],
+      "sku": "CK1-71960050_BROWN",
+      "url": "https://www.charleskeith.com/us/CK1-71960050_BROWN.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/806025dd-7bc5-4b33-b3f1-008f555e210b.jpg",
+      "images": []
+    },
+    {
+      "name": "Arwen Quilted Top Handle Vanity Bag",
+      "description": "The petite shape and classic quilted design of this Arwen bag make it ideal for special occasions and evening dinners. Inspired by compact vanity cases, this bag features a top handle and a detachable braided chain strap, offering versatile carrying options. Made from Nappa PU material, it includes a zip closure, adjustable and detachable strap, and weighs 252 grams.",
+      "price": 99,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Width: 6.3 in",
+        "Depth: 3.5 in",
+        "Height: 4.1 in",
+        "Strap drop length: 23.6 in",
+        "Strap length: 47.2 in",
+        "Handle drop length: 6.5 cm"
+      ],
+      "features": [
+        "Petite shape",
+        "Classic quilted design",
+        "Top handle",
+        "Detachable braided chain strap",
+        "Zip closure",
+        "Adjustable strap",
+        "Made from Nappa PU material",
+        "Weight: 252 g"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "quilted",
+        "top handle",
+        "vanity bag",
+        "black",
+        "Nappa PU",
+        "adjustable strap",
+        "detachable strap"
+      ],
+      "sku": "CK2-80782534_BLACK",
+      "url": "https://www.charleskeith.com/us/CK2-80782534_BLACK.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/b9d6ff26-39b1-40b1-9314-8f4a98369fb5.jpg",
+      "images": []
+    }
+  ]
+}

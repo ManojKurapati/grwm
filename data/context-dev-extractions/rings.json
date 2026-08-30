@@ -1,0 +1,9 @@
+{
+  "slug": "rings",
+  "archetypeId": "gold-signet-ring",
+  "sourceUrl": "https://www.pandora.net/en-us/jewelry/rings",
+  "extractedAt": "2026-08-30T08:53:01.736Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": []
+}

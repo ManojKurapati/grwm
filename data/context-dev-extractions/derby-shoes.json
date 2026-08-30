@@ -1,0 +1,258 @@
+{
+  "slug": "derby-shoes",
+  "archetypeId": "black-leather-derby",
+  "sourceUrl": "https://www.charleskeith.com/us/shoes/flats",
+  "extractedAt": "2026-08-30T08:52:12.016Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "XL Calla Tote Bag",
+      "description": "This XL Calla tote bag is made with faux suede and features double handles, a detachable pouch, a magnetic closure and a capacious interior. It contains recycled material and is designed for a striking yet understated look when paired with tonal separates.",
+      "price": 159,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Handle drop length 27 cm",
+        "Strap drop length 27 cm",
+        "Strap length 61.5 cm",
+        "Weight 796 g",
+        "Width 22-50 cm",
+        "Depth 11.6 cm",
+        "Height 30 cm"
+      ],
+      "features": [
+        "Made with faux suede",
+        "Double handles",
+        "Detachable pouch",
+        "Magnetic closure",
+        "Capacious interior",
+        "Contains recycled material"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "tote bag",
+        "faux suede",
+        "recycled material",
+        "magnetic closure",
+        "detachable pouch",
+        "XL size",
+        "stone grey"
+      ],
+      "sku": "CK2-30671782-1_STO.GR",
+      "url": "https://www.charleskeith.com/us/CK2-30671782-1_STO.GR.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/0c9ea080-6b5a-44b0-8a53-f8e0f2265ee7.jpg",
+      "images": []
+    },
+    {
+      "name": "Aether Lace-Up Split-Toe Mary Jane Flats",
+      "description": "These Aether Mary Janes in brown feature a burnished effect, lace-tie details, striking split toes, secure self-fastening straps across the insteps, gently rounded toes and comfortable soles. They are made of burnished PU with fabric lining and sole, and have a Velcro fastening. Ideal for effortless everyday outfits.",
+      "price": 99,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 328 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 0.4 in"
+      ],
+      "features": [
+        "Burnished PU material",
+        "Fabric lining",
+        "Fabric sole material",
+        "Velcro fastening",
+        "Lace-tie details",
+        "Split-toe design",
+        "Gently rounded toes",
+        "Comfortable soles"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "brown",
+        "mary janes",
+        "flats",
+        "lace-up",
+        "split-toe",
+        "velcro",
+        "burnished PU"
+      ],
+      "sku": "CK1-71960050_BROWN",
+      "url": "https://www.charleskeith.com/us/CK1-71960050_BROWN.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/0338fab7-7644-430a-96f0-89fe0fed4f7d.jpg",
+      "images": []
+    },
+    {
+      "name": "Aether Grommet Studded Mary Jane Flats",
+      "description": "These Aether Mary Jane flats in dark brown feature a double-strap design embellished with grommets and studs, thick buckled straps on the front, barely-there flat soles and covered round toes. Made from natural PU with fabric lining and PU sole, they bring a cool edge to everyday fall looks.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 410 g",
+        "Shoe width: 3.0 in",
+        "Heel height: 0.4 in"
+      ],
+      "features": [
+        "Double-strap design with grommets and studs",
+        "Thick buckled straps on the front",
+        "Barely-there flat soles",
+        "Covered round toes",
+        "Material: Natural PU",
+        "Material lining: Fabric",
+        "Sole material: PU",
+        "Type of fastening: Buckle"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "Mary Janes",
+        "Flats",
+        "Dark Brown",
+        "Studded",
+        "Grommet",
+        "Buckled Straps"
+      ],
+      "sku": "CK1-70920235_DK.BRW",
+      "url": "https://www.charleskeith.com/us/CK1-70920235_DK.BRW.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/712bbed8-7211-487a-81d8-3def328dc182.jpg",
+      "images": []
+    },
+    {
+      "name": "Emelia Leopard-Print Slingback Flats",
+      "description": "These Emelia slingback flats feature a leopard-print finish, a clean-lined silhouette, slim slingback straps with polished buckles, sleek pointed toes and very low block heels. They add an eye-catching element to both workday and weekend looks.",
+      "price": 79,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe width 3.0 in",
+        "Heel height 0.6 in"
+      ],
+      "features": [
+        "Leopard-print finish",
+        "Clean-lined silhouette",
+        "Slim slingback straps with polished buckles",
+        "Sleek pointed toes",
+        "Very low block heels",
+        "Material: Printed Fabric",
+        "Material lining: PU",
+        "Sole material: Fabric",
+        "Type of fastening: Buckle"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "leopard-print",
+        "slingback",
+        "flats",
+        "animal print",
+        "pointed toe",
+        "low heel"
+      ],
+      "sku": "CK1-70381246_AP.NAT",
+      "url": "https://www.charleskeith.com/us/CK1-70381246_AP.NAT.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/97466b74-1df0-4b81-96a5-aecaa76ec6be.jpg",
+      "images": []
+    },
+    {
+      "name": "Emelia Faux Suede Slingback Flats",
+      "description": "These Emelia slingback flats in black are made with faux suede and feature a clean-lined silhouette, slim slingback straps with polished buckles, sleek pointed toes and very low block heels. A wardrobe classic, they are versatile, understated and polished -- wear them with tailored separates or dresses.",
+      "price": 79,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe width 3.0 in",
+        "Heel height 0.6 in"
+      ],
+      "features": [
+        "Material: Faux Suede",
+        "Material lining: PU",
+        "Sole material: Fabric",
+        "Type of fastening: Buckle",
+        "Clean-lined silhouette",
+        "Slim slingback straps with polished buckles",
+        "Sleek pointed toes",
+        "Very low block heels"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "flats",
+        "slingback",
+        "faux suede",
+        "black",
+        "pointed toe",
+        "low heel"
+      ],
+      "sku": "CK1-70381246_BLKTXT",
+      "url": "https://www.charleskeith.com/us/CK1-70381246_BLKTXT.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/d18e0660-8619-4a97-835d-2bebccc42a77.jpg",
+      "images": []
+    },
+    {
+      "name": "Gertrude Tweed Mary Janes",
+      "description": "Mary Janes meet ballet flats, combining to create a new classic for the season. This pair features a timeless round-toe silhouette paired with a light grey tweed finish for a contemporary twist. The delicate straps across the vamps boast a contrasting white hue, adding a subtle yet eye-catching detail. With low block heels, they offer a comfortable lift for all-day wear.",
+      "price": 79,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 390 g",
+        "Shoe width: 2.9 in",
+        "Heel height: 0.8 in"
+      ],
+      "features": [
+        "Material: Tweed",
+        "Material lining: Fabric",
+        "Sole material: PU",
+        "Type of fastening: Buckle",
+        "Low block heel",
+        "Round-toe silhouette",
+        "Delicate contrasting white straps"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "Mary Janes",
+        "ballet flats",
+        "tweed",
+        "light grey",
+        "comfortable",
+        "low heel"
+      ],
+      "sku": "CK1-70381068_LT.GRY",
+      "url": "https://www.charleskeith.com/us/CK1-70381068_LT.GRY.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/ddb97b0a-acf7-477e-a286-c545e1352c07.jpg",
+      "images": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "slug": "belts",
+  "archetypeId": "black-leather-belt",
+  "sourceUrl": "https://www.cos.com/en-us/men/menswear/accessories",
+  "extractedAt": "2026-08-30T08:41:08.725Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": []
+}

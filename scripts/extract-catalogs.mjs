@@ -57,6 +57,12 @@ const TARGETS = [
   { slug: "watches", url: "https://www.danielwellington.com/us/watches/mens", maxProducts: 8 },
   { slug: "sunglasses", url: "https://www.persol.com/usa/sunglasses", maxProducts: 8 },
   { slug: "belts", archetypeId: "black-leather-belt", url: "https://www.cos.com/en-us/men/menswear/accessories", maxProducts: 10 },
+  // second pass — alternate retailers for archetypes the first pass missed
+  { slug: "shirts-linen", archetypeId: "cream-linen-shirt", url: "https://www.uniqlo.com/us/en/men/tops/casual-shirts", maxProducts: 12 },
+  { slug: "trousers-chino", archetypeId: "beige-pleated-trousers", url: "https://www.uniqlo.com/us/en/men/bottoms/chinos-and-shorts", maxProducts: 12 },
+  { slug: "derby-shoes", archetypeId: "black-leather-derby", url: "https://www.charleskeith.com/us/shoes/flats", maxProducts: 10 },
+  { slug: "rings", archetypeId: "gold-signet-ring", url: "https://www.pandora.net/en-us/jewelry/rings", maxProducts: 10 },
+  { slug: "belts-2", archetypeId: "black-leather-belt", url: "https://www.charleskeith.com/us/accessories/belts", maxProducts: 8 },
 ];
 
 async function extract(target) {

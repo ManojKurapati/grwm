@@ -1,0 +1,264 @@
+{
+  "slug": "shirts-linen",
+  "archetypeId": "cream-linen-shirt",
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/tops/casual-shirts",
+  "extractedAt": "2026-08-30T08:49:41.241Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Flannel Shirt | Tartan Check",
+      "description": "Unisex flannel shirt featuring a classic regular fit, updated length suitable for wearing tucked in or untucked. Made from fine 100% cotton brushed on both sides, smooth on the outside and soft and cozy on the inside. Includes rounded buttons for easy fastening. Not sheer, regular fit, perfect for wearing alone or layered.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Shirts / Casual Shirts / Long Sleeve",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton fabric, brushed on both sides",
+        "Smooth exterior and soft, cozy interior",
+        "Rounded buttons for easy fastening",
+        "Updated length for versatile styling",
+        "Classic regular fit",
+        "Not sheer"
+      ],
+      "target_audience": [
+        "Men",
+        "Women",
+        "Unisex"
+      ],
+      "tags": [
+        "flannel",
+        "shirt",
+        "tartan check",
+        "cotton",
+        "long sleeve",
+        "casual",
+        "unisex"
+      ],
+      "sku": "486594-30-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E486594-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/c6b76b0f-424c-4b5d-963f-85b1e47be6fc.jpg",
+      "images": [
+        "https://media.brand.dev/d0c8b458-40c5-4132-9d45-48af5d864e8f.jpg",
+        "https://media.brand.dev/20f28861-ce79-4731-b30e-bca3d5318b0c.jpg",
+        "https://media.brand.dev/b638d183-4f11-4c2d-9f39-cfa0c87475d0.jpg",
+        "https://media.brand.dev/51dcd949-ea55-462f-ab25-759e8f4b9f8c.jpg",
+        "https://media.brand.dev/02e175ea-2524-409f-8fc9-369715bd5323.jpg"
+      ]
+    },
+    {
+      "name": "Flannel Shirt | Ombre Check",
+      "description": "Unisex flannel shirt featuring an ombre check pattern. Made from fine 100% cotton brushed on both sides for a smooth outside and soft, cozy inside. Classic regular fit with updated length suitable for wearing tucked in or untucked, featuring a shirt-tail design and rounded buttons for easy fastening. Available in a wide range of colors and patterns including ombre checks, plaid, and block checks. Not sheer, regular fit, machine washable.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Shirts / Casual Shirts / Long Sleeve",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton, brushed on both sides",
+        "Smooth outside, soft and cozy inside",
+        "Classic regular fit",
+        "Updated length for tucked or untucked wear",
+        "Shirt-tail design",
+        "Rounded buttons for easy fastening",
+        "Not sheer"
+      ],
+      "target_audience": [
+        "Men",
+        "Women",
+        "Unisex"
+      ],
+      "tags": [
+        "flannel",
+        "ombre check",
+        "shirt",
+        "casual",
+        "long sleeve",
+        "cotton",
+        "regular fit"
+      ],
+      "sku": "486597-19-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E486597-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/4cd2db9d-4167-4be5-be67-1611e968fbb8.jpg",
+      "images": [
+        "https://media.brand.dev/6b3ecd2c-17e5-434b-89b4-28bc6aedb8c8.jpg",
+        "https://media.brand.dev/0eaad351-f2b6-4c29-91bf-36c4526ae776.jpg",
+        "https://media.brand.dev/ecd02290-2fce-46ac-b857-9851f6260d9c.jpg",
+        "https://media.brand.dev/8520bbb8-6f4e-4156-8576-3a44df24e6eb.jpg",
+        "https://media.brand.dev/d98f7613-9bce-4dd1-826f-210fc1790319.jpg",
+        "https://media.brand.dev/e79e389a-4be9-4656-b439-d02e9ad0f838.jpg"
+      ]
+    },
+    {
+      "name": "Easy Care Soft Shirt | Checked",
+      "description": "A unisex relaxed silhouette shirt with dropped shoulders and a straight hem, perfect for pairing with wide-leg pants and as an outer layer. Features a versatile ombre check pattern and is sumptuously soft and smooth. The shirt is wrinkle-resistant after washing for easy care and is made from 57% Rayon and 43% Polyester (with 43% recycled polyester fiber). Machine washable on a gentle cycle or dry clean. Imported from Indonesia.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Relaxed silhouette with dropped shoulders",
+        "Straight hem",
+        "Wrinkle-resistant after washing",
+        "Sumptuously soft and smooth fabric",
+        "Versatile ombre check pattern",
+        "57% Rayon, 43% Polyester (43% recycled polyester fiber)",
+        "Machine wash cold, gentle cycle or dry clean"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "shirt",
+        "easy care",
+        "soft",
+        "checked",
+        "ombre check",
+        "wrinkle-resistant",
+        "recycled polyester"
+      ],
+      "sku": "488793-19-004-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488793-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/785dcb34-c674-411a-a266-27dbde369e49.jpg",
+      "images": [
+        "https://media.brand.dev/34d2dd14-b0fa-440b-8aa5-98357d4d2034.jpg",
+        "https://media.brand.dev/5fce439c-31cb-4e89-8d9e-ad60c19e09d1.jpg",
+        "https://media.brand.dev/ebede8f2-aade-4333-9b95-d4ec6ac324cf.jpg",
+        "https://media.brand.dev/9cdbb4ff-7fbd-4fdd-99da-367a552214d9.jpg",
+        "https://media.brand.dev/823e5626-d428-44d6-9982-d324ea932b18.jpg",
+        "https://media.brand.dev/4b78111e-ca9e-442c-b854-4228554659ef.jpg"
+      ]
+    },
+    {
+      "name": "Unisex Flannel Checked Shirt",
+      "description": "A unisex flannel checked shirt made from 100% cotton, brushed for a smooth feel on the outside and soft, cozy warmth on the inside. Features buttons with rounded edges for easy fastening, a shirt-tail hem with a well-balanced length that works tucked in or untucked, and a classic regular fit suitable for styling alone or layering. Machine washable and imported from Bangladesh.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "100% cotton fabric, brushed for smooth feel outside and soft warmth inside",
+        "Buttons with rounded edges for easy fastening",
+        "Shirt-tail hem suitable for tucked or untucked wear",
+        "Classic regular fit",
+        "Machine washable"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "flannel",
+        "checked",
+        "shirt",
+        "cotton",
+        "long sleeve",
+        "casual"
+      ],
+      "sku": "470187-15-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E470187-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1d6a3e89-70dc-4ab5-be4e-4b5c04918440.jpg",
+      "images": [
+        "https://media.brand.dev/f2c638fa-b155-4fc2-a38b-115db0cb3016.jpg",
+        "https://media.brand.dev/0726047f-3d41-4deb-a7f6-073b27d39c85.jpg",
+        "https://media.brand.dev/5562d731-5868-4952-a9c9-3dc540d6e825.jpg",
+        "https://media.brand.dev/19890c70-167a-4b72-9e38-dc3bbb347991.jpg",
+        "https://media.brand.dev/cb0b53f1-0a13-404e-a63d-bfbf478ad308.jpg",
+        "https://media.brand.dev/739acc04-fc9b-4d21-9516-3c0bf0347819.jpg"
+      ]
+    },
+    {
+      "name": "オックスフォードシャツ",
+      "description": "UNIQLOのオックスフォードシャツは、コットン100%の生地を使用し、糸からこだわりしなやかさと丈夫さを追求した究極のベーシックシャツです。伝統的なデザインを現代のフィット感にアップデートし、細部のディテールにも創意工夫を凝らしています。ヨコ糸には強くしなやかな三子糸を使用し、耐久性と着心地の良さを両立。ボタンは3層の樹脂で本物の貝ボタンのような美しい輝きを再現し、留め外しもしやすい設計です。",
+      "price": null,
+      "regular_price": null,
+      "currency": "JPY",
+      "category": "Clothing",
+      "availability": null,
+      "dimensions": [],
+      "features": [
+        "コットン100%生地",
+        "三子糸使用で丈夫でしなやか",
+        "伝統的なオックスフォードシャツデザインを現代的にアップデート",
+        "3層樹脂ボタンで美しい輝きと使いやすさ",
+        "身幅と着丈はパンツイン・アウト両対応の絶妙なバランス"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "オックスフォードシャツ",
+        "シャツ",
+        "コットン",
+        "ベーシック",
+        "丈夫",
+        "しなやか"
+      ],
+      "sku": "oxford-shirt",
+      "url": "https://www.uniqlo.com/jp/ja/contents/feature/masterpiece/product/oxford-shirt",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/ea150829-0322-47ea-8d62-2682bd7a44bb.jpg",
+      "images": []
+    },
+    {
+      "name": "Broadcloth Shirt | Check",
+      "description": "A casual unisex broadcloth shirt made from 100% cotton fabric crafted from rare ultra-long cotton fibers. Features a naturally washed-out, wrinkled texture that pairs well with denim and chinos. The pattern is expertly aligned by hand for symmetry at the collar, placket, sleeves, and cuffs. It has buttons with rounded edges for easy fastening and a button-down collar that looks great tucked in or untucked. The shirt has a regular fit and is not sheer. Imported from Vietnam.",
+      "price": null,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton fabric from rare ultra-long cotton fibers",
+        "Smooth and comfortable texture",
+        "Naturally washed-out, wrinkled texture",
+        "Patterns aligned by hand for symmetry",
+        "Buttons with rounded edges",
+        "Button-down collar",
+        "Regular fit",
+        "Not sheer",
+        "Machine washable"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "broadcloth",
+        "shirt",
+        "check",
+        "cotton",
+        "casual",
+        "button-down",
+        "regular fit"
+      ],
+      "sku": "E486585-000",
+      "url": "https://www.uniqlo.com/us/en/products/E486585-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f541e80c-f602-4380-918a-e85ac21837eb.jpg",
+      "images": []
+    }
+  ]
+}
