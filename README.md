@@ -173,6 +173,18 @@ node scripts/verify-ui.mjs   # drives the real demo flow in a browser
 `scripts/verify-ui.mjs` loads each screen in Chromium, runs the demo query end
 to end, captures console errors and writes screenshots to `.screenshots/`.
 
+### Recording the demo
+
+```bash
+node scripts/record-demo.mjs   # -> .demo/grwm-demo.mp4
+```
+
+Drives the same real flow in Chrome with captions overlaid and writes a captioned
+1440×900 MP4. Nothing is staged: the outfit, the missing piece and the verdict all
+come from live Convex, Gemini and Context.dev calls, so the raw runtime moves with
+latency — the encode step compresses it to `TARGET_SECONDS` (82 by default).
+Requires the dev server running and Google Chrome plus `ffmpeg` installed.
+
 ---
 
 ## Environment variables

@@ -179,11 +179,19 @@ function GapBlock({
 
             <div className="flex flex-col">
               <span className="label text-[0.62rem]">{gap.product.retailer}</span>
+              {/*
+                Clamped to two lines: real retailer titles are not written for
+                layout. Marketplace listings in particular run to keyword strings
+                like "Mens Linen Pants Casual Loose Lightweight Drawstring
+                Elastic Waist Summer Yoga Beach Trousers", which pushed the price
+                and the score down the page. Full title stays in the tooltip.
+              */}
               <a
                 href={gap.product.url}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-2 text-[1.05rem] leading-snug underline decoration-clay decoration-1 underline-offset-4 hover:decoration-ink"
+                title={gap.product.name}
+                className="mt-2 line-clamp-2 text-[1.05rem] leading-snug underline decoration-clay decoration-1 underline-offset-4 hover:decoration-ink"
               >
                 {gap.product.name}
               </a>

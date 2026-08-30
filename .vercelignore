@@ -1,0 +1,17 @@
+# Keep secrets off Vercel entirely.
+#
+# GRWM's server-side keys (GEMINI_API_KEY, CONTEXT_DEV_API_KEY) belong on the
+# Convex deployment, because that is where the code using them runs. Vercel only
+# ever needs NEXT_PUBLIC_CONVEX_URL, which is set as a project env var.
+#
+# Without this, `vercel deploy` from a local checkout uploads .env and Next
+# reports "Detected .env file" during the build — putting secrets somewhere they
+# serve no purpose.
+.env
+.env.*
+!.env.example
+
+# Local-only artefacts.
+.screenshots/
+data/context-dev-extractions/
+scripts/
