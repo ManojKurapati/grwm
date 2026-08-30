@@ -1,0 +1,334 @@
+{
+  "slug": "watches",
+  "archetypeId": null,
+  "sourceUrl": "https://www.danielwellington.com/us/watches/mens",
+  "extractedAt": "2026-08-30T08:27:54.295Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Quadro 5-Link Evergold",
+      "description": "The Daniel Wellington Quadro 5-Link Evergold is a rectangular ladies' watch featuring a minimalist design with a touch of luxury. It has a matte eggshell white dial and a 5-link bracelet made from 316L stainless steel with PVD gold coating. The watch includes a Japanese quartz movement, interchangeable straps, and is water resistant up to 3 ATM, making it suitable for everyday wear and formal occasions.",
+      "price": 219,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Case thickness: 6mm",
+        "Case size: 20 x 26 mm",
+        "Lug width: 10mm"
+      ],
+      "features": [
+        "Rectangular ladies' watch",
+        "Matte eggshell white dial",
+        "5-link bracelet made from 316L stainless steel with PVD gold coating",
+        "Japanese quartz movement",
+        "Interchangeable straps",
+        "Water resistant up to 3 ATM (rain resistant)"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "gold",
+        "watch",
+        "minimalist",
+        "5-link bracelet",
+        "eggshell white dial",
+        "Japanese quartz",
+        "water resistant"
+      ],
+      "sku": "DW00100622",
+      "url": "https://www.danielwellington.com/products/quadro-5-link-evergold-eggshell-white-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/62e0d091-6d3f-46f3-9f3d-d21eb606ad01.png",
+      "images": []
+    },
+    {
+      "name": "Juliette Braided Mesh White Sunray Gold",
+      "description": "The Juliette Braided Mesh White Sunray Gold is a minimalist ladies' watch featuring a refined oval case (20 x 26 mm) and a braided mesh strap, designed for slender wrists and everyday use. It has a stainless steel (316L) case with PVD gold coating, a white sunray dial with polished rectangular indices at 3, 6, 9, and 12 o’clock, and a debossed oval for texture and depth. The watch includes a Japanese quartz movement, water resistance up to 3 ATM (rain resistant), and interchangeable straps, weighing just 40 grams. The strap is adjustable between 125-192 mm and fastens with a fold-over clasp.",
+      "price": 169,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Case size: 20 x 26 mm",
+        "Adjustable strap length: 125-192 mm",
+        "Lug width: 10 mm",
+        "Weight: 40 grams"
+      ],
+      "features": [
+        "316L Stainless Steel case with PVD gold plating",
+        "Braided mesh strap",
+        "White sunray dial with polished rectangular indices",
+        "Japanese quartz movement",
+        "Water resistant up to 3 ATM (rain resistant)",
+        "Interchangeable straps",
+        "Fold-over clasp fastening",
+        "Mineral glass mirror material"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "minimalist",
+        "gold",
+        "braided mesh",
+        "oval case",
+        "Japanese quartz",
+        "water resistant",
+        "interchangeable strap"
+      ],
+      "sku": "DW00100882",
+      "url": "https://www.danielwellington.com/products/juliette-braided-mesh-white-sunray-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f6dd0776-0247-4249-9f66-6d2152ef2fa1.png",
+      "images": []
+    },
+    {
+      "name": "Classic Sheffield Silver",
+      "description": "The Classic Sheffield Silver is a minimalist wristwatch featuring an eggshell white dial, black leather strap, and polished stainless steel (316L) case available in 36 mm or 40 mm diameter. It has a Japanese quartz movement, water resistance up to 3 ATM (rain resistant), and interchangeable straps with spring bars for personalization. Suitable for professional everyday wear and formal occasions.",
+      "price": 169,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Case diameter: 36 mm or 40 mm",
+        "Lug width: 18 mm"
+      ],
+      "features": [
+        "Eggshell white dial",
+        "Black leather strap",
+        "Polished stainless steel (316L) case",
+        "Japanese quartz movement",
+        "Water resistant up to 3 ATM (rain resistant)",
+        "Interchangeable straps with spring bars"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "classic",
+        "silver",
+        "leather strap",
+        "minimalist",
+        "Japanese quartz",
+        "water resistant",
+        "interchangeable strap"
+      ],
+      "sku": "DW00100053",
+      "url": "https://www.danielwellington.com/products/classic-sheffield-eggshell-white-silver",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/73b48c5a-fafe-419c-b1fe-3b57d428263e.png",
+      "images": []
+    },
+    {
+      "name": "Iconic Link Gold",
+      "description": "The Iconic Link Gold is a women's gold watch featuring a polished link bracelet made from 316L stainless steel with PVD gold coating and a white eggshell dial. It is available in 28mm and 32mm sizes, suitable for both professional everyday wear and special occasions. The watch has a Japanese quartz movement and is water resistant up to 3 ATM (rain resistant).",
+      "price": 169,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Size: 28mm or 32mm",
+        "Adjustable length (Min - Max): 130-187mm",
+        "Lug width: 14mm"
+      ],
+      "features": [
+        "Gold link bracelet",
+        "Stainless Steel (316L) with PVD gold plating",
+        "Eggshell white dial with twelve index dial",
+        "Japanese quartz movement",
+        "Water resistant up to 3 ATM (rain resistant)"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "gold",
+        "watch",
+        "women's watch",
+        "stainless steel",
+        "quartz movement",
+        "water resistant"
+      ],
+      "sku": "DW00100567",
+      "url": "https://www.danielwellington.com/products/iconic-link-eggshell-white-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/bfc0c35a-51f6-4f24-a07f-375de2c627ef.png",
+      "images": []
+    },
+    {
+      "name": "Quadro Pressed Evergold",
+      "description": "The Daniel Wellington Quadro Pressed Evergold is a rectangular ladies’ watch in gold with a mesh strap made from stainless steel (316L) and a light eggshell white dial. It features a compact size of 20 x 26 mm, suitable for both professional everyday wear and festive occasions. The watch has a Japanese quartz movement for reliable accuracy and a PVD coating for long-lasting color retention. The delicate gold mesh watchband supports a square dial with sleek rounded edges and a simple white dial with a sunray index. The watch is water resistant up to 3 ATM (rain resistant) and has interchangeable straps for easy customization.",
+      "price": 165,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Size: 20x26 mm",
+        "Watch case thickness: 6mm",
+        "Adjustable length (Min - Max): 135-195mm",
+        "Lug width: 10mm"
+      ],
+      "features": [
+        "Rectangular ladies’ watch",
+        "Gold mesh watchband made of stainless steel (316L)",
+        "Eggshell white square dial with sunray index",
+        "Japanese quartz movement",
+        "PVD coated for long-lasting color retention",
+        "Water resistant up to 3 ATM (rain resistant)",
+        "Interchangeable straps"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "gold",
+        "women's watch",
+        "mesh strap",
+        "stainless steel",
+        "Japanese quartz",
+        "water resistant",
+        "interchangeable straps"
+      ],
+      "sku": "DW00100556",
+      "url": "https://www.danielwellington.com/products/quadro-pressed-evergold-eggshell-white-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/b39be6d1-217b-4092-acc4-da53a258baef.png",
+      "images": []
+    },
+    {
+      "name": "Quadro Mini Evergold Champagne",
+      "description": "The Quadro Mini Evergold Champagne is a minimalist ladies’ watch featuring a compact rectangular gold case (15.4 x 18.2 mm) and a champagne-coloured sunray dial with two index markers for a minimalist look. It has a fabric-like mesh bracelet made from stainless steel (316L) with PVD gold coating, which is infinitely adjustable (124-185 mm), interchangeable, and lightweight at 34 grams. The watch is powered by a reliable Japanese quartz movement and is water resistant up to 3 ATM, suitable for daily wear and formal occasions.",
+      "price": 149,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Case size: 15.4 x 18.2 mm",
+        "Adjustable length (Min - Max): 124-185 mm",
+        "Lug width: 6 mm"
+      ],
+      "features": [
+        "Rectangular gold-coloured case",
+        "Champagne sunray dial with two index markers",
+        "Mesh strap made of stainless steel (316L) with PVD gold coating",
+        "Infinitely adjustable and interchangeable strap",
+        "Lightweight at 34 grams",
+        "Japanese quartz movement",
+        "Water resistant up to 3 ATM (rain resistant)"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "minimalist",
+        "gold",
+        "mesh strap",
+        "ladies watch",
+        "quartz movement",
+        "water resistant",
+        "interchangeable strap"
+      ],
+      "sku": "DW00100656",
+      "url": "https://www.danielwellington.com/products/quadro-mini-evergold-g-champagne",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/2ce37608-b5f2-4033-aa60-11ee06b3d9ac.png",
+      "images": []
+    },
+    {
+      "name": "Petite Evergold",
+      "description": "The Petite Evergold is a minimalist women's watch featuring an eggshell white dial and a gold-coloured mesh strap made from 316L stainless steel. It is available in diameters of 28 mm, 32 mm, and 36 mm. The watch has a slim case with PVD gold plating and a Japanese quartz movement, making it reliable for office, everyday wear, and festive occasions. It offers water resistance up to 3 ATM and interchangeable straps, combining functionality and versatility for daily use.",
+      "price": 145,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "watch",
+      "availability": "in_stock",
+      "dimensions": [
+        "Diameter: 28 mm, 32 mm, or 36 mm",
+        "Adjustable length (Min - Max): 150-205 mm",
+        "Lug width: 12 mm"
+      ],
+      "features": [
+        "Eggshell white dial",
+        "Gold-coloured mesh strap made from 316L stainless steel",
+        "Slim case with PVD gold plating",
+        "Japanese quartz movement",
+        "Water resistance up to 3 ATM (rain resistant)",
+        "Interchangeable straps",
+        "Adjustable mesh strap with clasp"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "minimalist",
+        "gold watch",
+        "mesh strap",
+        "stainless steel",
+        "Japanese quartz",
+        "water resistant",
+        "interchangeable straps"
+      ],
+      "sku": "DW00100350",
+      "url": "https://www.danielwellington.com/products/petite-evergold-eggshell-white-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/aa5717fb-a72f-4ab7-8519-81d5172345da.png",
+      "images": []
+    },
+    {
+      "name": "Classic Tennis Bracelet Gold",
+      "description": "The Classic Tennis Bracelet in Gold combines timeless design with 50 sparkling zirconia crystals, each individually set in a claw setting. Made from high-quality 316L stainless steel with a gold-coloured PVD coating, the adjustable bracelet (155-185 mm) feels comfortable against the skin and is suitable for both everyday wear and special occasions. It is water-resistant, sweat-proof, and built to withstand daily wear without losing its shine. The bracelet is delivered in a high-quality gift box and can be paired with other Daniel Wellington accessories.",
+      "price": 69,
+      "regular_price": null,
+      "currency": "EUR",
+      "category": "bracelet",
+      "availability": "in_stock",
+      "dimensions": [
+        "Size: 155-185 mm"
+      ],
+      "features": [
+        "50 Cubic Zirconia Crystals",
+        "Claw Setting",
+        "Made from 316L stainless steel",
+        "Gold-coloured PVD coating",
+        "Adjustable sizing rings",
+        "Water-resistant and sweat-proof",
+        "Delivered in a high-quality gift box"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "bracelet",
+        "gold",
+        "tennis bracelet",
+        "jewellery",
+        "adjustable",
+        "zirconia",
+        "stainless steel",
+        "water-resistant"
+      ],
+      "sku": "DW00400388",
+      "url": "https://www.danielwellington.com/products/classic-tennis-bracelet-gold",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/b00d1671-9f25-4e9d-89bb-a3d71b91ce11.png",
+      "images": []
+    }
+  ]
+}

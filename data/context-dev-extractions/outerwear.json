@@ -1,0 +1,446 @@
+{
+  "slug": "outerwear",
+  "archetypeId": "navy-unstructured-blazer",
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/outerwear/blazers-and-jackets",
+  "extractedAt": "2026-08-30T08:23:19.844Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Relaxed Tailored Jacket | Pattern",
+      "description": "A sleek single-breasted women's jacket in a hip length that pairs well with voluminous bottoms. Features a micro-check pattern and is made with contouring outer fabric for all-day comfort. Includes interior pockets and has a relaxed fit.",
+      "price": 89.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Blazers / Casual",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Sleek single-breasted design",
+        "Hip length",
+        "Micro-check pattern",
+        "Outer fabric made with contouring material for all-day comfort",
+        "Interior pockets",
+        "Relaxed fit"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "jacket",
+        "blazer",
+        "relaxed fit",
+        "micro-check",
+        "outerwear",
+        "casual"
+      ],
+      "sku": "489025-37-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E489025-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/95397238-2337-423b-a8ff-13c772a39279.jpg",
+      "images": [
+        "https://media.brand.dev/08250bb1-8d3f-4598-850a-0d26f7001c33.jpg",
+        "https://media.brand.dev/95e996ce-22d1-4eba-ad60-f6bc7dc96dab.jpg",
+        "https://media.brand.dev/f3053c80-c8a9-4477-9867-0eb633152fe8.jpg",
+        "https://media.brand.dev/cb2a36cf-b11b-414d-bff3-33d7a50e6694.jpg"
+      ]
+    },
+    {
+      "name": "Relaxed Tailored Jacket",
+      "description": "Sleek single-breasted women's jacket in a hip length that pairs well with voluminous bottoms. Made with contouring outer fabric for all-day comfort and features interior pockets. Fit is relaxed. Fabric details: Shell is 66% Polyester (66% recycled), 28% Rayon, 6% Spandex; Lining is 100% Polyester (40% recycled). Imported. Dry clean only.",
+      "price": 89.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Blazers / Casual",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Sleek single-breasted design",
+        "Hip length",
+        "Contouring outer fabric for comfort",
+        "Interior pockets",
+        "Relaxed fit",
+        "Made with recycled polyester fibers"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "jacket",
+        "blazer",
+        "outerwear",
+        "relaxed fit",
+        "recycled materials",
+        "sustainable fashion"
+      ],
+      "sku": "488652-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488652-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/5b9ce590-ce3e-4803-99db-ffd0ca310b35.jpg",
+      "images": [
+        "https://media.brand.dev/cec88acc-1639-48dd-8e10-5e1da810547f.jpg",
+        "https://media.brand.dev/20982c0e-0217-463c-9c7c-93ffb5b824c5.jpg",
+        "https://media.brand.dev/fbf60c52-8403-4e9a-a9ad-d80f86aeb721.jpg",
+        "https://media.brand.dev/d0d4ec40-a9a2-49e3-962e-a3e8014e717f.jpg"
+      ]
+    },
+    {
+      "name": "Windproof Stand Blouson",
+      "description": "A women's windproof blouson featuring a windproof film to keep cold air out, mesh lining for comfort, a two-way design with a stowable hood or stand collar, adjustable hem for styling, and a water-repellent finish that repels light rain. The fit is oversized for a relaxed look. Made with recycled nylon and polyester lining.",
+      "price": 69.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Sport Utility Wear / Outerwear / Jackets",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "Windproof film to keep cold air out",
+        "Mesh material lining feels comfortable and does not cling to the skin",
+        "Two-way design with a hood that can be stowed away or used as a stand collar",
+        "Adjustable hem to create your own style",
+        "Water-repellent finish repels light rain (not permanent)",
+        "Oversized fit",
+        "Shell: 100% Nylon (45% recycled nylon fiber)",
+        "Lining: 100% Polyester",
+        "Imported"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "windproof",
+        "blouson",
+        "outerwear",
+        "jackets",
+        "water-repellent",
+        "oversized",
+        "recycled materials"
+      ],
+      "sku": "487832-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487832-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/dd59361f-bf20-46d9-b897-816206969ca1.jpg",
+      "images": [
+        "https://media.brand.dev/4534c565-cca8-4c1b-94f4-5bb1389573a3.jpg",
+        "https://media.brand.dev/23f41fd1-26ce-43ad-bc99-dee59052821b.jpg",
+        "https://media.brand.dev/44106f56-0b11-48fd-98fc-aed8ae9f6d29.jpg",
+        "https://media.brand.dev/9e61accf-142c-4490-b7a0-f0cbe4cc73e4.jpg",
+        "https://media.brand.dev/edbc55aa-2e38-4bd8-a00d-ee256cd91ca6.jpg",
+        "https://media.brand.dev/12c17140-1853-48fc-a280-886ec044dcd2.jpg"
+      ]
+    },
+    {
+      "name": "Women's Zip-Up Short Jacket",
+      "description": "A modern everyday outer layer inspired by vintage barn jackets, featuring a relaxed, oversized silhouette for easy layering in cool-to-mild weather. Made from a moderately crisp cotton blend fabric that maintains a structured shape, with corduroy accents at the collar and cuffs. Includes chest and side pockets for functional storage. The short length pairs well with high-rise bottoms, mid-weight fleece, or lightweight knits for transitional styling. Product-washed for a casual, lived-in look.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Oversized silhouette for comfortable layering",
+        "Moderately crisp cotton blend fabric maintains shape",
+        "Corduroy collar and cuffs add soft accent",
+        "Chest and side pockets for storage",
+        "Short length pairs well with various bottoms",
+        "Vintage-inspired design",
+        "Product-washed finish for casual look",
+        "Suitable for cool-to-mild weather"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "jacket",
+        "zip-up",
+        "cotton blend",
+        "corduroy",
+        "oversized",
+        "outerwear",
+        "casual",
+        "transitional"
+      ],
+      "sku": "479208-32-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E479208-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/463fb283-2933-4ae9-b769-d4e6f49c8370.jpg",
+      "images": [
+        "https://media.brand.dev/0288ecb4-ef19-4f18-9a91-4128348d1970.jpg",
+        "https://media.brand.dev/9c147f8a-2675-4b3e-b584-10f3263bfc0f.jpg",
+        "https://media.brand.dev/86deed52-e46a-4f75-a284-cda11613818f.jpg",
+        "https://media.brand.dev/a9a15396-b853-4663-82ab-71aceb37463f.jpg",
+        "https://media.brand.dev/2834e84e-669b-4b0e-9895-a9476c075d9b.jpg",
+        "https://media.brand.dev/4400c024-d165-4ea6-add7-d1f6def41b3f.jpg"
+      ]
+    },
+    {
+      "name": "Zip-Up Short Jacket | Pattern",
+      "description": "Women's zip-up short jacket featuring a micro-check pattern with horizontal seam detail at the back for a sleek look. Made from a crisp cotton-blend material that keeps its shape well and is pre-washed for a vintage look. Includes corduroy accents at the collar and cuffs, chest and side pockets, and an oversized fit. Easy to layer like a shirt jacket.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Jackets & Parkas / Jackets",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Crisp cotton-blend material",
+        "Pre-washed for vintage look",
+        "Corduroy accents at collar and cuffs",
+        "Chest and side pockets",
+        "Horizontal seam detail at back",
+        "Oversized fit",
+        "Easy to layer like a shirt jacket",
+        "Micro-check pattern"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "zip-up",
+        "short jacket",
+        "pattern",
+        "cotton-blend",
+        "corduroy",
+        "oversized",
+        "outerwear",
+        "jackets"
+      ],
+      "sku": "488785-34-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488785-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1c9287ec-fe4d-410f-90f4-458e00ccb79d.jpg",
+      "images": [
+        "https://media.brand.dev/534de7c2-55ce-477a-a259-a469cb951381.jpg",
+        "https://media.brand.dev/07064187-f21c-425b-807e-dcbb49bf4bb8.jpg",
+        "https://media.brand.dev/42729977-6353-4594-b891-e6afe2456524.jpg",
+        "https://media.brand.dev/96e14454-ee28-4547-871e-12406e10ba3b.jpg",
+        "https://media.brand.dev/88fd4f46-edae-411a-8984-308a098cd8a0.jpg",
+        "https://media.brand.dev/b1f8b38e-f302-4620-a9f5-29c4888b29a9.jpg",
+        "https://media.brand.dev/b3c2f61c-187a-44c7-977a-3f29a897ffed.jpg"
+      ]
+    },
+    {
+      "name": "Women's Barn Short Jacket | Denim",
+      "description": "The Women's Barn Short Jacket in denim features pre-washed cotton fabric that maintains a crisp, structured silhouette. It has an oversized fit ideal for layering over mid-weight tops, fleece, or lightweight knits during transitional weather. Gusseted back pleats create a voluminous A-line shape, and the jacket includes a contrast corduroy collar and lining with a checked cuff lining for a casual, vintage-inspired look. Double-entry pockets accessible from the top and sides add practicality. The short length balances well with high-rise bottoms or wide-leg silhouettes.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Pre-washed cotton fabric for a crisp silhouette",
+        "Oversized fit for easy layering",
+        "Gusseted back pleats creating A-line shape",
+        "Contrast corduroy collar and lining",
+        "Checked cuff lining visible when sleeves are rolled",
+        "Double-entry pockets accessible from top and sides",
+        "Short length for balanced proportions"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "denim",
+        "jacket",
+        "oversized",
+        "casual",
+        "cotton",
+        "barn jacket"
+      ],
+      "sku": "484664-69-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E484664-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/a3003ba7-f618-49e0-9151-e36ed10706e9.jpg",
+      "images": [
+        "https://media.brand.dev/09bd4c4f-5f38-4bfb-bcca-1d438adb811d.jpg",
+        "https://media.brand.dev/33c6ada2-d9a6-4c5a-a799-418734d92ccd.jpg",
+        "https://media.brand.dev/641b99bc-fb49-407f-9ec6-9227f6bd5fc6.jpg",
+        "https://media.brand.dev/b60e5d30-f119-4130-9016-9c42337b7de0.jpg",
+        "https://media.brand.dev/8ac9bb96-530a-4906-ba6b-d76c2ead2177.jpg"
+      ]
+    },
+    {
+      "name": "Women's Barn Short Jacket",
+      "description": "A relaxed fit women's short jacket made with pre-washed cotton-blend material that keeps a perfectly crisp silhouette. Features a contrast-color corduroy collar, checked lining and cuff facings for a casual look, gusseted pleats at the back creating a voluminous A-line silhouette, and double pockets accessible from the top or side. Short length for a well-balanced look. Imported from Vietnam.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Pre-washed cotton-blend material",
+        "Contrast-color corduroy collar",
+        "Checked lining and cuff facings",
+        "Gusseted pleats at the back for A-line silhouette",
+        "Double pockets accessible from top or side",
+        "Short length",
+        "Relaxed fit"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "jacket",
+        "cotton-blend",
+        "corduroy collar",
+        "checked lining",
+        "A-line silhouette",
+        "relaxed fit",
+        "short jacket"
+      ],
+      "sku": "491201-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E491201-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/8b4f275b-d6ff-4ed8-b923-06e477b9b646.jpg",
+      "images": [
+        "https://media.brand.dev/bd44a64a-221d-403d-8030-8d81b8be8e3a.jpg",
+        "https://media.brand.dev/2700c2e2-6c3a-44b0-968e-f3b8cb97dd60.jpg",
+        "https://media.brand.dev/4a0d366f-f0fa-4e85-835f-389fc9603a53.jpg",
+        "https://media.brand.dev/4b4aeded-cf8a-44a2-a4b4-063ec06ed6f7.jpg",
+        "https://media.brand.dev/29ee10b7-cc23-4d5b-ba9f-bb445acdf264.jpg",
+        "https://media.brand.dev/1af890aa-90ae-4994-91e2-b2dfe35659e1.jpg"
+      ]
+    },
+    {
+      "name": "Zip-Up Short Jacket | Denim",
+      "description": "Women's oversized zip-up short jacket made from washed denim fabric with a crisp material that keeps its shape well. Features corduroy accents at the collar and cuffs, chest and side pockets, and a horizontal seam detail at the back for a sleek look. Suitable for casual wear with rolled-up sleeves style.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Jackets & Parkas / Jackets",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Made from 100% cotton washed denim fabric",
+        "Crisp material keeps its shape",
+        "Corduroy accents at collar and cuffs",
+        "Chest and side pockets",
+        "Horizontal seam detail at the back",
+        "Oversized fit"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "denim",
+        "jacket",
+        "zip-up",
+        "outerwear",
+        "oversized",
+        "cotton"
+      ],
+      "sku": "488787-69-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488787-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/a1f8c40f-56bf-4da2-815c-ae1683934a62.jpg",
+      "images": [
+        "https://media.brand.dev/29afcf8d-b17a-4b71-bd32-46d5feb19b4d.jpg",
+        "https://media.brand.dev/1bd53ca1-5eeb-4d18-8b30-b16cf4f5b753.jpg",
+        "https://media.brand.dev/a7e5f493-4868-4694-a8d6-d937173c144a.jpg",
+        "https://media.brand.dev/56aab778-397c-4b8c-80eb-ebb4f3e76e84.jpg",
+        "https://media.brand.dev/9d585a76-060a-41a8-9d45-a178b05d9813.jpg",
+        "https://media.brand.dev/50099047-4ba7-4aae-bdf7-a7b424c2e4d1.jpg",
+        "https://media.brand.dev/0dd550d1-51ff-4cdd-9fca-27f925af148a.jpg"
+      ]
+    },
+    {
+      "name": "Pile Lined Fleece Combination Jacket",
+      "description": "Outdoor sportswear-inspired women's jacket combining fleece and woven fabric, designed for everyday use. Features snap buttons for easy fastening and unfastening, bonded material for warmth and comfort, practical pockets on both sides and at the left chest, and raglan sleeves for ease of movement. Made from 100% polyester with recycled fibers, machine washable.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / T-Shirts, Sweats & Fleece / Fleece / Jackets",
+      "availability": "made_to_order",
+      "dimensions": [],
+      "features": [
+        "Outdoor sportswear-inspired design combining fleece and woven fabric",
+        "Snap buttons for easy fastening and unfastening",
+        "Bonded material provides warmth and comfort",
+        "Practical pockets on both sides and at the left chest",
+        "Comfortable fit with raglan sleeves for ease of movement",
+        "Made with 100% polyester (100% recycled polyester fiber)",
+        "Machine washable, gentle cycle, do not dry clean"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "fleece",
+        "jacket",
+        "women",
+        "outdoor",
+        "recycled polyester",
+        "warm",
+        "comfortable",
+        "snap buttons",
+        "pockets"
+      ],
+      "sku": "487594-01-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487594-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/e3c9b62a-599c-4e48-8e02-9bfbb474b751.jpg",
+      "images": [
+        "https://media.brand.dev/e28d5993-9e8e-429a-bbfa-21e5239c6381.jpg",
+        "https://media.brand.dev/81360859-4b8c-420b-a2f7-ae5e8dd1958e.jpg",
+        "https://media.brand.dev/fa9861da-a4f2-4757-a354-8fefbf91c6ec.jpg",
+        "https://media.brand.dev/8d74fa01-3c17-44a9-92bf-203b2308d114.jpg",
+        "https://media.brand.dev/513aeb48-436f-4c6e-8daf-cd1a6da9693a.jpg"
+      ]
+    },
+    {
+      "name": "Fluffy Yarn Fleece Full-Zip Jacket",
+      "description": "Women's full-zip jacket made from long-pile fleece refined through multiple prototypes for ultimate comfort. Features a fluffy yarn texture with a warm feel, piping at the hem and cuffs to keep cold air out, and knit construction with fabric density designed to reduce shedding and provide greater warmth. Machine washable and made with 100% recycled polyester fiber. Imported.",
+      "price": 39.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / T-Shirts, Sweats & Fleece / Fleece / Jackets",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Long-pile fleece for ultimate comfort",
+        "Fluffy yarn texture for warmth",
+        "Piping at hem and cuffs to block cold air",
+        "Knit construction reduces shedding",
+        "Made with 100% recycled polyester fiber",
+        "Machine washable for easy care"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "fleece",
+        "full-zip",
+        "jacket",
+        "warm",
+        "soft",
+        "recycled materials",
+        "polyester"
+      ],
+      "sku": "449753-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E449753-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/5eac201a-b5f2-4612-aa2c-56342a7ef15a.jpg",
+      "images": [
+        "https://media.brand.dev/4d0cac29-8ba9-48cb-badc-d38b59845aa2.jpg",
+        "https://media.brand.dev/c873653a-c584-42db-9e82-683e20587b52.jpg",
+        "https://media.brand.dev/422899e5-86bd-41da-aba2-d23da4d2f59d.jpg",
+        "https://media.brand.dev/624af743-4e02-4297-99d9-634ad7470332.jpg",
+        "https://media.brand.dev/9cce391f-e5f2-4360-8829-ce09324e0b59.jpg",
+        "https://media.brand.dev/8cd1036d-2fb6-451a-b84f-163823ac1a85.jpg"
+      ]
+    }
+  ]
+}

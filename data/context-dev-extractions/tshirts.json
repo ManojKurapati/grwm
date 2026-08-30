@@ -1,0 +1,441 @@
+{
+  "slug": "tshirts",
+  "archetypeId": "white-tshirt-heavyweight",
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/tops/t-shirts",
+  "extractedAt": "2026-08-30T08:21:07.330Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "AIRism Cotton T-Shirt | Long-Sleeve",
+      "description": "The long-sleeve version of UNIQLO's best-selling AIRism Cotton Oversized T-shirt, offering a smooth, comfortable feel with a contemporary silhouette. Features include a thick collar, wide armholes, loose-fitting sleeves, and tighter ribbing to keep sleeves from slipping when rolled up. Made with recycled materials and available in natural new hues inspired by painting, photography, and nature.",
+      "price": 29.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Long-sleeve design",
+        "Made with recycled materials",
+        "Thick collar and wide armholes for a sharp look",
+        "Loose-fitting sleeves for contemporary silhouette",
+        "Tighter ribbing to prevent sleeves slipping when rolled up",
+        "Available in natural new hues inspired by art and nature"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "AIRism",
+        "Cotton",
+        "Long Sleeve",
+        "T-Shirt",
+        "Recycled Materials",
+        "Unisex"
+      ],
+      "sku": "E465193-000",
+      "url": "https://www.uniqlo.com/us/en/contents/feature/masterpiece/product/airism-cotton-crew-neck-t-shirt-long-sleeve",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/e72cee80-a162-48ec-b498-c27eb144706a.jpg",
+      "images": []
+    },
+    {
+      "name": "Unisex Waffle Henley Neck T-Shirt | Long Sleeve",
+      "description": "A unisex long sleeve waffle henley neck t-shirt made from a blend of 60% cotton and 40% polyester (with 40% recycled polyester fiber). Features a waffle texture fabric that is stylish and comfortable. Machine washable with gentle cycle. Imported from Cambodia. This product contains over 20% recycled materials by weight, supporting sustainability efforts.",
+      "price": 29.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Unisex long sleeve t-shirt",
+        "Waffle texture fabric",
+        "Henley neck design",
+        "60% Cotton, 40% Polyester (40% recycled polyester fiber)",
+        "Machine wash cold, gentle cycle",
+        "Imported",
+        "Contains over 20% recycled materials by product weight"
+      ],
+      "target_audience": [
+        "Men",
+        "Women",
+        "Unisex"
+      ],
+      "tags": [
+        "long sleeve",
+        "henley neck",
+        "waffle texture",
+        "recycled polyester",
+        "sustainable",
+        "t-shirt"
+      ],
+      "sku": "482766-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482766-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/45b5e740-6608-4e04-a3fd-eeeba4bb826f.jpg",
+      "images": [
+        "https://media.brand.dev/bb5aa63d-0919-405d-85c3-34e951249beb.jpg",
+        "https://media.brand.dev/fe836f0a-d8c8-49df-b28e-56c43e0d137a.jpg",
+        "https://media.brand.dev/9f94fdb6-474c-4f55-b9e7-1d594d6ea726.jpg",
+        "https://media.brand.dev/c039d80d-e8b7-412c-94cd-9cd198169c40.jpg",
+        "https://media.brand.dev/c8934de9-bfec-42ff-b759-e77d32c5f2cf.jpg",
+        "https://media.brand.dev/dda2176c-fd86-419a-85c1-150dc71891a6.jpg"
+      ]
+    },
+    {
+      "name": "SUPIMA® Cotton T-Shirt",
+      "description": "A unisex T-shirt made from 100% premium SUPIMA® cotton, offering a fine, smooth texture with long fibers for a polished surface and consistent color. Features a clean silhouette with balanced proportions, adjusted neckline, body width, and sleeve length for a refined everyday essential. The elegant collar width and precise stitching complement the fabric texture, making it suitable for warm weather wear or layering across seasons. Designed as a timeless wardrobe piece that pairs easily with denim, straight-leg pants, or tailored layers.",
+      "price": 24.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Made of premium 100% SUPIMA® cotton for a fine, smooth texture",
+        "Elegant collar width and stitching complements the fabric texture",
+        "Unisex design with a clean silhouette and balanced proportions",
+        "Adjusted neckline, body width, and sleeve length for a balanced shape",
+        "Suitable for warm weather wear or layered styling",
+        "Timeless wardrobe piece that pairs easily with various outfits"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "cotton",
+        "SUPIMA",
+        "t-shirt",
+        "unisex",
+        "casual",
+        "everyday wear"
+      ],
+      "sku": "455365-68-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E455365-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/48676deb-5d08-4f23-b300-0ebd04c78a45.jpg",
+      "images": [
+        "https://media.brand.dev/6fa0f10e-9223-4b20-9d8c-3b858378eb44.jpg",
+        "https://media.brand.dev/d144484f-5ad1-4d8c-af85-73e672fcbff9.jpg",
+        "https://media.brand.dev/b8c82d04-dc1d-48ef-aa3f-f1dbcd0b9422.jpg",
+        "https://media.brand.dev/6560a145-c19b-440d-8416-da8d61bef452.jpg",
+        "https://media.brand.dev/4e02638a-a16e-4938-9977-8b31ba6a3a00.jpg",
+        "https://media.brand.dev/527e8589-0889-4a55-869c-ef1949d22a5d.jpg"
+      ]
+    },
+    {
+      "name": "Unisex Crew Neck T-Shirt",
+      "description": "A heavyweight cotton jersey fabric with a smooth texture and rugged look. Durable fabric built to last. Binding at the collar helps the neckline keep its shape. Neckline inspired by vintage military T-shirt designs. This unisex Crew Neck T-Shirt from the Uniqlo U collection is designed as a modern essential, balancing a clean silhouette with thoughtful fabric choice for everyday wear across seasons. Crafted from heavyweight cotton jersey made with thick yarn, it offers a smooth surface and a structured look that works well on its own in warm weather or as a reliable layering piece when temperatures drop. The mid-weight fabric makes this T-shirt adaptable for different weather, worn alone in warmer months or layered under overshirts, cardigans, or jackets. The unisex men’s sizing offers a fit that is not too loose and not too tight, pairing easily with straight-leg jeans, chinos, or tailored pants. Included in the Uniqlo U collection, designed by Co-Artistic Directors Christophe Lemaire and Sarah-Linh Tran, with careful attention to fabric, texture, and refined color selection. A versatile wardrobe staple that supports a wide range of styling, from relaxed weekend looks to polished but casual outfits.",
+      "price": 24.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Heavyweight cotton jersey fabric made with thick yarn",
+        "Smooth finish and classic crew neck",
+        "Binding at the collar maintains neckline shape",
+        "Neckline inspired by vintage military T-shirt designs",
+        "Unisex fit, not too loose or tight",
+        "Mid-weight fabric adaptable for different weather",
+        "Durable fabric built to last",
+        "Part of Uniqlo U collection designed by Christophe Lemaire and Sarah-Linh Tran"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "crew neck",
+        "t-shirt",
+        "heavyweight cotton",
+        "Unisex",
+        "casual wear",
+        "layering",
+        "Uniqlo U"
+      ],
+      "sku": "422992-53-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E422992-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/dd31f25a-4d1f-4e78-b936-19bfbb05c06b.jpg",
+      "images": [
+        "https://media.brand.dev/28b2e83c-7550-460a-8e01-79aada1dd803.jpg",
+        "https://media.brand.dev/54ea89b8-67b9-4c5e-ab28-c08593b31aae.jpg",
+        "https://media.brand.dev/b39a6452-6bb6-4073-b60a-01a5d9574d28.jpg",
+        "https://media.brand.dev/64597c47-ba67-4266-8ded-095da2de8491.jpg",
+        "https://media.brand.dev/00303fb6-ef33-48e9-ac91-b223e747ee3e.jpg",
+        "https://media.brand.dev/4da06364-7cf4-4476-9226-a394cb770906.jpg"
+      ]
+    },
+    {
+      "name": "Men's DRY-EX T-Shirt",
+      "description": "Men's DRY-EX T-Shirt designed for active wear and warm climates, featuring quick-drying DRY-EX technology, breathable mesh panels at sides and center back, fine-textured smooth fabric with subtle gloss for a premium look, and a seamless design at cuffs and hem. Regular fit offers natural movement and a streamlined silhouette. Suitable for workouts, travel, commuting, and casual layering in hot and transitional weather. Made with recycled materials.",
+      "price": 24.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Quick-drying DRY-EX technology",
+        "Breathable mesh at sides and center back",
+        "Fine texture and smooth feel",
+        "Subtly glossy fabric for premium look",
+        "Seamless design at cuffs and hem",
+        "Regular fit for natural movement",
+        "Lightweight and suitable for summer wear",
+        "Made with recycled materials"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "quick-drying",
+        "breathable",
+        "mesh",
+        "lightweight",
+        "recycled materials",
+        "active wear",
+        "summer",
+        "regular fit"
+      ],
+      "sku": "482299-54-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482299-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/4c0665d7-4bf3-456a-a995-03babb5d8b95.jpg",
+      "images": [
+        "https://media.brand.dev/bcd8a531-e3a4-4d95-8def-c25e90895d56.jpg",
+        "https://media.brand.dev/3eef8c8d-d561-4298-a2e0-b2b9b6406a96.jpg",
+        "https://media.brand.dev/67e9270e-a4b5-4234-baa5-a58c0920af65.jpg",
+        "https://media.brand.dev/39097085-942c-4acc-9cc3-98517f11bed6.jpg",
+        "https://media.brand.dev/32f00c82-316e-4f92-9039-b6f5afb97f85.jpg",
+        "https://media.brand.dev/9fe31375-3601-4589-bb71-bf6b945d083c.jpg",
+        "https://media.brand.dev/18d937e1-6451-4261-bba7-10e0ee26d9c2.jpg"
+      ]
+    },
+    {
+      "name": "Unisex Boxy Cropped T-Shirt",
+      "description": "A trendy boxy silhouette cropped t-shirt made from 100% cotton with a natural soft texture. Features a short length and boxy fit for a modern vibe. Machine washable and imported from Vietnam.",
+      "price": 19.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton material with a natural soft texture",
+        "Boxy silhouette",
+        "Short length for a trendy vibe",
+        "Machine wash cold, dry clean"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "boxy",
+        "cropped",
+        "t-shirt",
+        "cotton",
+        "unisex",
+        "casual"
+      ],
+      "sku": "487962-00-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487962-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/55144fc1-7ff6-4541-851a-127246ba6e87.jpg",
+      "images": [
+        "https://media.brand.dev/16e45e0c-f980-4377-8ee9-7a735b043d91.jpg",
+        "https://media.brand.dev/0930df8d-8dbb-46da-9bda-b8bcb5c922ed.jpg",
+        "https://media.brand.dev/28ef113e-6988-4b26-9f36-e22bc3fa52b8.jpg",
+        "https://media.brand.dev/aa147b37-9bb9-4881-b358-6008fc450ef5.jpg",
+        "https://media.brand.dev/b5cff2fe-3106-43b0-85a7-1b0540da2f26.jpg",
+        "https://media.brand.dev/c2aa5b8f-fa31-44ba-a026-9ae8fc534a70.jpg"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Oversized T-Shirt | Half-Sleeve",
+      "description": "A unisex oversized T-shirt made from a cotton-blend fabric incorporating AIRism technology, providing the look of cotton with smooth, quick-drying, and cooling functionality. Features a relaxed silhouette with half-length sleeves, dropped shoulders, and a narrow crew neck for refined styling. Designed for versatile everyday wear, suitable for layering or wearing alone, and made with recycled materials as part of sustainability efforts.",
+      "price": 19.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / T-Shirts, Sweats & Fleece / T-Shirts / Uniqlo U",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "AIRism fabric with the look of cotton",
+        "Stay-fresh comfort",
+        "Instantly cool and comfortable",
+        "Relaxed silhouette with half-length sleeves",
+        "Oversized cut with dropped shoulders",
+        "Narrow crew neck for refined styling",
+        "Cotton-blend fabric with quick-drying functionality",
+        "Fabric feels cool to the touch",
+        "Unisex design following men’s sizing",
+        "Made with recycled materials (30% recycled polyester fiber)",
+        "Included in the Uniqlo U collection"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "AIRism",
+        "cotton",
+        "oversized",
+        "T-shirt",
+        "half-sleeve",
+        "quick-drying",
+        "recycled materials",
+        "Uniqlo U"
+      ],
+      "sku": "465185-00-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E465185-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/e708fd83-5457-4370-b80a-6126e62780b3.jpg",
+      "images": [
+        "https://media.brand.dev/df0d92bc-dc93-4754-ab7c-c876edcf2e76.jpg",
+        "https://media.brand.dev/33c9d9db-9220-4005-a191-c400d664c6f2.jpg",
+        "https://media.brand.dev/1909c0d3-da09-4b07-b14e-c5a74aebef7e.jpg",
+        "https://media.brand.dev/ff10f704-77a9-4f73-8130-69ea1eff7cb2.jpg",
+        "https://media.brand.dev/f34b5dfb-e9d3-4681-b891-491ce5e60f2e.jpg",
+        "https://media.brand.dev/ce01294d-d2ba-422b-aaa3-301506ab2a58.jpg"
+      ]
+    },
+    {
+      "name": "Men's AIRism Cotton T-Shirt | Sleeveless",
+      "description": "Men's sleeveless AIRism Cotton T-Shirt featuring a regular fit and classic crew neck. Made with smooth, quick-drying AIRism fabric blended with cotton for comfort and a sleek silhouette. Includes side slits for style and ease of movement. Slightly sheer in white color depending on lighting. Made with recycled materials (53% Cotton, 47% Polyester with 30% recycled polyester fiber). Imported from Vietnam.",
+      "price": 9.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [
+        "Chest: 34 3/4-37 3/4 inches (Size S)",
+        "Waist: 26 3/4-30 inches (Size S)"
+      ],
+      "features": [
+        "AIRism fabric with cotton look",
+        "Stay-fresh comfort",
+        "Side slits for stylish accent and movement",
+        "Regular fit",
+        "Classic crew neck",
+        "Smooth, quick-drying fabric",
+        "Made with recycled materials (30% recycled polyester fiber)",
+        "Imported"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "AIRism",
+        "cotton",
+        "sleeveless",
+        "t-shirt",
+        "recycled materials",
+        "quick-drying",
+        "regular fit",
+        "crew neck"
+      ],
+      "sku": "457517-11-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E457517-000/01",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/c6f7feb1-db8b-4680-9a28-1ff9da911bfd.jpg",
+      "images": [
+        "https://media.brand.dev/72cf51aa-cbbf-4775-9fdd-ffc96c0ba389.jpg",
+        "https://media.brand.dev/b4e886a4-3220-4e78-9c47-0ae1caa7ae3e.jpg",
+        "https://media.brand.dev/c99006cd-0e25-4da8-94f0-1da6e3b7a805.jpg",
+        "https://media.brand.dev/9d1a4770-d74b-4728-ba44-cac1a90f4a6a.jpg",
+        "https://media.brand.dev/738bedf7-4880-4c2a-82f6-269c98822fd3.jpg",
+        "https://media.brand.dev/fe9a30e1-d5b3-4b05-8657-a7449b2452af.jpg"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Oversized T-Shirt",
+      "description": "A high-quality oversized T-shirt made from a cotton fabric blended with AIRism technology, offering a cool, dry, and smooth feel on the skin. Features a fine-textured surface of premium cotton, meticulous attention to color, detail, and balanced sizing. Designed as UNIQLO's best-selling basic T-shirt, suitable for adults and kids with a relaxed silhouette for comfort and ease of movement.",
+      "price": null,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Cotton fabric blended with AIRism for cool, dry, and smooth feel",
+        "Fine-textured surface of premium cotton",
+        "Meticulous attention to color and detail",
+        "Balanced sizing for comfort",
+        "Relaxed silhouette for ease of movement",
+        "Neck tape to reduce prickliness around the neck (kids version)"
+      ],
+      "target_audience": [
+        "Men",
+        "Women",
+        "Kids"
+      ],
+      "tags": [
+        "cotton",
+        "AIRism",
+        "oversized",
+        "T-shirt",
+        "basic",
+        "comfortable",
+        "breathable"
+      ],
+      "sku": "airism-cotton-oversized-t-shirt",
+      "url": "https://www.uniqlo.com/us/en/contents/feature/masterpiece/product/airism-cotton-oversized-t-shirt",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/e665a44e-1499-4e2e-831c-822b15f68e31.jpg",
+      "images": []
+    },
+    {
+      "name": "Crew Neck T-Shirt",
+      "description": "The UNIQLO U Crew Neck T-Shirt is designed with a focus on perfect fit, fabric quality, and refined colors. The men's version features a durable 100% cotton fabric made with thick yarn for a fit that's not too loose, embodying a 'New Classic' concept. The women's version uses cotton with an interlock weave for a smooth, soft impression and a fit that is neither too tight nor too loose. Both versions are crafted with attention to detail and color selection to provide a sophisticated yet comfortable everyday T-shirt.",
+      "price": null,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton fabric",
+        "Men's version: durable thick yarn cotton",
+        "Women's version: interlock-knit jersey fabric",
+        "Fit designed to be neither too tight nor too loose",
+        "Carefully selected refined colors",
+        "Designed by Christophe Lemaire, artistic director of Uniqlo U"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "crew neck",
+        "t-shirt",
+        "cotton",
+        "comfortable",
+        "UNIQLO U",
+        "basic",
+        "everyday wear"
+      ],
+      "sku": "ined",
+      "url": "https://www.uniqlo.com/us/en/contents/feature/masterpiece/product/u-crew-neck-t-shirt",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/46f77547-4170-4d20-a3f4-e0c18d3880e1.jpg",
+      "images": []
+    }
+  ]
+}

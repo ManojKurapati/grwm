@@ -1,0 +1,544 @@
+{
+  "slug": "trousers",
+  "archetypeId": "beige-pleated-trousers",
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/bottoms/pants",
+  "extractedAt": "2026-08-30T08:39:40.192Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Women's Padded Utility Short Jacket",
+      "description": "A short-length padded jacket inspired by a barn jacket, featuring a distinctive corduroy collar and a light, natural textured outer fabric. It has two-way pockets accessible from the side or top and a water-repellent finish that protects against light rain (finish is not permanent). The fit is relaxed for effortless styling.",
+      "price": 89.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Jackets & Parkas / Jackets",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Padded outer layer inspired by a barn jacket",
+        "Distinctive corduroy collar",
+        "Light, natural texture outer fabric",
+        "Two-way pockets accessible from side or top",
+        "Water-repellent finish protects against light rain",
+        "Short length for effortless styling",
+        "Relaxed fit"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "padded",
+        "utility",
+        "short jacket",
+        "outerwear",
+        "water-repellent",
+        "corduroy collar",
+        "relaxed fit"
+      ],
+      "sku": "487518-32-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487518-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f148ce40-6cc9-46e4-919b-d143ae0d7d84.jpg",
+      "images": [
+        "https://media.brand.dev/6ecb88e1-99ea-418a-80e1-ddb4d3fb6e7e.jpg",
+        "https://media.brand.dev/d8141fe5-d061-4da8-a891-b27e48f64d67.jpg",
+        "https://media.brand.dev/5e23b9e5-ef86-47cc-b57a-2c6b5ec6a19f.jpg",
+        "https://media.brand.dev/affdd408-a71f-43ed-a8b3-3ec5d6d5b5e5.jpg",
+        "https://media.brand.dev/630e8645-4b42-486f-81c5-e36946dfa9b6.jpg",
+        "https://media.brand.dev/1c5e5222-c8d4-4926-bc6b-53f5d53ed867.jpg"
+      ]
+    },
+    {
+      "name": "Women's PUFFTECH Jacket",
+      "description": "The Women's PUFFTECH Jacket features high-performance PUFFTECH padding made with advanced hollow fiber technology that is lightweight, warm, and retains heat even in high humidity. It has a water-repellent finish for light rain protection, a sleek front placket, and comes with a convenient storage pouch. The jacket uses a special double-weave fabric with no needle holes to keep padding inside and elements out, designed with a shorter length and anti-static lining. It is hand-washable and dries faster than natural down.",
+      "price": 79.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Outerwear",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "High-performance PUFFTECH padding with hollow fibers about 1/5 thickness of human hair",
+        "Lightweight and warm with excellent heat retention even in humidity above 90%",
+        "Water-repellent finish protects against light rain (not permanent)",
+        "Front placket for a sleek, refined look",
+        "Comes with a convenient storage pouch",
+        "Special double-weave fabric with no needle holes to keep padding inside and elements out",
+        "Shorter length design with anti-static lining",
+        "Hand-washable and dries faster than natural down"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "PUFFTECH",
+        "jacket",
+        "outerwear",
+        "lightweight",
+        "water-repellent",
+        "warm",
+        "hand-washable",
+        "recycled materials"
+      ],
+      "sku": "487408-35-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487408-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/6f695694-9237-4bcc-a662-68eb5d7c55a3.jpg",
+      "images": [
+        "https://media.brand.dev/4d490cf7-ebd5-451f-8d74-133f7c24bf78.jpg",
+        "https://media.brand.dev/4644cc74-9d1a-4aa0-918a-3e900a523315.jpg",
+        "https://media.brand.dev/9a4807a6-8848-4c9c-8c6b-0105aa9f690d.jpg",
+        "https://media.brand.dev/43f93bbf-3f97-4e64-abcd-4295306cf524.jpg",
+        "https://media.brand.dev/c0b7936a-6c4a-4e7d-bb5e-25598dc6c992.jpg",
+        "https://media.brand.dev/2823c13e-62d6-4299-a790-da6397848ad8.jpg"
+      ]
+    },
+    {
+      "name": "Windproof Stand Blouson",
+      "description": "A women's windproof blouson featuring a windproof film to keep cold air out, mesh lining for comfort, a two-way design with a stowable hood or stand collar, adjustable hem for styling, and a water-repellent finish that repels light rain. The fit is oversized for a relaxed look. Made with recycled nylon and polyester lining.",
+      "price": 69.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Sport Utility Wear / Outerwear / Jackets",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "Windproof film to keep cold air out",
+        "Mesh material lining feels comfortable and does not cling to the skin",
+        "Two-way design with a hood that can be stowed away or used as a stand collar",
+        "Adjustable hem to create your own style",
+        "Water-repellent finish repels light rain (not permanent)",
+        "Oversized fit",
+        "Shell: 100% Nylon (45% recycled nylon fiber)",
+        "Lining: 100% Polyester",
+        "Imported"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "windproof",
+        "blouson",
+        "outerwear",
+        "jackets",
+        "water-repellent",
+        "oversized",
+        "recycled materials"
+      ],
+      "sku": "487832-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487832-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/c8d27508-d36d-4254-942d-11e0ff303d30.jpg",
+      "images": [
+        "https://media.brand.dev/501032d8-d644-452a-8105-59d147ebb666.jpg",
+        "https://media.brand.dev/77073529-0f9e-47ed-a415-778d4633c6a8.jpg",
+        "https://media.brand.dev/eb7ffe88-d4cc-4ad6-aa8d-0b3286f60536.jpg",
+        "https://media.brand.dev/9d956611-e944-41d4-85db-f47090ae04f7.jpg",
+        "https://media.brand.dev/b5867691-258f-4f4d-8ec9-0571b7e6959a.jpg",
+        "https://media.brand.dev/e56ffcf4-bff7-48eb-8df1-441db5187060.jpg"
+      ]
+    },
+    {
+      "name": "Windproof Fleece Reversible Full-Zip Hoodie",
+      "description": "Women's windproof fleece hoodie with a reversible design and water-repellent finish that repels light rain. Features an adjuster at the hem to keep cold air out. Made of 100% polyester face and back fabric. Relaxed fit, not sheer. Machine washable.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Outerwear / Jackets & Parkas / Jackets",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Water-repellent finish repels light rain (fabric coated with water-repellent agent, finish not permanent)",
+        "Reversible design",
+        "Adjuster at the hem to keep cold air out",
+        "Relaxed fit",
+        "Not sheer",
+        "Made of 100% polyester face and back",
+        "Machine wash cold, gentle cycle, do not dry clean"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "windproof",
+        "fleece",
+        "reversible",
+        "full-zip",
+        "hoodie",
+        "water-repellent",
+        "outerwear",
+        "jackets",
+        "UNIQLO"
+      ],
+      "sku": "487603-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487603-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/a1964479-833c-4712-a5b4-d38da9ea285b.jpg",
+      "images": [
+        "https://media.brand.dev/cc0eec43-951c-4c3f-b0e9-23e42bed5e37.jpg",
+        "https://media.brand.dev/7c7c0a24-b101-4426-b96f-7595d4af87dd.jpg",
+        "https://media.brand.dev/b7757ca4-9c19-479d-a843-818dd4a32bd6.jpg",
+        "https://media.brand.dev/ace92c40-c0a5-432d-923a-fb97e7765a4c.jpg",
+        "https://media.brand.dev/3130a332-968a-4f7f-88a8-31429e6e8743.jpg",
+        "https://media.brand.dev/3044dc57-11b9-4297-bbd8-904037d33f03.jpg"
+      ]
+    },
+    {
+      "name": "Pile Lined Fleece Combination Jacket",
+      "description": "Outdoor sportswear-inspired women's jacket combining fleece and woven fabric, designed for everyday use. Features snap buttons for easy fastening and unfastening, bonded material for warmth and comfort, practical pockets on both sides and at the left chest, and raglan sleeves for ease of movement. Made from 100% polyester with recycled fibers, machine washable.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / T-Shirts, Sweats & Fleece / Fleece / Jackets",
+      "availability": "made_to_order",
+      "dimensions": [],
+      "features": [
+        "Outdoor sportswear-inspired design combining fleece and woven fabric",
+        "Snap buttons for easy fastening and unfastening",
+        "Bonded material provides warmth and comfort",
+        "Practical pockets on both sides and at the left chest",
+        "Comfortable fit with raglan sleeves for ease of movement",
+        "Made with 100% polyester (100% recycled polyester fiber)",
+        "Machine washable, gentle cycle, do not dry clean"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "fleece",
+        "jacket",
+        "women",
+        "outdoor",
+        "recycled polyester",
+        "warm",
+        "comfortable",
+        "snap buttons",
+        "pockets"
+      ],
+      "sku": "487594-01-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487594-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/da749a4e-a5ae-475d-8e1c-343d01685ff4.jpg",
+      "images": [
+        "https://media.brand.dev/5182a50e-845c-4485-b2a6-da8cf77d0bca.jpg",
+        "https://media.brand.dev/39731cdc-4f10-4b06-a94c-b67b705621e0.jpg",
+        "https://media.brand.dev/f95d6bc3-54aa-44d3-8aea-c17d1a99b566.jpg",
+        "https://media.brand.dev/40490e61-7dba-4216-b136-fe4cbab775ef.jpg",
+        "https://media.brand.dev/ae1b0145-05db-4124-9f5b-8a6fb28cc9cd.jpg"
+      ]
+    },
+    {
+      "name": "Pile Lined Wide Sweatpants",
+      "description": "Women's wide straight silhouette sweatpants with a special lining that provides instant warmth. Soft and warm with a smooth brushed feel. Features convenient side pockets, a sleek waist design with a comfortable fit, and a drawstring for easy adjustment. The fit is regular with a tapered silhouette and the fabric is not sheer.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Bottoms / Sweatpants",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Wide straight silhouette for a sleek look",
+        "Special lining provides instant warmth",
+        "Soft and warm with a smooth brushed feel",
+        "Convenient side pockets",
+        "Sleek waist design with comfortable fit",
+        "Drawstring for easy adjustment",
+        "Sheer: Not Sheer",
+        "Fit: Regular",
+        "Silhouette: Tapered",
+        "Fabric: Body 66% Polyester (66% recycled), 16% Modal, 15% Cotton, 3% Spandex; Waist 46% Modal, 45% Cotton, 9% Spandex",
+        "Machine wash cold, gentle cycle, do not dry clean"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "sweatpants",
+        "warm",
+        "lined",
+        "wide",
+        "comfortable",
+        "drawstring",
+        "pockets",
+        "recycled polyester"
+      ],
+      "sku": "487608-03-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487608-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/7bab3e8e-ef2c-40f6-ab03-3557eeb82403.jpg",
+      "images": [
+        "https://media.brand.dev/19278340-3527-4380-9774-9cee8b10d8ea.jpg",
+        "https://media.brand.dev/c5e35aea-9b53-4540-ba1d-69d5494d49f5.jpg",
+        "https://media.brand.dev/bb0c9f1a-20a6-4cc8-8ff5-d94424ae17fa.jpg",
+        "https://media.brand.dev/467fa66c-dda5-40f4-94d5-6f81d297fcb3.jpg"
+      ]
+    },
+    {
+      "name": "Women's Brushed Jersey Barrel Pants",
+      "description": "Barrel silhouette in soft brushed jersey material designed for lasting comfort. Features back welt pockets and a minimal waist design for a polished look. The contouring jersey fabric may shrink slightly after washing; hem should be kept slightly long if altered. Fit is relaxed with a mid rise and barrel silhouette. Fabric composition is 48% Polyester, 38% Cotton, 14% Rayon (30% recycled polyester fiber). Machine wash cold, gentle cycle, or dry clean. Imported from Cambodia.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Bottoms / Barrel Pants / Regular Lengths",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Barrel silhouette",
+        "Soft brushed jersey material",
+        "Back welt pockets",
+        "Minimal waist design",
+        "Relaxed fit",
+        "Mid rise",
+        "Not sheer",
+        "Contains 30% recycled polyester fiber"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "barrel pants",
+        "brushed jersey",
+        "relaxed fit",
+        "mid rise",
+        "recycled polyester",
+        "comfortable",
+        "UNIQLO"
+      ],
+      "sku": "489191-08-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E489191-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/e61d911b-8be7-49f3-9f5e-679bd522799a.jpg",
+      "images": [
+        "https://media.brand.dev/3eb5beae-ed1a-45b7-b96e-48edc5f5bc2e.jpg",
+        "https://media.brand.dev/6c0aef47-ab13-4c75-b7f4-5b13e63f6eec.jpg",
+        "https://media.brand.dev/0d815074-02c5-4035-8cfe-fc58f2973815.jpg",
+        "https://media.brand.dev/ff58f2ab-d7de-4a31-9e7d-2ff34d8893a8.jpg",
+        "https://media.brand.dev/b3fd6cad-6800-4be5-9f14-e59465cdc671.jpg"
+      ]
+    },
+    {
+      "name": "Souffle Yarn Relaxed Cardigan",
+      "description": "A women's cardigan featuring a longer length with a relaxed silhouette, made from soft brushed yarn. The fabric is sumptuously soft and non-itchy. Pilling may develop over time as part of the fabric's texture; to maintain appearance, remove pills with a lint remover or scissors without pulling. Made with recycled polyester fiber content.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Sweaters & Knitwear / Sweaters / Souffle Yarn",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Longer length with a relaxed silhouette",
+        "Made with soft brushed yarn",
+        "Sumptuously soft and non-itchy",
+        "Pilling may develop over time; remove pills with lint remover or scissors",
+        "Contains recycled polyester fiber"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "cardigan",
+        "souffle yarn",
+        "relaxed fit",
+        "soft",
+        "non-itchy",
+        "sweater",
+        "knitwear"
+      ],
+      "sku": "485340-08-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E485340-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/91e20f4b-36c6-4426-b7a0-e8aaa990c0e4.jpg",
+      "images": [
+        "https://media.brand.dev/2388edd9-7fa6-49c5-861c-928399cd7944.jpg",
+        "https://media.brand.dev/20e2de7e-2c1d-4cba-9bf0-1a3dc43b0ffd.jpg",
+        "https://media.brand.dev/8ddbf49e-adb1-4470-8368-b0d9d7ffced8.jpg",
+        "https://media.brand.dev/15ba06d4-7730-404a-aede-d891fe1ff797.jpg",
+        "https://media.brand.dev/c98e660f-3958-4826-8a66-d2987205a71c.jpg",
+        "https://media.brand.dev/c1237ac8-b50f-4110-8556-6186cc9eba4f.jpg"
+      ]
+    },
+    {
+      "name": "Smart Wide Straight Pants | Check",
+      "description": "Mid-rise design for a sleek fit at the waist. Lightweight tailored pants with two-tuck and center-pleat details and a wide straight silhouette. Micro-check pattern adds a stylish accent. Wrinkle-resistant after washing for easy care. Two-way stretch for freedom of movement. Not sheer, relaxed fit, straight silhouette, mid rise. Made from 66% Polyester (66% recycled), 28% Rayon, 6% Spandex. Imported from Vietnam.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Bottoms / Wide Leg Pants / Pleated",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Mid-rise design for a sleek fit at the waist",
+        "Lightweight tailored pants with two-tuck and center-pleat details",
+        "Wide straight silhouette",
+        "Micro-check pattern",
+        "Wrinkle-resistant after washing",
+        "Two-way stretch for freedom of movement",
+        "Not sheer",
+        "Relaxed fit",
+        "Straight silhouette",
+        "Mid rise"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "pants",
+        "wide leg",
+        "check pattern",
+        "wrinkle-resistant",
+        "stretch",
+        "tailored",
+        "mid-rise"
+      ],
+      "sku": "489415-37-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E489415-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/652d2b85-1432-4477-8d0b-d02d944ffe17.jpg",
+      "images": [
+        "https://media.brand.dev/dae48fdd-d037-4877-ad13-e79b0113d1a7.jpg",
+        "https://media.brand.dev/895566c8-d821-49f6-aa06-35dfc20593f2.jpg",
+        "https://media.brand.dev/ce100700-257d-4f24-9c06-7365447b51d6.jpg"
+      ]
+    },
+    {
+      "name": "Flannel Boxy Shirt",
+      "description": "A unisex flannel boxy shirt made with 100% brushed cotton (exclusive of decoration). Features a short length with a boxy silhouette and JW ANDERSON logo embroidery on the front hem. The shirt can be styled alone or layered, with the collar open or buttoned up. It has an oversized fit and is not sheer.",
+      "price": 39.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / Shirts & Blouses / Shirts & Blouses / Cropped",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% brushed cotton main body",
+        "Short length with boxy silhouette",
+        "JW ANDERSON logo embroidery on front hem",
+        "Unisex design",
+        "Oversized fit",
+        "Not sheer",
+        "Can be styled alone or layered, collar open or buttoned up"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "flannel",
+        "boxy shirt",
+        "cotton",
+        "oversized",
+        "JW ANDERSON",
+        "UNIQLO"
+      ],
+      "sku": "488559-30-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488559-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/5231c1a2-3951-4dc6-98c3-9a183d6f0f22.jpg",
+      "images": [
+        "https://media.brand.dev/c402052c-8754-45a7-8e95-7073296686a7.jpg",
+        "https://media.brand.dev/2ff33695-a88d-4b6d-81ef-91a4380bd219.jpg",
+        "https://media.brand.dev/aa8063ba-56ff-409e-8fb8-5b0098627d07.jpg",
+        "https://media.brand.dev/d0301552-0b05-4038-87e4-0ce326d7cd9c.jpg"
+      ]
+    },
+    {
+      "name": "Ribbed Knitted Fleece V-Neck T",
+      "description": "Women's relaxed silhouette fleece top with a dropped shoulder design. Features a ribbed-looking surface texture that mimics knitwear with the warmth of fleece. Moderate V-neck for a balanced look, suitable for layering or wearing alone. Cuff design allows easy rolling up of sleeves. Not sheer, relaxed fit.",
+      "price": 29.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Women / T-Shirts, Sweats & Fleece / T-Shirts and Tank Tops / Ribbed",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Relaxed silhouette with dropped shoulder design",
+        "Ribbed-looking surface texture",
+        "Moderate V-neck",
+        "Cuff design for rolling up sleeves",
+        "Not sheer",
+        "Fabric composition: 61% Acrylic, 33% Rayon, 6% Polyester",
+        "Machine washable, gentle cycle"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "fleece",
+        "ribbed",
+        "v-neck",
+        "relaxed fit",
+        "warm",
+        "knitwear look"
+      ],
+      "sku": "487595-41-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487595-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1867ad8c-bdc2-4817-bc88-9b20a11469ca.jpg",
+      "images": [
+        "https://media.brand.dev/5647075f-d4fc-48da-a3b8-ebf3f1931230.jpg",
+        "https://media.brand.dev/02185d34-6e23-48a8-aa41-999a80256dbe.jpg",
+        "https://media.brand.dev/24493380-d4e8-4fa5-938b-d29780b1cc9c.jpg",
+        "https://media.brand.dev/3d31bf46-75d8-451a-95e7-5f0be76236b0.jpg",
+        "https://media.brand.dev/f432abae-7a5f-41d2-82cb-215cc8ed0469.jpg",
+        "https://media.brand.dev/4f28fdc4-32d7-4aa4-bce0-3a1ba57301d7.jpg"
+      ]
+    },
+    {
+      "name": "Women's AIRism Cotton T-Shirt | Striped",
+      "description": "A women's relaxed fit, short sleeve T-shirt made from smooth AIRism fabric that looks like cotton with quick-drying DRY technology. Features a slightly narrow ribbed neckline, boxy silhouette with side slits and asymmetric hem for style accents. The fabric is 70% cotton and 30% polyester, offering a sleek surface and comfortable contouring material ideal for everyday wear, commuting, and travel.",
+      "price": 14.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Smooth AIRism fabric with cotton look",
+        "Quick-drying DRY technology",
+        "Slightly narrow ribbed neckline",
+        "Boxy silhouette with relaxed width and regular length",
+        "Side slits and asymmetric hem",
+        "70% Cotton, 30% Polyester",
+        "Short sleeves",
+        "Lightweight construction",
+        "Imported from Viet Nam"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "AIRism",
+        "Cotton",
+        "T-Shirt",
+        "Striped",
+        "Relaxed fit",
+        "Short sleeve",
+        "Crew neck"
+      ],
+      "sku": "480054-39-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E480054-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/6051cbec-e581-40c7-8997-70d5ec6cc653.jpg",
+      "images": [
+        "https://media.brand.dev/15572e9e-c6ec-435e-88b3-29425f078984.jpg",
+        "https://media.brand.dev/0da8c17f-5118-4a4b-97bd-fb29d2641925.jpg",
+        "https://media.brand.dev/2459ce47-3ea1-4af0-9974-1f78f9d88128.jpg",
+        "https://media.brand.dev/e7b2b560-a6b5-458b-8c1f-da02b290c54d.jpg",
+        "https://media.brand.dev/48f67041-5544-464a-b870-ca49e2c6f159.jpg",
+        "https://media.brand.dev/0ac51adf-50d3-45e6-929e-15e2b131d522.jpg"
+      ]
+    }
+  ]
+}

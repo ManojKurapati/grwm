@@ -1,0 +1,353 @@
+{
+  "slug": "jeans",
+  "archetypeId": null,
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/bottoms/jeans",
+  "extractedAt": "2026-08-30T08:22:32.798Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Men's EZY Barrel Jeans",
+      "description": "Men's EZY Barrel Jeans feature a distinctive three-dimensional barrel-leg silhouette with a crisp fabric that creates a stylish look. The classic denim-look outer is paired with a pile lining that feels as comfortable as sweatpants. They have a comfortable elastic waist with a drawstring and low-profile rivets that complement the material. The fit is loose with a barrel silhouette.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Bottoms / Easy Pants / Jeans",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Distinctive three-dimensional barrel-leg silhouette",
+        "Crisp fabric for stylish barrel-leg silhouette",
+        "Classic denim-look outer with pile lining",
+        "Comfortable elastic waist with drawstring",
+        "Low-profile rivets complement the material",
+        "Fit: Loose",
+        "Silhouette: Barrel",
+        "Material: 82% Cotton, 9% Lyocell, 8% Polyester, 1% Spandex",
+        "Imported",
+        "Machine wash cold, gentle cycle, Do not dry clean"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "jeans",
+        "barrel-leg",
+        "denim-look",
+        "elastic waist",
+        "drawstring",
+        "casual pants"
+      ],
+      "sku": "488397-08-004-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488397-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/2137f809-6d51-4417-a9f6-0937283684ed.jpg",
+      "images": [
+        "https://media.brand.dev/7afafc5d-fea8-4755-9fd3-ad10096e2c4b.jpg",
+        "https://media.brand.dev/8df3af2b-8282-4ec1-81a3-591c3b8e25bb.jpg",
+        "https://media.brand.dev/9b490f1d-8667-4ddc-bbb1-8885b1b21c0a.jpg"
+      ]
+    },
+    {
+      "name": "Barrel Jeans",
+      "description": "Unisex wide-leg jeans made with dyed colored denim featuring a stylish curved silhouette and sleek L-shaped front pockets for easy access. These jeans have a loose fit and barrel silhouette, crafted from 100% cotton fabric. Machine washable and imported.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "limited_availability",
+      "dimensions": [
+        "Size: MEN 29inch (varies by selected size)"
+      ],
+      "features": [
+        "Wide-leg pants with curved silhouette",
+        "Loose fit",
+        "Barrel silhouette",
+        "Dyed colored denim",
+        "Sleek L-shaped front pockets",
+        "100% Cotton fabric",
+        "Machine wash cold, do not dry clean"
+      ],
+      "target_audience": [
+        "Men",
+        "Women",
+        "Unisex"
+      ],
+      "tags": [
+        "jeans",
+        "wide-leg",
+        "denim",
+        "cotton",
+        "unisex",
+        "barrel silhouette"
+      ],
+      "sku": "488743-09-029-000",
+      "url": "https://www.uniqlo.com/us/en/products/E488743-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/01bb1d6d-fa43-40d8-a7b1-2052bfe35014.jpg",
+      "images": [
+        "https://media.brand.dev/00b9a535-dc2a-46d4-9163-99d5411b51e4.jpg",
+        "https://media.brand.dev/c207b846-fb9d-4c07-9a38-42a575b27bd6.jpg",
+        "https://media.brand.dev/d3134501-f79e-47ca-a3b0-b7c2857f4b63.jpg",
+        "https://media.brand.dev/2eafd0f1-cddd-4fb5-937f-c00030757326.jpg",
+        "https://media.brand.dev/78b2b1d7-1cf8-4ae8-a592-b6e8d8934ef5.jpg",
+        "https://media.brand.dev/751db4c9-a93b-4a6a-8d0c-177e0f31a104.jpg"
+      ]
+    },
+    {
+      "name": "Barrel Jeans | Indigo",
+      "description": "Wide-leg pants in a stylish curved silhouette made from indigo denim with a naturally faded finish for a casual yet refined look. Features sleek L-shaped front pockets for easy access. Fit is loose with a barrel silhouette. Made from 100% cotton, imported. Machine wash cold, do not dry clean.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Bottoms / Jeans / Wide",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "Wide-leg pants",
+        "Stylish curved silhouette",
+        "Indigo denim with naturally faded finish",
+        "Sleek L-shaped front pockets",
+        "Loose fit",
+        "Barrel silhouette",
+        "100% Cotton",
+        "Imported",
+        "Machine wash cold, do not dry clean"
+      ],
+      "target_audience": [
+        "Men",
+        "Unisex"
+      ],
+      "tags": [
+        "jeans",
+        "denim",
+        "wide-leg",
+        "barrel",
+        "indigo",
+        "casual",
+        "loose fit"
+      ],
+      "sku": "489565-66-029-000",
+      "url": "https://www.uniqlo.com/us/en/products/E489565-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/3e0caa60-d407-48c2-9b21-bfca4f77c96b.jpg",
+      "images": [
+        "https://media.brand.dev/1abfbc01-878a-4158-a791-5fd74cb0448a.jpg",
+        "https://media.brand.dev/8058e746-2bbb-43d7-92e7-79069c90df1b.jpg",
+        "https://media.brand.dev/10c875a8-008b-41ce-85f4-f159dddd79a2.jpg"
+      ]
+    },
+    {
+      "name": "Baggy Straight Jeans",
+      "description": "Men's Baggy Straight Jeans featuring a voluminous baggy silhouette with a polished look. Made from crisp 100% cotton denim, pre-washed for a subtly faded, casual appearance. Workwear-inspired pockets complement the straight silhouette and offer plenty of storage. Darts create a more three-dimensional shape around the hips. Fit is loose with a straight silhouette. Imported from Bangladesh.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Bottoms / Jeans / Wide",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton denim",
+        "Pre-washed for subtle faded look",
+        "Workwear-inspired pockets",
+        "Darts for three-dimensional hip shape",
+        "Loose fit",
+        "Straight silhouette"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "baggy",
+        "straight",
+        "jeans",
+        "cotton",
+        "denim",
+        "loose fit",
+        "casual"
+      ],
+      "sku": "492365-08-030-000",
+      "url": "https://www.uniqlo.com/us/en/products/E492365-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/cb3ad52c-8b79-4c05-a182-0dfaa868cb81.jpg",
+      "images": [
+        "https://media.brand.dev/b017ab56-94a1-4523-b3e4-521c36993b0b.jpg",
+        "https://media.brand.dev/648f9344-c39c-47c7-9013-29ac26e440a8.jpg",
+        "https://media.brand.dev/d02d1ae5-b914-4152-8a18-f26e155ee73d.jpg",
+        "https://media.brand.dev/28cf2d57-c22d-47fb-9436-d2e04604d12e.jpg"
+      ]
+    },
+    {
+      "name": "Men's Straight Jeans",
+      "description": "Men's Straight Jeans by UNIQLO, designed in collaboration with JW ANDERSON. These jeans feature 100% cotton denim that is pre-washed for a casual, naturally faded look. They have a regular fit with a straight cut from waist to hem, offering a timeless and easy-to-wear silhouette. The jeans include branded JW ANDERSON logo front buttons and practical pockets. Suitable for year-round wear and a great alternative to slim or wide-leg jeans.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "100% cotton denim",
+        "Pre-washed for subtle faded finish",
+        "Straight cut from waist to hem",
+        "Regular fit for relaxed comfort",
+        "JW ANDERSON logo front buttons",
+        "Pockets for daily functionality"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "jeans",
+        "straight",
+        "cotton",
+        "denim",
+        "casual",
+        "JW ANDERSON"
+      ],
+      "sku": "487206-67-029-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487206-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/aa056c39-fc63-47d9-bb10-1f20b248a8d4.jpg",
+      "images": [
+        "https://media.brand.dev/a89df120-c99b-4097-bcbd-4057e5a2033d.jpg",
+        "https://media.brand.dev/4acd3608-c13f-4754-aada-3f287e9b8c38.jpg",
+        "https://media.brand.dev/a7d0cdac-1738-4590-852b-9c227f5d3933.jpg",
+        "https://media.brand.dev/2fad8954-70d5-4b1b-a712-147765dab296.jpg",
+        "https://media.brand.dev/4d17cbe3-acc8-47bd-8861-8e2027de77ef.jpg"
+      ]
+    },
+    {
+      "name": "Men's Baggy Jeans",
+      "description": "These Men's Baggy Jeans feature a relaxed, voluminous straight-leg silhouette crafted from 100% cotton denim, offering a naturally soft feel and comfortable year-round wear. They have laser-processed whiskers and fading for a realistic worn-in look, a loose fit from hip to hem for a roomy shape, and clean lines with subtle detailing for a refined look. The jeans include practical pockets and are suitable for pairing with oversized tees, workwear layers, fleece, or structured jackets. They provide more volume than classic straight-leg jeans but more definition than wide-leg styles.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [
+        "Inseam varies by size: 27, 28 (30 3/4\")",
+        "29, 30 (31\")",
+        "31, 32 (31 1/2\")",
+        "33-40 (32\")"
+      ],
+      "features": [
+        "100% cotton denim",
+        "Lightweight for year-round wear",
+        "Contrast stitching and belt loop design",
+        "Flat-finished rivets and buttons",
+        "Loose fit with voluminous straight-leg silhouette",
+        "Laser-processed whiskers and fading for worn-in look",
+        "Pockets included",
+        "Machine washable"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "baggy jeans",
+        "men",
+        "denim",
+        "cotton",
+        "straight leg",
+        "loose fit",
+        "casual"
+      ],
+      "sku": "482868-08-029-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482868-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/278f9be2-234e-4f0d-8ac8-57141493078c.jpg",
+      "images": [
+        "https://media.brand.dev/2c8a9e2e-00db-489d-936f-ac59de224283.jpg",
+        "https://media.brand.dev/cb70db31-1f8a-4a55-be5a-34efdee69e5e.jpg",
+        "https://media.brand.dev/e0c002e1-0968-4a3c-b0eb-7d44561f2e1e.jpg",
+        "https://media.brand.dev/fbef64d4-4761-4f38-9185-9cbeaaf64d72.jpg",
+        "https://media.brand.dev/2f6862d6-efce-4d21-afcf-eacb72283120.jpg",
+        "https://media.brand.dev/6f26e902-2726-4a3a-927d-49e8032f8c03.jpg"
+      ]
+    },
+    {
+      "name": "Slim Straight Jeans/Selvedge",
+      "description": "These Slim Straight Jeans feature a unique vintage texture with modern comfort. Crafted with an old-style shuttle, these selvedge jeans showcase a distinctive red thread along the edges, known as a \"red ear,\" visible when the hem is folded. They use rope dyeing technique on denim yarn, dyeing the outer surface rich indigo while leaving the inner white core intact, which becomes visible over time for a beautiful vintage effect. Made in collaboration with denim maker Kaihara, the fabric offers stretchable comfort while maintaining an authentic texture, combining traditional craftsmanship with modern comfort.",
+      "price": null,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Selvedge denim with red ear detail",
+        "Rope dyeing technique for vintage effect",
+        "Stretchable comfort fabric",
+        "Crafted with traditional shuttle loom",
+        "Collaboration with denim maker Kaihara"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "denim",
+        "jeans",
+        "selvedge",
+        "vintage",
+        "stretch",
+        "classic",
+        "indigo"
+      ],
+      "sku": "slim-straight-jeans-selvedge",
+      "url": "https://www.uniqlo.com/us/en/contents/feature/masterpiece/product/slim-straight-jeans-selvedge",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1a466284-6497-46c9-9d7c-a1733b0646f2.jpg",
+      "images": []
+    },
+    {
+      "name": "Stretch Easy Ankle Pants | Denim",
+      "description": "Men's Stretch Easy Ankle Pants made from authentic denim fabric with stretch for easy movement. Features a relaxed, tapered silhouette with an easy ankle length, elastic waistband with adjustable drawstring, and practical pockets. Designed for comfort and versatility across seasons, suitable for casual indoor and outdoor wear.",
+      "price": null,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": null,
+      "dimensions": [
+        "Inseam XS: 26 1/2 inches",
+        "Inseam S: 27 1/4 inches",
+        "Inseam M: 28 1/4 inches",
+        "Inseam L, XL, XXL, 3XL: 29 inches"
+      ],
+      "features": [
+        "Stretch denim fabric supports easy movement",
+        "Authentic denim look",
+        "Relaxed, tapered silhouette",
+        "Easy ankle length",
+        "Elastic waistband with adjustable drawstring",
+        "Regular fit",
+        "Pockets for practical use"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "denim",
+        "stretch",
+        "ankle pants",
+        "elastic waist",
+        "casual",
+        "comfortable"
+      ],
+      "sku": "481569",
+      "url": "https://www.uniqlo.com/us/en/products/E461420-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1094d36d-331b-4fd5-864a-cb640a6990c7.jpg",
+      "images": []
+    }
+  ]
+}

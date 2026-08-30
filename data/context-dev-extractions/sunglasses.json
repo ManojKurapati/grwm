@@ -1,0 +1,244 @@
+{
+  "slug": "sunglasses",
+  "archetypeId": null,
+  "sourceUrl": "https://www.persol.com/usa/sunglasses",
+  "extractedAt": "2026-08-30T08:36:54.326Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "PO8001S",
+      "description": "Inspired by the understated elegance of the Italian Riviera, these panthos sunglasses are a sophisticated expression of Persol's dedication to craftsmanship, where form and function exist in perfect harmony. Each frame is handmade in Italy and presented in a dedicated tin case accompanied by an authenticity card. The featured model has a Red Havana frame with Blue lenses, size 51-19, suitable for most faces.",
+      "price": 571,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Sun",
+      "availability": "out_of_stock",
+      "dimensions": [
+        "Lens width: 51 mm",
+        "Bridge width: 19 mm",
+        "Temple length: 145 mm",
+        "Lens height: 21 mm"
+      ],
+      "features": [
+        "Handmade in Italy",
+        "Panthos style sunglasses",
+        "Dedicated tin case included",
+        "Authenticity card included",
+        "Available with prescription lenses option",
+        "Monogram engraving available (not with prescription lenses)"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "sunglasses",
+        "panthos",
+        "handmade",
+        "Italian Riviera",
+        "prescription lenses",
+        "monogram"
+      ],
+      "sku": "8056262841846",
+      "url": "https://www.persol.com/en-us/products/0po8001s-1242r5",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1b8d35dc-04c4-469e-a01b-87b648ccf3f5.png",
+      "images": [
+        "https://media.brand.dev/a6ea8c11-dc10-494a-810a-558611b0113b.png",
+        "https://media.brand.dev/b0e653a4-9191-4a90-8ffe-a073267edf12.png",
+        "https://media.brand.dev/f8ef9518-2e41-4761-a844-9442eb5752c6.png",
+        "https://media.brand.dev/5da7b616-35c3-4c58-ba0e-57f493af0a78.png",
+        "https://media.brand.dev/cfd5a521-b2d5-4101-b43e-b88eaff6c3b9.png"
+      ]
+    },
+    {
+      "name": "714SM - Steve McQueen",
+      "description": "Introduced in the 1960s as a folding version of the 649, the 714 was the first-ever folding glasses model. The iconic pilot shape, keyhole bridge, timeless acetates and foldable system make it a masterpiece of Italian craftsmanship, requiring ten additional manufacturing steps compared to standard models. The Steve McQueen™ edition celebrates the original model worn by the actor, featuring a Light Havana frame and Crystal Blue lenses.",
+      "price": 511,
+      "regular_price": 575,
+      "currency": "USD",
+      "category": "Sun",
+      "availability": "out_of_stock",
+      "dimensions": [
+        "Lens width: 54 mm",
+        "Bridge width: 21 mm",
+        "Temple length: 140 mm",
+        "Lens height: 27 mm"
+      ],
+      "features": [
+        "Folding glasses model",
+        "Iconic pilot shape",
+        "Keyhole bridge",
+        "Timeless acetates",
+        "Foldable system",
+        "Handmade in Italy"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "folding glasses",
+        "pilot shape",
+        "Steve McQueen",
+        "Light Havana",
+        "Crystal Blue lenses",
+        "handmade",
+        "Italian craftsmanship"
+      ],
+      "sku": "713132341919",
+      "url": "https://www.persol.com/en-us/products/0po0714sm-96_56",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/a9143cb0-2272-4e0d-b10c-acfc6a49d677.png",
+      "images": [
+        "https://media.brand.dev/f43b710a-9478-494a-8c3a-451d08e2deed.png",
+        "https://media.brand.dev/0af8b5cc-281d-4bff-8c32-3fbe4e24d564.png",
+        "https://media.brand.dev/bc7b3586-dd9a-440b-b63d-e2ae5ea0df80.png",
+        "https://media.brand.dev/afdd98c5-927d-4fe7-b2d8-217c17b38ee1.png",
+        "https://media.brand.dev/ec251ce2-ac63-440d-b489-ba488bc31be3.png",
+        "https://media.brand.dev/7daf2d24-9ec3-447c-a24d-da91a741994f.png"
+      ]
+    },
+    {
+      "name": "PO3019S",
+      "description": "This square-shaped style captures the essential values of the Persol brand's collections over time. Featuring the elegant arrow and Meflecto system, this model combines extreme functionality with impeccable elegance. The frame is Transparent Grey with Light Blue Gradient Dark Blue Polarized lenses. Handmade in Italy.",
+      "price": 397,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Sun",
+      "availability": "limited_availability",
+      "dimensions": [
+        "Lens width: 52 mm",
+        "Bridge width: 18 mm",
+        "Temple length: 140 mm",
+        "Lens height: 21 mm",
+        "Frame size: 52-18"
+      ],
+      "features": [
+        "Polarized Lenses",
+        "Handmade in Italy",
+        "Elegant arrow design",
+        "Meflecto system for flexibility and comfort",
+        "Square-shaped frame"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "sunglasses",
+        "polarized",
+        "handmade",
+        "italy",
+        "transparent grey",
+        "blue lenses",
+        "square frame"
+      ],
+      "sku": "8056597995566",
+      "url": "https://www.persol.com/en-us/products/0po3019s-1196s3",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/6e0bc003-fad4-4752-b5ff-cc6654a4a316.png",
+      "images": [
+        "https://media.brand.dev/4d3e41e8-d56a-4277-b20f-d6adfc889deb.png",
+        "https://media.brand.dev/819e7b9b-e67f-4f8c-926f-7ed7965f72e9.png",
+        "https://media.brand.dev/fdb9b26a-e417-41bd-b533-e8a85022fcbf.png",
+        "https://media.brand.dev/f8d81b0b-180c-4c1f-9490-d637daff331b.png",
+        "https://media.brand.dev/cec30a06-e92a-4389-b313-833333848c80.jpg"
+      ]
+    },
+    {
+      "name": "PO3269S",
+      "description": "This sun frame is characterised by emblematic retro elements and an iconic appeal. Featuring the iconic Arrow, Meflecto System in a sophisticated soft champagne tone with opaline acetate effect offering the perfect seasonal colourway.",
+      "price": 363,
+      "regular_price": 437,
+      "currency": "USD",
+      "category": "Sun",
+      "availability": "out_of_stock",
+      "dimensions": [
+        "Lens width: 52 mm",
+        "Bridge width: 20 mm",
+        "Temple length: 145 mm",
+        "Lens height: 22 mm"
+      ],
+      "features": [
+        "Handmade in Italy",
+        "Iconic Arrow design",
+        "Meflecto System for comfort",
+        "Soft champagne tone with opaline acetate effect"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "sunglasses",
+        "retro",
+        "handmade",
+        "Persol",
+        "PO3269S",
+        "blue lenses",
+        "cobalto frame"
+      ],
+      "sku": "8056262758328",
+      "url": "https://www.persol.com/en-us/products/0po3269s-181_r5",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/6515fa4d-9ba1-4e39-a7c6-72b849d0c594.png",
+      "images": [
+        "https://media.brand.dev/050782cf-7c96-4ccf-8b82-a4e5891fb776.png",
+        "https://media.brand.dev/decf3007-c093-4335-9a52-96a604d878ec.png",
+        "https://media.brand.dev/92cb0db8-fb1f-4c9b-8a01-813effe34380.png",
+        "https://media.brand.dev/44a7a2a7-05d7-4ed0-8a3a-41b7a3b3f120.png"
+      ]
+    },
+    {
+      "name": "Persol PO3269S with Opal Smoke Frame and Green Lenses",
+      "description": "This sun frame is characterised by emblematic retro elements and an iconic appeal. Featuring the iconic Arrow, Meflecto System in a sophisticated soft champagne tone with opaline acetate effect offering the perfect seasonal colourway. Handmade in Italy. Frame color: Opal Smoke. Lenses color: Light Green.",
+      "price": 363,
+      "regular_price": 437,
+      "currency": "USD",
+      "category": "Sun",
+      "availability": "out_of_stock",
+      "dimensions": [
+        "Lens width: 52 mm",
+        "Bridge width: 20 mm",
+        "Temple length: 145 mm",
+        "Lens height: 22 mm"
+      ],
+      "features": [
+        "Handmade in Italy",
+        "Iconic Arrow design",
+        "Meflecto System for comfort",
+        "Opaline acetate effect",
+        "Retro style"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "sunglasses",
+        "retro",
+        "handmade",
+        "Persol",
+        "sun"
+      ],
+      "sku": "8056597409261",
+      "url": "https://www.persol.com/en-us/products/0po3269s-11034e",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f450c6f1-431a-429f-87f2-408ed813ae1f.png",
+      "images": [
+        "https://media.brand.dev/5db0c050-a080-4e65-91e3-7c1aa710b39d.png",
+        "https://media.brand.dev/833fdb19-297d-4708-9a83-02e5c0c30381.png",
+        "https://media.brand.dev/039ce0ef-8c19-40b4-9b6f-e38b6acfced9.png",
+        "https://media.brand.dev/252c3d84-4b80-4b40-9597-41413072da83.png",
+        "https://media.brand.dev/ed96f6ae-9e0b-46b0-a118-be10acd1fd73.jpg"
+      ]
+    }
+  ]
+}

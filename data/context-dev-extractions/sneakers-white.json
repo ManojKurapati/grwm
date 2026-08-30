@@ -1,0 +1,337 @@
+{
+  "slug": "sneakers-white",
+  "archetypeId": "white-leather-sneakers",
+  "sourceUrl": "https://www.allbirds.com/collections/mens-sneakers",
+  "extractedAt": "2026-08-30T08:15:25.370Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Men's Tree Dasher Relay",
+      "description": "The Men's Tree Dasher Relay is a laceless running shoe made from earth-friendly materials, including leftover stock yarns that create unique color variations. It features a stretch one-piece upper made from breathable Tree Knit, a TENCEL™ Lyocell (tree fiber) blend, and a responsibly-sourced wool blend heel lining for comfort and support. The shoe includes a sugarcane-based SweetFoam® midsole that is both sturdy and soft, designed for lightweight, breathable, and supportive everyday wear. It is machine washable (insoles hand wash separately) and fits true to size with a slightly wide fit.",
+      "price": 135,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Active Shoes",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Laceless running shoe",
+        "Made from leftover stock yarns for unique color variations",
+        "Stretch one-piece upper made from breathable Tree Knit (TENCEL™ Lyocell blend)",
+        "Responsibly-sourced wool blend heel lining for support",
+        "Sugarcane-based SweetFoam® midsole for sturdy and soft cushioning",
+        "Lightweight, breathable, and supportive design",
+        "Machine washable (remove insoles and hand wash separately)",
+        "Fits true to size, runs slightly wide"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "running",
+        "active",
+        "sustainable",
+        "eco-friendly",
+        "laceless",
+        "breathable",
+        "lightweight",
+        "supportive"
+      ],
+      "sku": "MENS_TREE_DASHER_RELAY",
+      "url": "https://www.allbirds.com/products/mens-tree-dasher-relay-hanami-blue",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f09380df-1afe-4cac-9b20-64de050ea94f.png",
+      "images": [
+        "https://media.brand.dev/a5761c69-ec06-4571-9faf-588cf9d82a4d.png",
+        "https://media.brand.dev/7cb09c7d-7c4d-4850-96f6-ff1d16ffcfba.png"
+      ]
+    },
+    {
+      "name": "Men's Runner NZ Slip On",
+      "description": "Men's Runner NZ Slip On sneakers are lightweight slip-on shoes delivering everyday comfort with a sleek profile and subtle texture. Made from a breathable blend of TENCEL™ Lyocell (tree fiber) and recycled polyester, they feature a dual-density Featherbed™ memory foam insole for plush comfort, SweetFoam® cushioning made from sugarcane for energy return, and flexible construction designed to move naturally with you. They are washable by hand and air dryable.",
+      "price": 105,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Footwear",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Lightweight slip-on design",
+        "Made from TENCEL™ Lyocell and recycled polyester",
+        "Dual-density Featherbed™ memory foam insole",
+        "SweetFoam® cushioning made from sugarcane",
+        "Breathable, moisture-wicking, and cool materials",
+        "Flexible, functional construction",
+        "Machine washable (hand wash insoles separately)"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "slip-on",
+        "sneakers",
+        "lightweight",
+        "comfortable",
+        "breathable",
+        "memory foam",
+        "sustainable materials"
+      ],
+      "sku": "MENS_RUNNER_NZ_SLIP_ON",
+      "url": "https://www.allbirds.com/products/mens-runner-nz-slip-on-light-grey",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/702ab96c-abf7-4991-9572-692e3999ed9a.png",
+      "images": [
+        "https://media.brand.dev/c3327ae2-c36f-4697-a233-ed1f54f2eab7.png",
+        "https://media.brand.dev/c9ebccd3-bad3-4ee5-9c8f-ca30d62f6155.png"
+      ]
+    },
+    {
+      "name": "Women's Tree Runner NZ",
+      "description": "The Women's Tree Runner NZ is a stylish and comfortable sneaker designed for all-day wear and travel. It features a breathable canvas upper made from a blend of hemp and TENCEL™ Lyocell (tree fiber), a Merino wool blend lining for softness, and a sugarcane-based SweetFoam® midsole that provides sturdy yet soft cushioning with responsive energy return. The shoe includes a plush Featherbed™ dual-density memory foam insole for extra comfort and bounce. It is lightweight, supportive, and responsibly sourced, making it an ideal choice for everyday use, commuting, walking, and warm weather.",
+      "price": 100,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Footwear",
+      "availability": "in_stock",
+      "dimensions": [
+        "Weight: 7.1 oz (Women's size 7)",
+        "Stack Height: Heel 20 mm, Toe 10.2 mm",
+        "Heel/Toe Drop: 9.8 mm"
+      ],
+      "features": [
+        "Breathable canvas upper made from hemp and TENCEL™ Lyocell blend",
+        "Merino wool blend lining for softness and comfort",
+        "Sugarcane-based SweetFoam® midsole cushioning with energy return",
+        "Plush Featherbed™ dual-density memory foam insole",
+        "Lightweight and supportive design",
+        "Machine washable (remove insoles and hand wash separately)",
+        "Fits true to size"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "sneakers",
+        "breathable",
+        "lightweight",
+        "sustainable",
+        "Merino wool",
+        "SweetFoam",
+        "memory foam",
+        "travel",
+        "everyday"
+      ],
+      "sku": "WOMENS_TREE_RUNNER_NZ",
+      "url": "https://www.allbirds.com/products/womens-tree-runner-nz-medium-grey",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/45fc3446-2495-434d-ade6-1615d37022d0.png",
+      "images": [
+        "https://media.brand.dev/4ed61b12-120c-44eb-84b0-bc431eae3b58.png"
+      ]
+    },
+    {
+      "name": "Men's Tree Runner - Wheat",
+      "description": "The Allbirds Men's Tree Runner is a breathable and lightweight sneaker made with responsibly sourced eucalyptus tree fiber that feels silky smooth and cool on your skin. It features a breathable TENCEL™ Lyocell (tree fiber) and recycled polyester blend upper, sugarcane-based SweetFoam® cushioning with responsive energy return, a soft Merino wool-blend lining, and 100% recycled polyester laces sourced from plastic bottles. Designed for everyday wear including traveling, walking, and commuting, it offers a light, cool feel and all-day comfort. The shoe is machine washable and made in Vietnam.",
+      "price": 100,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Footwear",
+      "availability": "in_stock",
+      "dimensions": [
+        "Weight: 8.6oz (Men's size 9)",
+        "Stack Height: Heel 19.6mm, Toe 10mm",
+        "Heel/Toe Drop: 9.0mm"
+      ],
+      "features": [
+        "Breathable TENCEL™ Lyocell (tree fiber) and recycled polyester blend upper",
+        "Sugarcane-based SweetFoam® cushioning with responsive energy return",
+        "Soft Merino wool-blend lining",
+        "100% recycled polyester laces sourced from plastic bottles",
+        "Machine washable"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "sneakers",
+        "breathable",
+        "lightweight",
+        "sustainable",
+        "tree fiber",
+        "Merino wool",
+        "recycled materials"
+      ],
+      "sku": "MENS_TREE_RUNNERS",
+      "url": "https://www.allbirds.com/products/mens-tree-runners-wheat-dark-beige",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/aa68391a-5350-4d5e-8ba9-bffb8a14e341.png",
+      "images": [
+        "https://media.brand.dev/82d785f4-5f23-402b-bb39-54bcf47ab047.png",
+        "https://media.brand.dev/64735d87-cf43-4c4f-8ef8-53f3d45bc9b6.png"
+      ]
+    },
+    {
+      "name": "Men's Tree Runner NZ",
+      "description": "The latest iteration of the fan-favorite Tree Runner sneaker, the Tree Runner NZ nods to Allbirds' New Zealand roots, combining ten years of innovation in a stylish and comfortable shoe. Designed for all-day wear, it features a slightly more structured build than the original, made with breathable, lightweight materials ideal for travel and everyday use.",
+      "price": 100,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Footwear",
+      "availability": "limited_availability",
+      "dimensions": [
+        "Weight: 8.9oz (Men's size 9)",
+        "Stack Height: Heel 20mm, Toe 10.2mm",
+        "Heel/Toe Drop: 9.8mm"
+      ],
+      "features": [
+        "Breathable hemp and TENCEL™ Lyocell (tree fiber) canvas upper",
+        "Merino wool-blend lining for softness and comfort",
+        "Sugarcane-based SweetFoam® cushioning for comfort and energy return",
+        "Plush Featherbed™ dual-density memory foam insole for extra softness and bounce",
+        "Machine washable (remove insoles and hand wash separately)",
+        "Lightweight and breathable design",
+        "Structured and supportive fit with a lined upper"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "sneakers",
+        "men's shoes",
+        "sustainable materials",
+        "breathable",
+        "comfortable",
+        "travel",
+        "casual footwear"
+      ],
+      "sku": "MENS_TREE_RUNNER_NZ",
+      "url": "https://www.allbirds.com/products/mens-tree-runner-nz-medium-grey",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/10d58804-da1f-4831-8956-e90a81878b1b.png",
+      "images": [
+        "https://media.brand.dev/84685bfd-fb92-4c00-91bb-1c7f3681e92c.png",
+        "https://media.brand.dev/c0694baf-f85b-42e1-9bb8-d742539ce302.png"
+      ]
+    },
+    {
+      "name": "Anytime Crew Sock - Black",
+      "description": "The Anytime Crew Sock is a classic full-length sock designed for breathability and lightweight comfort. It features super soft heel and toe cushioning without bulk, supportive elastic arch band, and is made from a soft and breathable yarn blend. Manufactured in the U.S., these socks are perfect for everyday wear, walking, and workouts.",
+      "price": 18,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Apparel & Accessories",
+      "availability": "in_stock",
+      "dimensions": [
+        "Weight: 1.1oz (single sock, size L)"
+      ],
+      "features": [
+        "Soft & breathable yarn blend made from tree-derived TENCEL™ Lyocell, organic cotton, recycled nylon, and spandex",
+        "Cushioned heel and toe for plush feel without bulk",
+        "Supportive elastic arch band for all day comfort",
+        "Manufactured in the U.S., knit in North Carolina"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "socks",
+        "crew sock",
+        "breathable",
+        "lightweight",
+        "cushioned",
+        "arch support",
+        "sustainable",
+        "tree yarn",
+        "organic cotton"
+      ],
+      "sku": "ANYTIME_CREW_SOCK",
+      "url": "https://www.allbirds.com/products/anytime-crew-sock-natural-black",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/315cff87-7374-4c63-a355-4b9dfbc345f0.png",
+      "images": []
+    },
+    {
+      "name": "Anytime No Show Sock",
+      "description": "Soft, breathable, and super durable lightweight no-show socks designed to stay put and remain hidden. Made with natural materials including organic cotton and tree fiber blend for comfort and sustainability. Reinforced with recycled nylon at wear points and extra cushioning at heel and toe for durability and comfort. Suitable for everyday wear and workouts.",
+      "price": 14,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Apparel & Accessories",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Ultra soft and super durable",
+        "Reinforced wear points with recycled nylon",
+        "Extra cushion at heel and toe",
+        "Made with organic cotton and tree fiber blend",
+        "Machine washable (cold wash, air dry)",
+        "Designed to stay hidden and stay put"
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "no-show",
+        "sock",
+        "organic cotton",
+        "tree fiber",
+        "recycled nylon",
+        "sustainable",
+        "lightweight",
+        "durable"
+      ],
+      "sku": "ANYTIME_NO_SHOW_SOCK",
+      "url": "https://www.allbirds.com/products/anytime-no-show-sock-rugged-beige",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/b3edba85-7798-4e74-b049-bd3eba2b146b.png",
+      "images": []
+    },
+    {
+      "name": "Anytime No Show Heel Grip Sock",
+      "description": "The Anytime No Show Heel Grip Sock is a lightweight, low-profile sock designed to stay hidden and comfortable during everyday wear, workouts, and walking. It features a silicone heel grip to prevent slipping, a supportive elastic arch band, and is made from a breathable yarn blend including TENCEL™ Lyocell, recycled nylon, organic cotton, and spandex. Manufactured in the U.S., these socks offer a barefoot look with secure fit and all-day comfort.",
+      "price": 14,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Apparel & Accessories",
+      "availability": "in_stock",
+      "dimensions": [
+        "Weight: 0.4oz (single sock, size L)"
+      ],
+      "features": [
+        "Light & Breathable Yarn Blend",
+        "Designed to Stay Hidden",
+        "No Slip Silicone Grip",
+        "Supportive Arch",
+        "Manufactured in the U.S."
+      ],
+      "target_audience": [
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "no show",
+        "heel grip",
+        "socks",
+        "breathable",
+        "lightweight",
+        "non-slip"
+      ],
+      "sku": "ANYTIME_NO_SHOW__HEEL_GRIP",
+      "url": "https://www.allbirds.com/products/anytime-no-show-heel-grip",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/10f47c41-9591-4651-ba05-91c4a0047ef9.png",
+      "images": []
+    }
+  ]
+}

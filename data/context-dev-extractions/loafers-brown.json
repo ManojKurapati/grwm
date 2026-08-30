@@ -1,0 +1,371 @@
+{
+  "slug": "loafers-brown",
+  "archetypeId": "brown-suede-loafers",
+  "sourceUrl": "https://www.charleskeith.com/us/shoes/loafers",
+  "extractedAt": "2026-08-30T08:14:38.307Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "XL Calla Tote Bag",
+      "description": "This XL Calla tote bag is made with faux suede and features double handles, a detachable pouch, a magnetic closure and a capacious interior. It contains recycled material and is designed for a striking yet understated look when paired with tonal separates.",
+      "price": 159,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Bags",
+      "availability": "in_stock",
+      "dimensions": [
+        "Handle drop length 27 cm",
+        "Strap drop length 27 cm",
+        "Strap length 61.5 cm",
+        "Weight 796 g",
+        "Width 22-50 cm",
+        "Depth 11.6 cm",
+        "Height 30 cm"
+      ],
+      "features": [
+        "Made with faux suede",
+        "Double handles",
+        "Detachable pouch",
+        "Magnetic closure",
+        "Capacious interior",
+        "Contains recycled material"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "tote bag",
+        "faux suede",
+        "recycled material",
+        "magnetic closure",
+        "detachable pouch",
+        "XL size",
+        "stone grey"
+      ],
+      "sku": "CK2-30671782-1_STO.GR",
+      "url": "https://www.charleskeith.com/us/CK2-30671782-1_STO.GR.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/db1816a0-eaa8-4bf0-aeff-6d86172b5a02.jpg",
+      "images": []
+    },
+    {
+      "name": "Leather & Suede Bow Loafers",
+      "description": "These flat loafers in black are made with genuine leather and suede. They feature covered almond toes, contrast-trim detailing and bows on the front. Suitable for both work and play, these versatile shoes will go well with most outfits.",
+      "price": 119,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 398 g",
+        "Shoe width: 3.0 in",
+        "Heel height: 0.4 in"
+      ],
+      "features": [
+        "Made with genuine leather and suede",
+        "Covered almond toes",
+        "Contrast-trim detailing",
+        "Bows on the front",
+        "Material lining: Fabric",
+        "Sole material: PU"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafers",
+        "flat shoes",
+        "leather",
+        "suede",
+        "black",
+        "bow"
+      ],
+      "sku": "SL1-70920014_BLKTXT",
+      "url": "https://www.charleskeith.com/us/SL1-70920014_BLKTXT.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/41f53b4a-cb47-4b0e-ae0e-461f0cbeb95c.jpg",
+      "images": []
+    },
+    {
+      "name": "Kaiya Penny Loafers",
+      "description": "Kaiya penny loafers in dark brown featuring an effortless slip-on style, decorative slotted leather strips across the vamps, and platform soles that provide a slight lift while remaining comfortable for everyday wear. Made with Box PU material, fabric & PU lining, and PU sole, these loafers combine simplicity with refined sophistication, making them versatile enough to complement any wardrobe.",
+      "price": 99,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 545 g",
+        "Shoe width: 3.1 in",
+        "Heel height: 1.2 in"
+      ],
+      "features": [
+        "Slip-on style",
+        "Decorative slotted leather strips across vamps",
+        "Platform soles for slight lift and comfort",
+        "Material: Box PU",
+        "Lining: Fabric & PU",
+        "Sole material: PU"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafers",
+        "dark brown",
+        "slip-on",
+        "platform sole",
+        "comfortable",
+        "elegant"
+      ],
+      "sku": "CK1-71720030-1_DK.BRW",
+      "url": "https://www.charleskeith.com/us/CK1-71720030-1_DK.BRW.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/6a0ab052-490c-4248-94ec-7be21c3ecbe4.jpg",
+      "images": []
+    },
+    {
+      "name": "Two-Tone Metallic-Buckle Loafer Pumps",
+      "description": "These loafer pumps in burgundy feature a two-tone design, a glossy finish, polished metallic buckles, chunky block heels, gently rounded toes and a clean-lined silhouette. Their comfort and versatility makes them perfect for all-day wear.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 660 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 2.0 in"
+      ],
+      "features": [
+        "Two-tone design",
+        "Glossy finish",
+        "Polished metallic buckles",
+        "Chunky block heels",
+        "Gently rounded toes",
+        "Clean-lined silhouette",
+        "Material: Box PU",
+        "Material lining: Fabric",
+        "Sole material: PU"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafer",
+        "pumps",
+        "burgundy",
+        "two-tone",
+        "metallic buckle",
+        "block heel",
+        "shoes"
+      ],
+      "sku": "CK1-60280532_BURGUN",
+      "url": "https://www.charleskeith.com/us/CK1-60280532_BURGUN.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/59c16407-8093-43a5-add0-69f5fe9dd093.jpg",
+      "images": []
+    },
+    {
+      "name": "Metallic-Buckle Loafer Pumps",
+      "description": "These loafer pumps in black feature a glossy finish, polished metallic buckles, chunky block heels, gently rounded toes and a clean-lined silhouette. They bring structure and sophistication to simple weekday looks.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 660 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 2.0 in"
+      ],
+      "features": [
+        "Glossy finish",
+        "Polished metallic buckles",
+        "Chunky block heels",
+        "Gently rounded toes",
+        "Clean-lined silhouette",
+        "Material: Box PU",
+        "Material lining: Fabric",
+        "Sole material: PU"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafer",
+        "pumps",
+        "black",
+        "metallic buckle",
+        "block heel",
+        "shoes"
+      ],
+      "sku": "CK1-60280532_BLKBOX",
+      "url": "https://www.charleskeith.com/us/CK1-60280532_BLKBOX.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/19e2e47a-a626-4c0c-a537-025c6b5eb931.jpg",
+      "images": []
+    },
+    {
+      "name": "Griselda Faux Suede Loafers",
+      "description": "These Griselda loafers in dark brown are made with faux suede and feature almond toes, classic penny tabs, shiny lock charms, and very low block heels. They complement work staples with stylish tactility and functional details.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 564 g",
+        "Shoe width: 3.2 in",
+        "Heel height: 1.2 in"
+      ],
+      "features": [
+        "Made with faux suede material",
+        "Fabric lining",
+        "PU sole material",
+        "Almond toe design",
+        "Classic penny tabs",
+        "Shiny lock charms",
+        "Very low block heels"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafers",
+        "faux suede",
+        "dark brown",
+        "shoes",
+        "women's footwear"
+      ],
+      "sku": "CK1-70381242_DB.TXT",
+      "url": "https://www.charleskeith.com/us/CK1-70381242_DB.TXT.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/f409c70a-1885-473c-b217-ba8ed867ce92.jpg",
+      "images": []
+    },
+    {
+      "name": "Griselda Loafers",
+      "description": "These Griselda loafers in black feature almond toes, classic penny tabs, shiny lock charms, and very low block heels. They are stylish and versatile shoes suitable for both office outfits and weekend wear.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 564 g",
+        "Shoe width: 3.2 in",
+        "Heel height: 1.2 in"
+      ],
+      "features": [
+        "Almond toe design",
+        "Classic penny tabs",
+        "Shiny lock charms",
+        "Very low block heels",
+        "Material: Natural PU",
+        "Lining: Fabric",
+        "Sole material: PU"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafers",
+        "black",
+        "shoes",
+        "block heels",
+        "almond toe",
+        "penny tabs"
+      ],
+      "sku": "CK1-70381242_BLACK",
+      "url": "https://www.charleskeith.com/us/CK1-70381242_BLACK.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/8767ac5a-6d1c-4df5-97a0-65ddc56de03d.jpg",
+      "images": []
+    },
+    {
+      "name": "Faux Suede Metallic Knot-Bar Loafers",
+      "description": "Light-toned faux suede shoes perfect for spring-summer wardrobe. Versatile to pair with neutral and vibrant outfits. Gold-tone accents add subtle shine to elevate everyday ensembles.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 420 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 0.6 in"
+      ],
+      "features": [
+        "Material: Faux Suede",
+        "Material lining: Fabric & PU",
+        "Sole material: PU",
+        "Gold-tone accents",
+        "Light-toned camel color"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "faux suede",
+        "loafers",
+        "camel",
+        "metallic",
+        "spring-summer",
+        "shoes"
+      ],
+      "sku": "CK1-70380740-1_CAMEL",
+      "url": "https://www.charleskeith.com/us/CK1-70380740-1_CAMEL.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/eab030c7-8c10-4284-a4bf-3855a58b0f0d.jpg",
+      "images": []
+    },
+    {
+      "name": "Metallic Knot-Bar Loafers",
+      "description": "Sleek and sophisticated almond-toe loafers featuring simple design with gold-tone metallic knot accents that stand out beautifully against clean black uppers, adding shine to elevate everyday look.",
+      "price": 89,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Shoes",
+      "availability": "in_stock",
+      "dimensions": [
+        "Shoe weight (1 pair): 420 g",
+        "Shoe width: 3.3 in",
+        "Heel height: 0.6 in"
+      ],
+      "features": [
+        "Almond-toe design",
+        "Gold-tone metallic knot accents",
+        "Natural PU material",
+        "Fabric & PU lining",
+        "PU sole"
+      ],
+      "target_audience": [
+        "Women"
+      ],
+      "tags": [
+        "loafers",
+        "black",
+        "metallic",
+        "almond-toe",
+        "PU",
+        "shoes"
+      ],
+      "sku": "CK1-70380740-1_BLACK",
+      "url": "https://www.charleskeith.com/us/CK1-70380740-1_BLACK.html",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/eabfd92c-b28b-437f-9ac8-406701fa905f.jpg",
+      "images": []
+    }
+  ]
+}

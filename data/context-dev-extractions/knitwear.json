@@ -1,0 +1,456 @@
+{
+  "slug": "knitwear",
+  "archetypeId": "black-knit-polo",
+  "sourceUrl": "https://www.uniqlo.com/us/en/men/tops/sweaters-and-cardigans",
+  "extractedAt": "2026-08-30T08:24:38.065Z",
+  "provider": "context.dev",
+  "endpoint": "POST /brand/ai/products",
+  "products": [
+    {
+      "name": "Men's Cashmere Sweater",
+      "description": "A premium men's cashmere sweater featuring perfected yarn thickness and knit tension for an exquisite feel described as the “gem of fibers.” It is hand-washable with special pilling-resistant processing, made from 100% cashmere, and imported. The sweater offers a luxurious and soft texture, suitable for stylish and comfortable wear.",
+      "price": 99.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "made_to_order",
+      "dimensions": [],
+      "features": [
+        "100% Cashmere fabric",
+        "Yarn thickness and knit tension perfected for premium feel",
+        "Hand-washable",
+        "Special pilling-resistant processing",
+        "Imported"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "cashmere",
+        "sweater",
+        "men",
+        "knitwear",
+        "premium",
+        "hand-washable"
+      ],
+      "sku": "450543-01-004-000",
+      "url": "https://www.uniqlo.com/us/en/products/E450543-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/8a88b149-cbc0-4a78-9675-ad674b1ce14a.jpg",
+      "images": [
+        "https://media.brand.dev/1847226f-3695-4098-a1ed-d2a0a80157ed.jpg",
+        "https://media.brand.dev/180a6900-8c53-4ae6-b142-6fd148bd74d3.jpg",
+        "https://media.brand.dev/8121a62d-ac1e-4bf6-bc07-ada6741ef32d.jpg",
+        "https://media.brand.dev/1fa20c69-e30b-45de-abad-8497701774f3.jpg",
+        "https://media.brand.dev/b660a3be-c3b3-4645-ac13-a0c6ddffeca1.jpg",
+        "https://media.brand.dev/5abd7b9c-4071-47c8-93c6-08bfca594fb8.jpg"
+      ]
+    },
+    {
+      "name": "Milano Ribbed Shirt Collar Cardigan",
+      "description": "A refined silhouette cardigan made with elegant knit fabric suitable for both business and casual wear. Can be styled buttoned as a top or unbuttoned as a light outer layer. The fabric is easy to care for and hand-washable. Made with recycled materials, containing 39% Cotton, 34% Polyester (34% recycled polyester fiber), and 27% Rayon. The fit is regular and the fabric is not sheer.",
+      "price": 59.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Sweaters & Knitwear / Sweaters & Cardigans / Cardigans",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Refined silhouette",
+        "Elegant knit fabric",
+        "Suitable for business and casual wear",
+        "Can be styled buttoned or unbuttoned",
+        "Easy care fabric",
+        "Hand-washable",
+        "Made with recycled materials (34% recycled polyester fiber)",
+        "Regular fit",
+        "Not sheer"
+      ],
+      "target_audience": [
+        "Men",
+        "Unisex"
+      ],
+      "tags": [
+        "cardigan",
+        "knitwear",
+        "recycled materials",
+        "sustainable",
+        "business casual",
+        "regular fit"
+      ],
+      "sku": "478550-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E478550-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/fb0627b4-ad13-4479-ae9b-bf3303d90c02.jpg",
+      "images": [
+        "https://media.brand.dev/faf4b316-0582-4a7b-a140-d7cf91c70172.jpg",
+        "https://media.brand.dev/b196a723-8592-429e-84b9-ddea23cb7c18.jpg",
+        "https://media.brand.dev/e697c78e-5b5a-49af-8186-0047502e3611.jpg",
+        "https://media.brand.dev/7c8511c5-8ecc-4b3f-9ec6-85888b23b070.jpg",
+        "https://media.brand.dev/d9b5cf46-3eb9-4890-b2ed-791863562c94.jpg",
+        "https://media.brand.dev/594dd1f8-be45-4bfa-901a-ef7cca209e79.jpg"
+      ]
+    },
+    {
+      "name": "Washable Milano Ribbed Skipper Polo Sweater",
+      "description": "Milano rib knit in a skipper design for a refined look. Classic knit appearance with easy-care material and details. Machine washable. Crisp knitted fabric for a comfortably fitted feel. Made from 42% Cotton, 30% Polyester, 28% Rayon (30% recycled polyester fiber). Imported. Recommended to wash inside out in a mesh laundry bag.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Sweaters & Knitwear / Sweaters & Cardigans / Milano Ribbed",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Milano rib knit",
+        "Skipper design",
+        "Classic knit appearance",
+        "Easy-care material",
+        "Machine washable",
+        "Crisp knitted fabric",
+        "Comfortably fitted feel",
+        "Contains 30% recycled polyester fiber"
+      ],
+      "target_audience": [
+        "Men",
+        "Unisex"
+      ],
+      "tags": [
+        "washable",
+        "milano ribbed",
+        "skipper polo sweater",
+        "knitwear",
+        "machine washable",
+        "recycled polyester"
+      ],
+      "sku": "482325-31-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482325-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/af05279e-b80d-4f45-81ae-fbb7408d46d3.jpg",
+      "images": [
+        "https://media.brand.dev/de435049-ce1b-402f-91c1-d81fa86f0e6b.jpg",
+        "https://media.brand.dev/b423bf66-1e99-4d64-8577-48738033f2dd.jpg",
+        "https://media.brand.dev/0f2e7deb-dc0f-448a-a80e-45c969622b2a.jpg",
+        "https://media.brand.dev/1a57b99e-4d2e-40ea-a533-cb196865f759.jpg",
+        "https://media.brand.dev/b2909ffd-d227-443e-b71e-37e1b8f330fb.jpg",
+        "https://media.brand.dev/8f4e2553-7a2f-49ad-8897-4e54d9728992.jpg"
+      ]
+    },
+    {
+      "name": "Washable Milano Ribbed Sweater",
+      "description": "A unisex Milano ribbed sweater made with recycled materials, featuring a refined silhouette and knit fabric suitable for both business and casual wear. It has a perfectly crisp feel with meticulous design details including a ribbed collar that joins seamlessly to the body for comfort. The sweater is machine washable (recommended to turn inside out and wash in a net) and contains 39% Cotton, 34% Polyester, and 27% Rayon, with 34% recycled polyester fiber. It is imported and produced in China, Cambodia, and Vietnam.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Machine washable (recommend turning inside out and washing in a net)",
+        "Perfectly crisp feel",
+        "Ribbed collar joins seamlessly to body for comfort",
+        "Refined silhouette suitable for business and casual wear",
+        "Made with recycled materials (34% recycled polyester fiber)",
+        "Fabric composition: 39% Cotton, 34% Polyester, 27% Rayon",
+        "Imported"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "sweater",
+        "ribbed",
+        "washable",
+        "recycled materials",
+        "knitwear",
+        "unisex"
+      ],
+      "sku": "453754-03-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E453754-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1baa73e6-10f2-4fac-837a-4cc16ab95248.jpg",
+      "images": [
+        "https://media.brand.dev/e868d430-7a07-4eaa-9822-be3f8d418dad.jpg",
+        "https://media.brand.dev/f4404aa3-2ec9-45a4-a69d-57d725f7a92e.jpg",
+        "https://media.brand.dev/bf92e630-1fd0-47fc-a273-255516429715.jpg",
+        "https://media.brand.dev/a89fd17e-9114-4562-8629-1381a7713d75.jpg",
+        "https://media.brand.dev/61ee6837-ce2d-4fee-bf20-64b9ab5cf867.jpg",
+        "https://media.brand.dev/ffd18193-c377-46f2-8262-48e58d7c79c2.jpg"
+      ]
+    },
+    {
+      "name": "Souffle Yarn Polo Sweater",
+      "description": "Soft and non-itchy \"Souffle Yarn\" sweater made with finer yarn for a lightweight and comfortable feel. Features a half button-down polo style with a regular fit. Fabric composition is 62% Acrylic, 30% Polyester (30% recycled polyester fiber), 5% Wool, and 3% Spandex. Imported from Vietnam. Care instructions: hand wash cold or dry clean.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Sweaters & Knitwear / Sweaters & Cardigans / Souffle Yarn",
+      "availability": "made_to_order",
+      "dimensions": [],
+      "features": [
+        "Soft and non-itchy Souffle Yarn",
+        "Lightweight and comfortable feel",
+        "Regular fit",
+        "Not sheer",
+        "Half button-down polo style",
+        "Made with 30% recycled polyester fiber"
+      ],
+      "target_audience": [
+        "Men",
+        "Unisex"
+      ],
+      "tags": [
+        "sweater",
+        "knitwear",
+        "polo",
+        "souffle yarn",
+        "lightweight",
+        "recycled polyester"
+      ],
+      "sku": "487939-08-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E487939-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/60cb0177-aea1-4749-b61e-b32553f20f18.jpg",
+      "images": [
+        "https://media.brand.dev/be98ee71-dd13-4d3d-b159-9ded1a3b1e91.jpg",
+        "https://media.brand.dev/77c6d7ba-3258-4553-9e28-687acb94d162.jpg",
+        "https://media.brand.dev/63156b3c-4ef0-424b-b421-c7910c241d77.jpg",
+        "https://media.brand.dev/0e30fa5f-d28a-4fab-84e6-b6777a634922.jpg",
+        "https://media.brand.dev/a53202f4-d3b0-45dc-9d52-70c9505ef2a5.jpg",
+        "https://media.brand.dev/33aba1b0-f85c-43f6-9c68-5327e32935c5.jpg"
+      ]
+    },
+    {
+      "name": "Washable 3D Knit Sweater",
+      "description": "A unisex sweater featuring distinctive 3D Knit fabric and silhouette, perfect for casual styling. Made with a seamless knit for a gentle feel, the neckline is designed to keep its shape after extended wear. Machine-washable for easy care, recommended to wash inside out in a mesh laundry bag. Made using the special WHOLEGARMENT® technique. Fabric composition varies by color but generally 70% Acrylic and 30% Cotton. Regular fit, not sheer, no pockets.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Machine washable",
+        "3D Knit fabric and silhouette",
+        "Seamless knit for gentle feel",
+        "Neckline designed to keep shape",
+        "Made with WHOLEGARMENT® technique",
+        "Regular fit",
+        "Not sheer",
+        "No pockets"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "sweater",
+        "knitwear",
+        "machine washable",
+        "3D knit",
+        "casual",
+        "unisex"
+      ],
+      "sku": "482321-02-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482321-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/b56a37ca-847a-42af-a07d-4c55b6c6b716.jpg",
+      "images": [
+        "https://media.brand.dev/169be600-bac8-49d8-8c2e-fe2fcfe73256.jpg",
+        "https://media.brand.dev/37707eaa-d086-4244-a7da-e5763619ae21.jpg",
+        "https://media.brand.dev/6e6db5d8-dc19-4c8a-8e7f-0f38a2042623.jpg",
+        "https://media.brand.dev/be62283c-c73d-444f-b121-5ad19bda1d6d.jpg",
+        "https://media.brand.dev/131e1064-2212-4aaf-b746-822461a3e92e.jpg",
+        "https://media.brand.dev/3249bfe6-cd09-4f50-9dd0-0d3dfae7be33.jpg"
+      ]
+    },
+    {
+      "name": "Men's Souffle Yarn Sweater",
+      "description": "Soft and non-itchy Souffle Yarn sweater with a roomy fit in the shoulders and body and a short length. Made from 57% Acrylic, 32% Polyester (32% recycled fiber), 8% Wool, and 3% Spandex. Features a regular fit and is not sheer. Imported. Care instructions: hand wash cold or dry clean.",
+      "price": 49.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Men / Sweaters & Knitwear / Sweaters & Cardigans",
+      "availability": "in_stock",
+      "dimensions": [],
+      "features": [
+        "Soft and non-itchy Souffle Yarn",
+        "Roomy fit in shoulders and body",
+        "Short length",
+        "Regular fit",
+        "Not sheer",
+        "Made with 32% recycled polyester fiber",
+        "Material composition: 57% Acrylic, 32% Polyester, 8% Wool, 3% Spandex",
+        "Imported"
+      ],
+      "target_audience": [
+        "Men"
+      ],
+      "tags": [
+        "sweater",
+        "knitwear",
+        "souffle yarn",
+        "men",
+        "recycled polyester",
+        "regular fit"
+      ],
+      "sku": "486080-08-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E486080-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/1076095e-374e-493c-89d9-bf0364557f66.jpg",
+      "images": [
+        "https://media.brand.dev/9fa04bfc-0457-4244-bccb-c0fb8e1e3659.jpg",
+        "https://media.brand.dev/bc14a2f6-8bc3-45b2-a6d3-619a7ed1c116.jpg",
+        "https://media.brand.dev/08c3aaf0-38b4-4ed0-b239-ad42abd79301.jpg",
+        "https://media.brand.dev/0e44d2b4-73eb-4edf-b314-5f1cee1cc612.jpg",
+        "https://media.brand.dev/de7d9548-5bea-481f-8ae9-14f1629b435e.jpg",
+        "https://media.brand.dev/ba3261c4-f29f-4083-af51-f358c233e68f.jpg"
+      ]
+    },
+    {
+      "name": "Unisex Washable Milano Ribbed Knitted T-Shirt",
+      "description": "A unisex Milano ribbed knitted T-shirt designed in men's sizing, featuring a comfortable, non-clingy Milano ribbed knit fabric made with recycled materials. It offers a refined, structured appearance with a smooth surface that holds its shape better than typical cotton tees. The T-shirt is machine washable and suitable for layering or wearing alone in mild to warm conditions, bridging casual and smart-casual styles.",
+      "price": 39.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "out_of_stock",
+      "dimensions": [],
+      "features": [
+        "Made with recycled materials",
+        "Comfortable, non-clingy Milano ribbed knit",
+        "Machine washable (recommended inside out in mesh laundry bag)",
+        "Regular, balanced silhouette for a cleaner look",
+        "Thinner knit construction for ease of wear",
+        "Knit fabric holds shape better than typical cotton tees",
+        "Versatile design for layering or standalone wear",
+        "Suitable for daily wear, travel, and casual office settings"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "knitted",
+        "ribbed",
+        "t-shirt",
+        "milano",
+        "washable",
+        "recycled materials",
+        "unisex"
+      ],
+      "sku": "481004-09-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E481004-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/703fa332-b0c1-4def-b56d-a03d31da87c4.jpg",
+      "images": [
+        "https://media.brand.dev/c9118af4-737a-4e86-a91e-2487668b8bd1.jpg",
+        "https://media.brand.dev/47469c7d-6550-439b-8f5c-35e4961fd62c.jpg",
+        "https://media.brand.dev/a0168553-cabc-41ee-88e5-df7359b38b48.jpg",
+        "https://media.brand.dev/44cc2362-f0f5-4b86-b8ff-07aa949c1cde.jpg",
+        "https://media.brand.dev/0848371c-05d0-4b99-adfe-1ae5e8077846.jpg",
+        "https://media.brand.dev/eda24e6a-b131-4356-a4f7-7bc410879f28.jpg"
+      ]
+    },
+    {
+      "name": "Washable Knitted Skipper Polo Sweater",
+      "description": "A unisex washable knitted skipper polo sweater combining the polish of a polo with the ease of a lightweight knit, ideal for everyday wear in mild to transitional weather. Made from smooth cotton-rayon fabric with a soft texture and refined drape, featuring a skipper-style open collar for a relaxed yet elevated look. It has ribbed knit at the sleeves and hem for subtle structure, elevated stitching detail for a polished finish, and a regular fit for ease of movement. Machine washable and suitable for layering or wearing alone as a versatile alternative to traditional polo shirts.",
+      "price": 39.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "Smooth cotton-rayon knit fabric (53% Cotton, 35% Modal, 12% Nylon)",
+        "Skipper-style open collar",
+        "Regular fit",
+        "Ribbed knit at sleeves and hem",
+        "Elevated stitching detail",
+        "Lightweight knit suitable for spring, early fall, and indoor wear",
+        "Machine washable (recommended inside out in mesh laundry bag)",
+        "No pockets"
+      ],
+      "target_audience": [
+        "Unisex",
+        "Men",
+        "Women"
+      ],
+      "tags": [
+        "knitted",
+        "polo",
+        "sweater",
+        "washable",
+        "cotton-rayon",
+        "lightweight",
+        "unisex",
+        "casual",
+        "layering"
+      ],
+      "sku": "482328-79-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E482328-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/ad91d429-0954-4bfc-9ede-fbf976087cbf.jpg",
+      "images": [
+        "https://media.brand.dev/9d4fec6b-b7f7-4dcc-84b2-28ead2f03c10.jpg",
+        "https://media.brand.dev/a4a8c8fb-7021-4f0a-a47c-f3705a890a3b.jpg",
+        "https://media.brand.dev/79d31ca6-8b8f-47f7-afcf-9b38e41ab639.jpg",
+        "https://media.brand.dev/a05e4b9f-efad-4dcf-b737-f6e06703731f.jpg",
+        "https://media.brand.dev/8afcdaee-dab5-47fb-bb90-2b823f437557.jpg",
+        "https://media.brand.dev/df71afab-dbec-4b3f-af9d-547e5b8a9fef.jpg"
+      ]
+    },
+    {
+      "name": "Washable Knitted Polo Sweater | Short Sleeve",
+      "description": "A unisex short sleeve polo sweater made from a smooth cotton-rayon fabric blend (49% Cotton, 38% Modal, 13% Nylon). Features a distinctive ribbed knit at the sleeves and hem, regular fit, and is machine washable (recommended to wash inside out in a mesh laundry bag). The sweater is not sheer except for the light gray color, and has no pockets. Imported, with care instructions for machine wash cold, gentle cycle, or dry clean.",
+      "price": 19.9,
+      "regular_price": null,
+      "currency": "USD",
+      "category": "Clothing",
+      "availability": "limited_availability",
+      "dimensions": [],
+      "features": [
+        "Machine washable (recommended inside out in mesh laundry bag)",
+        "Smooth cotton-rayon fabric",
+        "Distinctive ribbed knit at sleeves and hem",
+        "Regular fit",
+        "Not sheer except light gray color",
+        "No pockets",
+        "Imported"
+      ],
+      "target_audience": [
+        "Unisex"
+      ],
+      "tags": [
+        "knitted",
+        "polo",
+        "sweater",
+        "short sleeve",
+        "machine washable",
+        "cotton-rayon",
+        "ribbed knit"
+      ],
+      "sku": "476997-64-003-000",
+      "url": "https://www.uniqlo.com/us/en/products/E476997-000/00",
+      "billing_frequency": "one_time",
+      "pricing_model": "flat",
+      "image_url": "https://media.brand.dev/70b28abf-246c-48ac-9238-b3822e26ebb5.jpg",
+      "images": [
+        "https://media.brand.dev/7ff5300b-7a1c-4fda-897a-f247977c8843.jpg",
+        "https://media.brand.dev/c6d4a243-2f47-467a-b667-6fe6a9e85d52.jpg",
+        "https://media.brand.dev/11b15d6b-aeb7-4e1e-9341-014b78bd93d8.jpg",
+        "https://media.brand.dev/0201f2d8-db2f-4b97-9778-0413bef3bf58.jpg",
+        "https://media.brand.dev/5c066aaa-bbdb-4093-937f-26b8f55f6b16.jpg",
+        "https://media.brand.dev/fd6b6a95-7663-44e6-9f15-8fde378dcdc8.jpg"
+      ]
+    }
+  ]
+}
