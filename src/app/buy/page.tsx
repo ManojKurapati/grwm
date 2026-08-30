@@ -261,10 +261,14 @@ function Verdict({
                   {formatPrice(result.product.price, result.product.currency)}
                 </p>
               )}
+              {/*
+                The classifier's raw read used to be printed here. It is
+                internal detail, and when the classifier is wrong it is wrong in
+                public: a suede loafer came back as "black leather t-shirt ·
+                formality 2.2/10". The verdict and the reasons beside it already
+                show what GRWM understood.
+              */}
               <p className="label mt-4 text-[0.58rem]">
-                GRWM read this as: {result.product.specSummary}
-              </p>
-              <p className="label mt-2 text-[0.58rem]">
                 {result.product.provenance === "context.dev"
                   ? "Extracted live via Context.dev"
                   : "Context.dev extraction · cached"}

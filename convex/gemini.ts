@@ -40,13 +40,41 @@ import { z } from "zod";
  *   gemini-3.5-flash    the default: reliable, ~8s, good judgement
  *   gemini-3.5-flash-lite  ~1.4s if you need speed over nuance
  *
- * Override per-deployment with GEMINI_MODEL.
+ * Why a chain rather than one model: the free tier meters requests *per model
+ * per day* (20 at time of writing), so a busy afternoon of demos exhausts the
+ * preferred model and returns 429 for everything after. Falling forward to the
+ * next model buys a fresh allowance and keeps Gemini — not the deterministic
+ * engine — driving the recommendation. Order is preference, not capability.
+ *
+ * GEMINI_MODEL, if set, takes priority over the whole chain.
  */
-const DEFAULT_MODEL = "gemini-3.5-flash";
+const MODEL_CHAIN = [
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite",
+  "gemini-3-flash-preview",
+];
 const DEFAULT_TIMEOUT_MS = 20_000;
 
-function model(): string {
-  return process.env.GEMINI_MODEL || DEFAULT_MODEL;
+function models(): string[] {
+  const override = process.env.GEMINI_MODEL;
+  if (!override) return MODEL_CHAIN;
+  // Keep the rest of the chain as backup behind an explicit override.
+  return [override, ...MODEL_CHAIN.filter((m) => m !== override)];
+}
+
+/**
+ * Worth trying the next model, or is this our own fault?
+ *
+ * Quota (429) and capacity (503) are properties of the model we happened to
+ * pick, so another model may well succeed. A malformed prompt or a bad key will
+ * fail identically everywhere, so retrying just adds latency before the
+ * fallback the caller already has.
+ */
+function isModelUnavailable(error: unknown): boolean {
+  const message = error instanceof Error ? error.message : String(error);
+  return /\b(429|503)\b|RESOURCE_EXHAUSTED|UNAVAILABLE|deadline|abort|timeout/i.test(
+    message,
+  );
 }
 
 /** Is a live stylist configured on this deployment? */
@@ -78,21 +106,40 @@ async function structured<T>(
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return null;
 
-  try {
-    const ai = new GoogleGenAI({ apiKey });
-    const response = await ai.models.generateContent({
-      model: model(),
-      contents: [{ role: "user", parts }],
-      config: {
-        responseMimeType: "application/json",
-        responseSchema,
-        temperature: 0.7,
-        abortSignal: AbortSignal.timeout(timeoutMs),
-      },
-    });
+  const ai = new GoogleGenAI({ apiKey });
+  const chain = models();
 
-    const text = response.text;
+  for (const [index, name] of chain.entries()) {
+    const last = index === chain.length - 1;
+    let text: string | undefined;
+
+    try {
+      const response = await ai.models.generateContent({
+        model: name,
+        contents: [{ role: "user", parts }],
+        config: {
+          responseMimeType: "application/json",
+          responseSchema,
+          temperature: 0.7,
+          abortSignal: AbortSignal.timeout(timeoutMs),
+        },
+      });
+      text = response.text;
+    } catch (error) {
+      const reason = error instanceof Error ? error.message : "unknown";
+      if (!last && isModelUnavailable(error)) {
+        console.warn(`[gemini:${label}] ${name} unavailable — trying ${chain[index + 1]}`);
+        continue;
+      }
+      console.warn(`[gemini:${label}] request failed on ${name} — falling back:`, reason);
+      return null;
+    }
+
     if (!text) {
+      if (!last) {
+        console.warn(`[gemini:${label}] ${name} returned nothing — trying ${chain[index + 1]}`);
+        continue;
+      }
       console.warn(`[gemini:${label}] empty response — falling back`);
       return null;
     }
@@ -101,27 +148,24 @@ async function structured<T>(
     try {
       parsed = JSON.parse(text);
     } catch {
-      console.warn(`[gemini:${label}] non-JSON response — falling back`);
+      console.warn(`[gemini:${label}] non-JSON response from ${name} — falling back`);
       return null;
     }
 
     const result = schema.safeParse(parsed);
     if (!result.success) {
       console.warn(
-        `[gemini:${label}] schema violation (` +
+        `[gemini:${label}] schema violation from ${name} (` +
           `${result.error.issues.map((i) => i.path.join(".") || "root").join(", ")}) — falling back`,
       );
       return null;
     }
 
+    if (index > 0) console.log(`[gemini:${label}] served by ${name}`);
     return result.data;
-  } catch (error) {
-    console.warn(
-      `[gemini:${label}] request failed — falling back:`,
-      error instanceof Error ? error.message : "unknown",
-    );
-    return null;
   }
+
+  return null;
 }
 
 // ---------------------------------------------------------------------------

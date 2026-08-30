@@ -8,11 +8,11 @@ import { CountUp, Reveal, ScoreBar, SectionLabel, Thinking } from "./primitives"
 import { Garment } from "./Garment";
 import type { GapResult } from "../../convex/shopping";
 
+/** UI status only, same as the outfit sequence: stages, not reasoning. */
 const THINKING = [
-  "Simulating additions to your wardrobe…",
-  "Measuring which outfits each one unlocks…",
-  "Checking what you already own that does the same job…",
-  "Finding real products with Context.dev…",
+  "Searching for the missing piece…",
+  "Checking live products…",
+  "Matching them against your wardrobe…",
 ];
 
 /**
@@ -30,17 +30,18 @@ export function MissingPiece({
   baselineScore: number;
 }) {
   const findGaps = useAction(api.shopping.missingPiece);
+  // Starts in `loading` rather than being switched into it from the effect:
+  // this component is mounted with a `key` per session, so a new session
+  // remounts it and the initial state is always the right one.
   const [state, setState] = useState<
-    | { status: "idle" }
     | { status: "loading" }
     | { status: "done"; gaps: GapResult[] }
     | { status: "empty" }
     | { status: "error"; message: string }
-  >({ status: "idle" });
+  >({ status: "loading" });
 
   useEffect(() => {
     let cancelled = false;
-    setState({ status: "loading" });
 
     findGaps({ sessionId })
       .then((result) => {

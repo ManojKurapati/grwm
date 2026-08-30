@@ -10,6 +10,38 @@ import { Button, SectionLabel } from "./primitives";
 const CATEGORIES = ["top", "bottom", "shoes", "layer", "accessory"];
 const AVAILABILITY = ["available", "laundry", "packed"];
 
+type Draft = {
+  name: string;
+  category: string;
+  subcategory: string;
+  primaryColor: string;
+  material: string;
+  formalityScore: number;
+  availability: string;
+};
+
+function draftFromItem(item: {
+  name: string;
+  availability: string;
+  spec: {
+    category: string;
+    subcategory: string;
+    primaryColor: string;
+    material?: string;
+    formalityScore: number;
+  };
+}): Draft {
+  return {
+    name: item.name,
+    category: item.spec.category,
+    subcategory: item.spec.subcategory,
+    primaryColor: item.spec.primaryColor,
+    material: item.spec.material ?? "",
+    formalityScore: item.spec.formalityScore,
+    availability: item.availability,
+  };
+}
+
 /**
  * Item detail / edit.
  *
@@ -28,28 +60,11 @@ export function ItemSheet({
   const update = useMutation(api.wardrobe.update);
   const remove = useMutation(api.wardrobe.remove);
 
-  const [draft, setDraft] = useState<{
-    name: string;
-    category: string;
-    subcategory: string;
-    primaryColor: string;
-    material: string;
-    formalityScore: number;
-    availability: string;
-  } | null>(null);
-
-  useEffect(() => {
-    if (!item || draft) return;
-    setDraft({
-      name: item.name,
-      category: item.spec.category,
-      subcategory: item.spec.subcategory,
-      primaryColor: item.spec.primaryColor,
-      material: item.spec.material ?? "",
-      formalityScore: item.spec.formalityScore,
-      availability: item.availability,
-    });
-  }, [item, draft]);
+  // Edits the user has actually made; null until they touch something. The form
+  // is otherwise derived from the item during render, so there is no effect
+  // copying server state into local state and no flash of an empty form.
+  const [edits, setDraft] = useState<Draft | null>(null);
+  const draft: Draft | null = edits ?? (item ? draftFromItem(item) : null);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {

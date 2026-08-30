@@ -1,7 +1,32 @@
 "use client";
 
 import { clsx } from "clsx";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+
+/**
+ * Whether the visitor asked for reduced motion.
+ *
+ * Uses `useSyncExternalStore` rather than an effect so the value is available on
+ * the first render: setting it from an effect would mean every animation starts,
+ * then stops, which is precisely what the preference asks us not to do.
+ */
+const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
+
+function subscribeToReducedMotion(onChange: () => void) {
+  if (typeof window === "undefined") return () => {};
+  const query = window.matchMedia(REDUCED_MOTION_QUERY);
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
+export function usePrefersReducedMotion(): boolean {
+  return useSyncExternalStore(
+    subscribeToReducedMotion,
+    () => window.matchMedia(REDUCED_MOTION_QUERY).matches,
+    // Server render: assume motion is fine, matching the CSS default.
+    () => false,
+  );
+}
 
 /** Editorial section label with a hairline rule. */
 export function SectionLabel({
@@ -69,22 +94,16 @@ export function CountUp({
   className?: string;
   suffix?: string;
 }) {
+  const reduce = usePrefersReducedMotion();
   const [display, setDisplay] = useState(0);
   const from = useRef(0);
 
   useEffect(() => {
+    if (reduce) return;
+
     const start = performance.now();
     const origin = from.current;
     let frame = 0;
-
-    const reduce =
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) {
-      setDisplay(value);
-      from.current = value;
-      return;
-    }
 
     const tick = (now: number) => {
       const t = Math.min(1, (now - start) / duration);
@@ -96,11 +115,11 @@ export function CountUp({
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [value, duration]);
+  }, [value, duration, reduce]);
 
   return (
     <span className={clsx("nums", className)}>
-      {display}
+      {reduce ? value : display}
       {suffix}
     </span>
   );
@@ -187,35 +206,51 @@ export function Pill({
   );
 }
 
-/** Loading state that reads as intentional rather than broken. */
-export function Thinking({ lines }: { lines: string[] }) {
+/**
+ * Staged progress that explains the reasoning without narrating it.
+ *
+ * Each stage resolves to a tick, so by the time the fit lands the user has been
+ * told — quickly — that the wardrobe, the weather and the occasion were all
+ * considered. The final line stays unresolved: it is the one still running.
+ */
+export function Thinking({ lines, interval = 520 }: { lines: string[]; interval?: number }) {
+  const reduce = usePrefersReducedMotion();
   const [index, setIndex] = useState(0);
+
   useEffect(() => {
+    if (reduce) return;
     const timer = setInterval(() => {
       setIndex((i) => (i + 1 < lines.length ? i + 1 : i));
-    }, 900);
+    }, interval);
     return () => clearInterval(timer);
-  }, [lines.length]);
+  }, [lines.length, interval, reduce]);
+
+  // Reduced motion: show the whole sequence at once rather than animating it.
+  const current = reduce ? lines.length - 1 : index;
 
   return (
-    <div className="flex flex-col gap-3">
-      {lines.slice(0, index + 1).map((line, i) => (
-        <div
-          key={line}
-          className={clsx(
-            "fade flex items-center gap-3 text-[0.85rem]",
-            i === index ? "text-ink" : "text-ash",
-          )}
-        >
-          <span
+    <ol className="flex flex-col gap-3.5">
+      {lines.slice(0, current + 1).map((line, i) => {
+        const done = i < current;
+        return (
+          <li
+            key={line}
             className={clsx(
-              "size-1.5 rounded-full",
-              i === index ? "animate-pulse bg-ink" : "bg-clay",
+              "fade flex items-center gap-3 text-[0.9rem]",
+              done ? "text-ash" : "text-ink",
             )}
-          />
-          {line}
-        </div>
-      ))}
-    </div>
+          >
+            <span className="flex size-4 shrink-0 items-center justify-center">
+              {done ? (
+                <span className="text-[0.8rem] leading-none text-ink">✓</span>
+              ) : (
+                <span className="size-1.5 animate-pulse rounded-full bg-ink" />
+              )}
+            </span>
+            {line}
+          </li>
+        );
+      })}
+    </ol>
   );
 }

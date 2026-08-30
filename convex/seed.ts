@@ -33,6 +33,7 @@ export const ensureSeeded = mutation({
       await ctx.db.insert("wardrobeItems", {
         userId: user._id,
         name: item.name,
+        imageUrl: item.imageUrl,
         spec: item.spec,
         aiDescription: item.aiDescription,
         availability: "available",

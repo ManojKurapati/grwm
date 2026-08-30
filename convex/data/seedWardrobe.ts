@@ -15,8 +15,17 @@ import type { GarmentSpec } from "../engine/taxonomy";
 export type SeedItem = {
   key: string;
   name: string;
-  /** path under /public — kept local so imagery never fails to load on stage */
-  imageUrl: string;
+  /**
+   * Path under /public, kept local so imagery never fails to load on stage.
+   *
+   * Only set where we have a photograph that is genuinely the right garment on
+   * a clean, near-white ground. Everything else falls back to the illustrated
+   * system in `Garment.tsx`, which is preferable to a wrong or off-tone photo:
+   * automated product discovery returned shoe insoles for "grey runners" and a
+   * green-dial chronograph for "silver watch". Photographs are composited onto
+   * the paper ground in `GarmentCard`, so the two media sit together.
+   */
+  imageUrl?: string;
   spec: GarmentSpec;
   aiDescription: string;
   wearCountDaysAgo?: number;
@@ -27,7 +36,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "cream-linen-overshirt",
     name: "Cream linen shirt",
-    imageUrl: "/wardrobe/cream-linen-shirt.jpg",
     wearCount: 6,
     wearCountDaysAgo: 12,
     spec: {
@@ -49,7 +57,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "black-fitted-shirt",
     name: "Black fitted shirt",
-    imageUrl: "/wardrobe/black-fitted-shirt.jpg",
     wearCount: 9,
     wearCountDaysAgo: 5,
     spec: {
@@ -71,7 +78,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "white-oxford-shirt",
     name: "White Oxford shirt",
-    imageUrl: "/wardrobe/white-oxford-shirt.jpg",
     wearCount: 14,
     wearCountDaysAgo: 21,
     spec: {
@@ -93,7 +99,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "black-tshirt",
     name: "Black T-shirt",
-    imageUrl: "/wardrobe/black-tshirt.jpg",
     wearCount: 22,
     wearCountDaysAgo: 2,
     spec: {
@@ -114,7 +119,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "white-tshirt",
     name: "White T-shirt",
-    imageUrl: "/wardrobe/white-tshirt.jpg",
     wearCount: 25,
     wearCountDaysAgo: 4,
     spec: {
@@ -157,7 +161,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "beige-trousers",
     name: "Beige trousers",
-    imageUrl: "/wardrobe/beige-trousers.jpg",
     wearCount: 7,
     wearCountDaysAgo: 16,
     spec: {
@@ -179,7 +182,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "blue-jeans",
     name: "Blue jeans",
-    imageUrl: "/wardrobe/blue-jeans.jpg",
     wearCount: 31,
     wearCountDaysAgo: 3,
     spec: {
@@ -201,7 +203,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "white-sneakers",
     name: "White sneakers",
-    imageUrl: "/wardrobe/white-sneakers.jpg",
     wearCount: 40,
     wearCountDaysAgo: 1,
     spec: {
@@ -266,7 +267,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "stone-overshirt",
     name: "Stone overshirt",
-    imageUrl: "/wardrobe/stone-overshirt.jpg",
     wearCount: 5,
     wearCountDaysAgo: 19,
     spec: {
@@ -288,7 +288,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "charcoal-knit",
     name: "Charcoal knit",
-    imageUrl: "/wardrobe/charcoal-knit.jpg",
     wearCount: 4,
     wearCountDaysAgo: 40,
     spec: {
@@ -310,7 +309,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "silver-watch",
     name: "Silver watch",
-    imageUrl: "/wardrobe/silver-watch.jpg",
     wearCount: 34,
     wearCountDaysAgo: 3,
     spec: {
@@ -332,7 +330,6 @@ export const SEED_WARDROBE: SeedItem[] = [
   {
     key: "silver-chain",
     name: "Silver chain",
-    imageUrl: "/wardrobe/silver-chain.jpg",
     wearCount: 15,
     wearCountDaysAgo: 7,
     spec: {

@@ -8,7 +8,7 @@ import { Button, Reveal, Thinking } from "@/components/primitives";
 import { OutfitResult } from "@/components/OutfitResult";
 
 const SUGGESTIONS = [
-  "Rooftop date in Dubai tonight. Smart casual. I want to look effortless, not overdressed.",
+  "Rooftop date in Dubai tonight. Smart casual. Make me look effortless, not overdressed.",
   "Client dinner, need to look sharp",
   "Sunday brunch",
   "Airport fit, long haul",
@@ -32,12 +32,15 @@ const ENERGIES = [
   { id: "surprise", label: "Surprise Me" },
 ];
 
+/**
+ * UI status only — these describe which stage is running, not the model's
+ * reasoning. Nothing here is generated and no chain-of-thought is exposed.
+ */
 const THINKING_LINES = [
-  "Reading the occasion and dress code…",
-  "Checking the weather where you're going…",
-  "Filtering out what doesn't work tonight…",
-  "Scoring every combination in your wardrobe…",
-  "Ranking the strongest fits…",
+  "Checking your wardrobe…",
+  "Understanding the occasion…",
+  "Checking the weather…",
+  "Styling your fit…",
 ];
 
 export default function AskPage() {
