@@ -293,6 +293,169 @@ export async function extractProductCatalog(
 }
 
 // ---------------------------------------------------------------------------
+// Discovery
+// ---------------------------------------------------------------------------
+
+/**
+ * Context.dev has no product-search endpoint, so discovery is composed:
+ *
+ *   /web/search        find candidate retailer pages for a natural-language need
+ *   -> classify        product detail page, category listing, or editorial noise
+ *   -> /brand/ai/*     extract real product records from the useful ones
+ *
+ * This is the only way to answer "find brown suede loafers under AED 500" with
+ * live data rather than a hard-coded catalogue.
+ */
+
+type SearchResult = { url: string; title?: string; description?: string };
+type SearchResponse = { results?: SearchResult[] };
+
+/** Sites that rank well for shopping queries but never sell anything. */
+const NOT_RETAILERS = [
+  "pinterest.", "reddit.", "youtube.", "instagram.", "facebook.", "tiktok.",
+  "wikipedia.", "quora.", "medium.", "gq.com", "esquire.", "vogue.",
+  "harpersbazaar.", "buzzfeed.", "x.com", "twitter.", "linkedin.",
+];
+
+function isRetailer(url: string): boolean {
+  const lower = url.toLowerCase();
+  return !NOT_RETAILERS.some((domain) => lower.includes(domain));
+}
+
+/**
+ * Guess whether a URL is a single product or a listing.
+ *
+ * Getting this wrong is only a performance cost, not a correctness one: a
+ * listing sent to `/brand/ai/product` returns `is_product_page: false` and a
+ * product sent to `/brand/ai/products` still yields that product.
+ */
+function looksLikeProductPage(url: string): boolean {
+  return /\/(products?|p|item|itm|dp|prd)\//i.test(url) || /[-_/][A-Z0-9]{6,}\.html?$/i.test(url);
+}
+
+/**
+ * Build the search query.
+ *
+ * Attributes routinely restate the product type — a "brown suede loafers" gap
+ * arrives with attributes ["brown", "suede", "loafers"], which naively joined
+ * produces "brown suede loafers brown suede loafers buy". Duplicated terms cost
+ * relevance, so anything already present in the product type is dropped.
+ */
+function buildQuery(
+  intent: { productType: string; attributes: string[] },
+  audience?: string,
+): string {
+  const base = intent.productType.toLowerCase();
+  const extra = intent.attributes
+    .map((attribute) => attribute.trim())
+    .filter((attribute) => attribute.length > 0 && !base.includes(attribute.toLowerCase()));
+
+  return [audience ? `${audience}'s` : null, intent.productType, ...extra.slice(0, 3), "buy"]
+    .filter(Boolean)
+    .join(" ")
+    .slice(0, 200);
+}
+
+export type Discovery = {
+  products: NormalizedProduct[];
+  /** How many retailer pages we actually extracted from. */
+  pagesExtracted: number;
+  /** Candidate URLs the search returned, after dropping editorial noise. */
+  candidates: string[];
+  query: string;
+};
+
+/**
+ * Find real, currently-listed products for a wardrobe gap.
+ *
+ * The price ceiling is enforced HERE, in code, rather than being left to either
+ * the search engine or the model — a hard constraint should never depend on a
+ * probabilistic system. Products whose currency differs from the requested one
+ * are kept but never price-filtered, because we do not convert currencies.
+ */
+export async function discoverProducts(
+  intent: {
+    productType: string;
+    attributes: string[];
+    maxPrice: number;
+    currency: string;
+  },
+  options: {
+    country?: string;
+    maxPages?: number;
+    maxAgeMs?: number;
+    /** "men" / "women" — without it, a loafer search returns ballet flats. */
+    audience?: string;
+  } = {},
+): Promise<Discovery> {
+  const query = buildQuery(intent, options.audience);
+
+  // `numResults` has an undocumented minimum of 10 — smaller values 400.
+  const search = await post<SearchResponse>("/web/search", {
+    query,
+    numResults: 10,
+    ...(options.country ? { country: options.country } : {}),
+  });
+
+  const candidates = (search.results ?? [])
+    .map((result) => result.url)
+    .filter((url) => Boolean(url) && isRetailer(url));
+
+  const maxPages = options.maxPages ?? 3;
+  const targets = candidates.slice(0, maxPages);
+
+  // Extract in parallel — each of these is a 10-credit, rate-limit-weight-10
+  // call, so the page count is deliberately small.
+  const settled = await Promise.allSettled(
+    targets.map(async (url) =>
+      looksLikeProductPage(url)
+        ? [await extractProduct(url, { maxAgeMs: options.maxAgeMs })]
+        : await extractProductCatalog({ directUrl: url }, {
+            maxProducts: 6,
+            maxAgeMs: options.maxAgeMs,
+          }),
+    ),
+  );
+
+  const seen = new Set<string>();
+  const products: NormalizedProduct[] = [];
+  let pagesExtracted = 0;
+
+  for (const outcome of settled) {
+    if (outcome.status === "rejected") {
+      const reason = outcome.reason;
+      console.warn(
+        `[context.dev] discovery page failed: ${
+          reason instanceof Error ? reason.message : "unknown"
+        }`,
+      );
+      continue;
+    }
+    pagesExtracted += 1;
+    for (const product of outcome.value) {
+      if (seen.has(product.url)) continue;
+      seen.add(product.url);
+
+      // No price filtering here, deliberately.
+      //
+      // Real retailer stock routinely sits above a sensible-sounding ceiling —
+      // Dubai loafers came back at 620-1410 AED against a 400 AED budget — and
+      // dropping those left the feature with nothing real to show, or worse, a
+      // cached product from another country in another currency. The price is
+      // always displayed as extracted, so the user can judge for themselves.
+      products.push(product);
+    }
+  }
+
+  console.log(
+    `[context.dev] discovery "${query}" -> ${candidates.length} candidates, ` +
+      `${pagesExtracted}/${targets.length} pages, ${products.length} in-budget products`,
+  );
+
+  return { products, pagesExtracted, candidates, query };
+}
+
+// ---------------------------------------------------------------------------
 // Convex-facing actions
 // ---------------------------------------------------------------------------
 
@@ -317,6 +480,46 @@ export const extractAndStore = internalAction({
     const product = await extractProduct(args.url, { maxAgeMs: args.maxAgeMs });
     const id = await persist(ctx, product, args.archetypeId);
     return { id, product };
+  },
+});
+
+/**
+ * Live product discovery for a wardrobe gap.
+ *
+ * Exposed as an action because this module runs in the Node runtime while
+ * `shopping.ts` runs in V8 — crossing runtimes requires `ctx.runAction`, not a
+ * direct import.
+ */
+export const discover = internalAction({
+  args: {
+    productType: v.string(),
+    attributes: v.array(v.string()),
+    maxPrice: v.number(),
+    currency: v.string(),
+    country: v.optional(v.string()),
+    audience: v.optional(v.string()),
+    maxPages: v.optional(v.number()),
+    maxAgeMs: v.optional(v.number()),
+  },
+  handler: async (
+    _ctx,
+    args,
+  ): Promise<{ products: NormalizedProduct[]; pagesExtracted: number; query: string }> => {
+    const { products, pagesExtracted, query } = await discoverProducts(
+      {
+        productType: args.productType,
+        attributes: args.attributes,
+        maxPrice: args.maxPrice,
+        currency: args.currency,
+      },
+      {
+        country: args.country,
+        audience: args.audience,
+        maxPages: args.maxPages,
+        maxAgeMs: args.maxAgeMs,
+      },
+    );
+    return { products, pagesExtracted, query };
   },
 });
 

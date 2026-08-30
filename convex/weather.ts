@@ -93,12 +93,23 @@ function vibeFor(temperatureC: number, condition: string): string {
   return "Coat weather";
 }
 
-export function fallbackWeather(city: string, now = Date.now()): WeatherContext {
+/** Rough offset from the daily high for each part of the day. */
+const DIURNAL_OFFSET: Record<string, number> = {
+  morning: -6,
+  afternoon: 0,
+  evening: -5,
+  night: -7,
+};
+
+export function fallbackWeather(
+  city: string,
+  now = Date.now(),
+  timeOfDay?: string,
+): WeatherContext {
   const resolved = CLIMATE_FALLBACK[city] ? city : DEFAULT_CITY;
   const month = new Date(now).getUTCMonth();
   const high = CLIMATE_FALLBACK[resolved][month];
-  // Evening is a few degrees off the daily high.
-  const temperatureC = Math.round(high - 3);
+  const temperatureC = Math.round(high + (DIURNAL_OFFSET[timeOfDay ?? "afternoon"] ?? -3));
   const condition = "clear";
   const humidity = resolved === "Dubai" ? 62 : 45;
 
@@ -137,20 +148,30 @@ function coordsFor(city: string) {
  * Fetch live weather. Never throws — a failure returns the flagged fallback so
  * the recommendation pipeline always has a context to reason about.
  */
+/** The hour we should be forecasting for, given when the user is going out. */
+const HOUR_FOR: Record<string, number> = {
+  morning: 9,
+  afternoon: 14,
+  evening: 19,
+  night: 21,
+};
+
 export async function getWeather(
   city: string,
-  coords?: { lat: number; lon: number },
+  options: { timeOfDay?: string; coords?: { lat: number; lon: number } } = {},
 ): Promise<WeatherContext> {
-  const location = coords ?? coordsFor(city);
-  if (!location) return fallbackWeather(city);
+  const location = options.coords ?? coordsFor(city);
+  if (!location) return fallbackWeather(city, Date.now(), options.timeOfDay);
 
-  const lat = "lat" in location ? location.lat : (location as { lat: number }).lat;
-  const lon = "lon" in location ? location.lon : (location as { lon: number }).lon;
+  const { lat, lon } = location;
 
+  // Ask for the hourly series too: a rooftop date "tonight" should be scored
+  // against the evening temperature, not the 40°C afternoon reading.
   const url =
     `${OPEN_METEO}?latitude=${lat}&longitude=${lon}` +
     `&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code` +
-    `&timezone=auto`;
+    `&hourly=temperature_2m,relative_humidity_2m,weather_code` +
+    `&forecast_days=2&timezone=auto`;
 
   try {
     const response = await fetch(url, {
@@ -158,26 +179,36 @@ export async function getWeather(
     });
     if (!response.ok) {
       console.warn(`[weather] open-meteo ${response.status} — using fallback`);
-      return fallbackWeather(city);
+      return fallbackWeather(city, Date.now(), options.timeOfDay);
     }
     const json = (await response.json()) as {
       current?: {
+        time?: string;
         temperature_2m?: number;
         relative_humidity_2m?: number;
         apparent_temperature?: number;
         weather_code?: number;
+      };
+      hourly?: {
+        time?: string[];
+        temperature_2m?: number[];
+        relative_humidity_2m?: number[];
+        weather_code?: number[];
       };
     };
 
     const current = json.current;
     if (!current || typeof current.temperature_2m !== "number") {
       console.warn("[weather] unexpected payload — using fallback");
-      return fallbackWeather(city);
+      return fallbackWeather(city, Date.now(), options.timeOfDay);
     }
 
-    const temperatureC = Math.round(current.temperature_2m);
-    const condition = conditionFromCode(current.weather_code ?? 0);
-    const humidity = current.relative_humidity_2m;
+    // Prefer the forecast for the hour the user is actually going out.
+    const forecast = pickHour(json.hourly, current.time, options.timeOfDay);
+
+    const temperatureC = Math.round(forecast?.temperature ?? current.temperature_2m);
+    const condition = conditionFromCode(forecast?.weatherCode ?? current.weather_code ?? 0);
+    const humidity = forecast?.humidity ?? current.relative_humidity_2m;
     const resolvedCity = coordsFor(city)?.name ?? city;
 
     return {
@@ -185,7 +216,7 @@ export async function getWeather(
       country: findCountry(resolvedCity),
       temperatureC,
       feelsLikeC:
-        typeof current.apparent_temperature === "number"
+        forecast === null && typeof current.apparent_temperature === "number"
           ? Math.round(current.apparent_temperature)
           : undefined,
       humidity,
@@ -201,6 +232,47 @@ export async function getWeather(
       "[weather] request failed — using fallback:",
       error instanceof Error ? error.message : "unknown",
     );
-    return fallbackWeather(city);
+    return fallbackWeather(city, Date.now(), options.timeOfDay);
   }
+}
+
+/**
+ * Choose the forecast hour matching the outing.
+ *
+ * Open-Meteo returns local-time ISO strings like "2026-08-30T19:00". We find
+ * the next occurrence of the target hour at or after "now", so asking about
+ * "tonight" at 2pm looks ahead to 9pm, and asking at 11pm rolls to tomorrow.
+ */
+function pickHour(
+  hourly:
+    | {
+        time?: string[];
+        temperature_2m?: number[];
+        relative_humidity_2m?: number[];
+        weather_code?: number[];
+      }
+    | undefined,
+  currentTime: string | undefined,
+  timeOfDay: string | undefined,
+): { temperature: number; humidity?: number; weatherCode?: number } | null {
+  if (!timeOfDay || !hourly?.time || !hourly.temperature_2m) return null;
+  const targetHour = HOUR_FOR[timeOfDay];
+  if (targetHour === undefined) return null;
+
+  const times = hourly.time;
+  const startIndex = currentTime ? Math.max(0, times.indexOf(currentTime)) : 0;
+
+  for (let i = startIndex; i < times.length; i += 1) {
+    const hour = Number(times[i].slice(11, 13));
+    if (hour === targetHour) {
+      const temperature = hourly.temperature_2m[i];
+      if (typeof temperature !== "number") return null;
+      return {
+        temperature,
+        humidity: hourly.relative_humidity_2m?.[i],
+        weatherCode: hourly.weather_code?.[i],
+      };
+    }
+  }
+  return null;
 }

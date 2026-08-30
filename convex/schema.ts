@@ -26,14 +26,31 @@ export const garmentSpec = v.object({
   occasionTags: v.array(v.string()),
 });
 
+/**
+ * The five explainable dimensions, always measured deterministically — even
+ * when Gemini chose the outfit. See `convex/recommendation.ts`.
+ *
+ * `novelty` and `personality` are retained as optional so rows written by the
+ * earlier seven-dimension engine still validate. Nothing writes them now:
+ * judging mood is a taste call, which is Gemini's job rather than a rule's.
+ */
 export const scoreBreakdown = v.object({
   occasion: v.number(),
   weather: v.number(),
   personalStyle: v.number(),
   colorHarmony: v.number(),
   comfort: v.number(),
-  novelty: v.number(),
-  personality: v.number(),
+  novelty: v.optional(v.number()),
+  personality: v.optional(v.number()),
+});
+
+/** A wardrobe gap, shaped so Context.dev can go and search for it. */
+export const missingPiece = v.object({
+  productType: v.string(),
+  reason: v.string(),
+  attributes: v.array(v.string()),
+  maxPrice: v.number(),
+  currency: v.string(),
 });
 
 export const weatherContext = v.object({
@@ -119,6 +136,8 @@ const schema = defineSchema({
       avoidStyles: v.array(v.string()),
     }),
     weather: weatherContext,
+    /** ISO currency used for any price ceiling in this session */
+    currency: v.optional(v.string()),
     status: v.string(), // ready | failed
     createdAt: v.number(),
   }).index("by_userId", ["userId"]),
@@ -133,9 +152,17 @@ const schema = defineSchema({
     reasons: v.array(
       v.object({ label: v.string(), score: v.number(), text: v.string() }),
     ),
-    /** deterministic fingerprint of the item set, for novelty scoring */
+    /** the gap identified alongside this outfit, if any */
+    missingPiece: v.optional(missingPiece),
+    /** deterministic fingerprint of the item set */
     signature: v.string(),
-    explanationSource: v.string(), // engine | llm
+    /**
+     * Which engine produced this recommendation: "gemini" (primary),
+     * "fallback" (deterministic) or "cached". Internal/debug only — the UI
+     * never announces a fallback to the user.
+     */
+    source: v.optional(v.string()),
+    explanationSource: v.string(),
     wornAt: v.optional(v.number()),
     createdAt: v.number(),
   })

@@ -316,68 +316,28 @@ export const DRESS_CODES: Record<string, { formality: number; label: string }> =
 };
 
 // ---------------------------------------------------------------------------
-// Personality / energy
+// Energy
 // ---------------------------------------------------------------------------
 
-export const ENERGIES: Record<
-  string,
-  { label: string; styleBias: string[]; formalityShift: number; contrast: number }
-> = {
-  "main-character": {
-    label: "Main Character",
-    styleBias: ["statement", "elevated", "sharp"],
-    formalityShift: 0.7,
-    contrast: 0.8,
-  },
-  clean: {
-    label: "Clean",
-    styleBias: ["minimal", "monochrome", "tailored"],
-    formalityShift: 0.3,
-    contrast: 0.2,
-  },
-  dangerous: {
-    label: "Dangerous",
-    styleBias: ["monochrome", "sharp", "statement"],
-    formalityShift: 0.2,
-    contrast: 0.9,
-  },
-  "low-key": {
-    label: "Low-key",
-    styleBias: ["relaxed", "minimal", "comfort"],
-    formalityShift: -0.8,
-    contrast: 0.15,
-  },
-  serious: {
-    label: "Serious",
-    styleBias: ["tailored", "business casual", "minimal"],
-    formalityShift: 1.1,
-    contrast: 0.3,
-  },
-  surprise: {
-    label: "Surprise Me",
-    styleBias: [],
-    formalityShift: 0,
-    contrast: 0.5,
-  },
-};
-
 /**
- * Zodiac as a *lightweight* personality modifier — it can only nudge style tag
- * preference and never overrides weather, occasion or availability. Worth ~5%.
+ * The energy selector.
+ *
+ * Only `formalityShift` remains deterministic, because "serious" genuinely does
+ * mean dressier and that is a measurable constraint. The *aesthetic* reading of
+ * an energy — what "dangerous" or "main character" should look like — is passed
+ * to Gemini as context instead of being encoded as style-tag tables here.
+ *
+ * The previous version also carried a zodiac-to-style-tag table. That was pure
+ * taste modelling, so it has been removed from the deterministic path; the sign
+ * still lives on the style profile for Gemini to interpret.
  */
-export const ZODIAC: Record<string, { styleBias: string[]; note: string }> = {
-  aries: { styleBias: ["statement", "sharp"], note: "bold lines" },
-  taurus: { styleBias: ["minimal", "comfort"], note: "tactile neutrals" },
-  gemini: { styleBias: ["relaxed", "statement"], note: "playful contrast" },
-  cancer: { styleBias: ["comfort", "relaxed"], note: "soft layers" },
-  leo: { styleBias: ["statement", "elevated"], note: "a little drama" },
-  virgo: { styleBias: ["minimal", "tailored"], note: "precise tailoring" },
-  libra: { styleBias: ["elevated", "minimal"], note: "balanced proportions" },
-  scorpio: { styleBias: ["monochrome", "sharp"], note: "dark monochrome" },
-  sagittarius: { styleBias: ["relaxed", "mediterranean"], note: "easy movement" },
-  capricorn: { styleBias: ["tailored", "monochrome"], note: "structured restraint" },
-  aquarius: { styleBias: ["statement", "streetwear"], note: "an off-beat detail" },
-  pisces: { styleBias: ["relaxed", "comfort"], note: "fluid fabrics" },
+export const ENERGIES: Record<string, { label: string; formalityShift: number }> = {
+  "main-character": { label: "Main Character", formalityShift: 0.7 },
+  clean: { label: "Clean", formalityShift: 0.3 },
+  dangerous: { label: "Dangerous", formalityShift: 0.2 },
+  "low-key": { label: "Low-key", formalityShift: -0.8 },
+  serious: { label: "Serious", formalityShift: 1.1 },
+  surprise: { label: "Surprise Me", formalityShift: 0 },
 };
 
 // ---------------------------------------------------------------------------

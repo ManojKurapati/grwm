@@ -3,7 +3,6 @@ import { mutation, query, internalQuery, type QueryCtx } from "./_generated/serv
 import type { Doc } from "./_generated/dataModel";
 import { garmentSpec } from "./schema";
 import { getProfile, requireDemoUser } from "./users";
-import type { EngineItem, EngineProfile } from "./engine/score";
 
 /**
  * Wardrobe state.
@@ -222,31 +221,6 @@ export const markWorn = mutation({
 // Engine bridge
 // ---------------------------------------------------------------------------
 
-/** Convert a stored item into the shape the scoring engine expects. */
-export function toEngineItem(item: Doc<"wardrobeItems">): EngineItem {
-  return {
-    id: item._id,
-    name: item.name,
-    spec: item.spec,
-    wearCount: item.wearCount,
-    lastWornAt: item.lastWornAt,
-    availability: item.availability,
-  };
-}
-
-export function toEngineProfile(profile: Doc<"styleProfiles">): EngineProfile {
-  return {
-    preferredStyles: profile.preferredStyles,
-    preferredColors: profile.preferredColors,
-    avoidColors: profile.avoidColors,
-    baseFormality: profile.baseFormality,
-    styleAffinity: profile.styleAffinity,
-    colorAffinity: profile.colorAffinity,
-    categoryAffinity: profile.categoryAffinity,
-    zodiacSign: profile.zodiacSign,
-  };
-}
-
 /**
  * Everything the engine needs, in a single transactional read.
  * Actions call this once rather than issuing several queries, so the wardrobe
@@ -262,20 +236,11 @@ export const engineSnapshot = internalQuery({
       .withIndex("by_userId", (q) => q.eq("userId", user._id))
       .take(300);
 
-    // Signatures already recommended, so "Try another" stays genuinely fresh
-    // and novelty scoring has something real to work with.
-    const previous = await ctx.db
-      .query("outfits")
-      .withIndex("by_userId", (q) => q.eq("userId", user._id))
-      .order("desc")
-      .take(60);
-
     return {
       userId: user._id,
       city: user.city,
       profile,
       items,
-      seenSignatures: previous.map((o) => o.signature),
     };
   },
 });

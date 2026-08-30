@@ -139,7 +139,6 @@ export function parseIntent(
     fallbackCity: string;
     baseFormality: number;
     energy?: string;
-    zodiacBias?: string[];
   },
 ): Intent {
   const text = prompt.toLowerCase();
@@ -194,9 +193,6 @@ export function parseIntent(
       keywords.push(...signal.tags);
     }
   }
-  if (energy) styleBias.push(...energy.styleBias);
-  if (options.zodiacBias) styleBias.push(...options.zodiacBias);
-
   // Evening events lean a touch darker/sharper; mornings lean lighter.
   if (timeOfDay === "night" || timeOfDay === "evening") styleBias.push("elevated");
   if (timeOfDay === "morning") styleBias.push("relaxed");
@@ -216,6 +212,39 @@ export function parseIntent(
     styleBias: unique(styleBias),
     avoidStyles: unique(avoidStyles),
   };
+}
+
+/**
+ * Local currency for a city, used for missing-piece price ceilings.
+ * A small lookup rather than a service: the demo cities are known, and getting
+ * "AED 299" instead of "$299" in Dubai matters more than exhaustive coverage.
+ */
+const CURRENCY_BY_COUNTRY: Record<string, string> = {
+  "United Arab Emirates": "AED",
+  "Saudi Arabia": "SAR",
+  Qatar: "QAR",
+  "United Kingdom": "GBP",
+  France: "EUR",
+  Italy: "EUR",
+  Germany: "EUR",
+  Spain: "EUR",
+  Portugal: "EUR",
+  Netherlands: "EUR",
+  "United States": "USD",
+  Japan: "JPY",
+  Singapore: "SGD",
+  India: "INR",
+  "Türkiye": "TRY",
+  Australia: "AUD",
+};
+
+export function currencyForCity(city: string): string {
+  const key = city.trim().toLowerCase();
+  const entry =
+    KNOWN_CITIES[key] ??
+    Object.values(KNOWN_CITIES).find((c) => c.name.toLowerCase() === key);
+  if (!entry) return "USD";
+  return CURRENCY_BY_COUNTRY[entry.country] ?? "USD";
 }
 
 export function inferDressCodeLabel(formality: number): string {

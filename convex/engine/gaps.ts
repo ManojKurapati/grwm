@@ -1,128 +1,97 @@
 /**
- * The Missing Piece Engine.
+ * Fallback missing-piece suggestion.
  *
- * After GRWM has picked the best outfit your wardrobe can actually produce, it
- * asks a narrower question: *what is the smallest single addition that would
- * have made this better?*
+ * Gemini identifies wardrobe gaps in the primary path — it reads the whole
+ * wardrobe and says what is missing and why, which is a taste call. This module
+ * is only the parachute for that decision.
  *
- * It answers by simulation, not by vibes — each archetype is inserted into the
- * real wardrobe, the whole recommendation is re-run, and only pieces that
- * measurably raise the score AND unlock outfits across the rest of your life
- * are surfaced.
+ * It used to be a simulation engine: it inserted each of a dozen archetypes into
+ * the wardrobe, re-ran the full recommendation across eight synthetic "life
+ * contexts", and counted outfits unlocked with a substitution test. That was
+ * thousands of scoring passes to answer a question Gemini answers in one call,
+ * so it is gone.
+ *
+ * What is left is a small, honest heuristic: find the first archetype whose role
+ * nothing in the wardrobe fills, preferring ones that suit today's occasion.
  */
 
 import { ARCHETYPES, type Archetype } from "./archetypes";
-import { evaluateCandidate, type CompatibilityResult, isRedundantWith } from "./compatibility";
-import { bestScoreFor } from "./outfits";
-import type { EngineContext, EngineItem, EngineProfile } from "./score";
+import { isRedundantWith } from "./compatibility";
+import type { MeasureContext } from "./measure";
+import type { GarmentSpec } from "./taxonomy";
+import type { MissingPiece } from "../recommendation";
 
-export type Gap = {
-  archetype: Archetype;
-  /** points the recommended outfit would gain today */
-  todayGain: number;
-  /** score of the best outfit today once this piece exists */
-  improvedScore: number;
-  compatibility: CompatibilityResult;
-  /** ranking value combining today's gain with wider wardrobe value */
-  priority: number;
+export type GapCandidate = { spec: GarmentSpec; availability?: string };
+
+/** Sensible price ceilings by role, used when we have to name a budget. */
+const CEILING: Record<string, number> = {
+  shoes: 400,
+  layer: 500,
+  top: 200,
+  bottom: 250,
+  accessory: 200,
 };
 
-const CANDIDATE_ID_PREFIX = "gap:";
+/**
+ * The single most useful thing the wardrobe is missing, or `null` if nothing
+ * obvious is absent.
+ *
+ * Deliberately simple — one pass over a static library, no scoring loops.
+ */
+export function fallbackMissingPiece(
+  wardrobe: GapCandidate[],
+  ctx: MeasureContext & { currency: string },
+): MissingPiece | null {
+  const missing = ARCHETYPES.filter(
+    (archetype) => !wardrobe.some((item) => isRedundantWith(archetype.spec, item.spec)),
+  );
+  if (missing.length === 0) return null;
 
-export function archetypeAsItem(archetype: Archetype): EngineItem {
+  // Prefer a gap that would actually matter for what the user asked about today.
+  const relevant = missing.filter((archetype) =>
+    archetype.spec.occasionTags.includes(ctx.occasion),
+  );
+  const chosen = (relevant.length > 0 ? relevant : missing)[0];
+
+  return toMissingPiece(chosen, ctx.currency);
+}
+
+/** Look up a specific archetype as a missing piece, e.g. for a SKIP alternative. */
+export function archetypeAsMissingPiece(
+  archetype: Archetype,
+  currency: string,
+): MissingPiece {
+  return toMissingPiece(archetype, currency);
+}
+
+function toMissingPiece(archetype: Archetype, currency: string): MissingPiece {
   return {
-    id: `${CANDIDATE_ID_PREFIX}${archetype.id}`,
-    name: archetype.label,
-    spec: archetype.spec,
-    wearCount: 0,
-    availability: "available",
+    productType: archetype.label.toLowerCase(),
+    reason: archetype.rationale.slice(0, 240),
+    attributes: attributesFor(archetype.spec),
+    maxPrice: CEILING[archetype.spec.category] ?? 250,
+    currency: currency.length === 3 ? currency.toUpperCase() : "USD",
   };
 }
 
-/**
- * Find the strongest wardrobe gaps.
- *
- * @param todayContext the live recommendation context (weather + intent)
- * @param lifeContexts the spread of situations used for wider wardrobe value
- */
-export function findGaps(
-  wardrobe: EngineItem[],
-  profile: EngineProfile,
-  todayContext: EngineContext,
-  lifeContexts: EngineContext[],
-  options: { limit?: number; minTodayGain?: number } = {},
-): { gaps: Gap[]; baselineScore: number } {
-  const baselineScore = bestScoreFor(wardrobe, todayContext, profile);
-  const minTodayGain = options.minTodayGain ?? 1;
-
-  const gaps: Gap[] = [];
-
-  for (const archetype of ARCHETYPES) {
-    // Skip anything the user effectively already owns.
-    if (wardrobe.some((item) => isRedundantWith(archetype.spec, item.spec))) continue;
-
-    const candidate = archetypeAsItem(archetype);
-    const improvedScore = bestScoreFor([...wardrobe, candidate], todayContext, profile);
-    const todayGain = improvedScore - baselineScore;
-
-    const compatibility = evaluateCandidate(wardrobe, candidate, profile, lifeContexts);
-
-    // A real gap must help today *or* meaningfully expand the wardrobe.
-    const helpsToday = todayGain >= minTodayGain;
-    const helpsWardrobe =
-      compatibility.newOutfitsUnlocked >= 3 && compatibility.wardrobeCompatibility >= 62;
-    if (!helpsToday && !helpsWardrobe) continue;
-
-    gaps.push({
-      archetype,
-      todayGain,
-      improvedScore,
-      compatibility,
-      priority:
-        todayGain * 3.2 +
-        compatibility.newOutfitsUnlocked * 0.5 +
-        compatibility.wardrobeCompatibility * 0.08 +
-        compatibility.occasionCoverageGain.length * 1.1,
-    });
-  }
-
-  gaps.sort((a, b) => b.priority - a.priority);
-
-  return { gaps: gaps.slice(0, options.limit ?? 3), baselineScore };
+function attributesFor(spec: GarmentSpec): string[] {
+  return [spec.primaryColor, spec.material, spec.subcategory, ...spec.styleTags.slice(0, 2)]
+    .filter((value): value is string => Boolean(value))
+    .slice(0, 6);
 }
 
 /**
- * One-line framing of the gap, shown under the outfit result.
- * e.g. "Your wardrobe is missing one thing: brown suede loafers"
+ * The best unfilled archetype in a given category — used by "Should I Buy This?"
+ * to answer "then what should I buy instead?".
  */
-export function gapHeadline(gap: Gap): string {
-  return gap.archetype.label;
-}
-
-export function gapReason(gap: Gap, baselineScore: number): string {
-  if (gap.todayGain >= 2) {
-    return `Adding this would take tonight's fit from ${baselineScore}% to ${gap.improvedScore}% — ${gap.archetype.rationale}`;
-  }
-  return gap.archetype.rationale;
-}
-
-/** When we tell someone to SKIP a product, tell them what to buy instead. */
 export function suggestInsteadOf(
-  wardrobe: EngineItem[],
-  profile: EngineProfile,
-  lifeContexts: EngineContext[],
-  excludeCategory?: string,
+  wardrobe: GapCandidate[],
+  category?: string,
 ): Archetype | null {
-  let best: { archetype: Archetype; score: number } | null = null;
-  for (const archetype of ARCHETYPES) {
-    if (wardrobe.some((item) => isRedundantWith(archetype.spec, item.spec))) continue;
-    const candidate = archetypeAsItem(archetype);
-    const result = evaluateCandidate(wardrobe, candidate, profile, lifeContexts);
-    // Strongly prefer the same category: if someone is shopping for shoes, the
-    // useful answer is "buy these shoes instead", not "buy a belt".
-    const categoryBonus = excludeCategory && archetype.spec.category === excludeCategory ? 30 : 0;
-    const score = result.wardrobeCompatibility + result.newOutfitsUnlocked * 0.6 + categoryBonus;
-    if (!best || score > best.score) best = { archetype, score };
-  }
-  return best?.archetype ?? null;
+  const missing = ARCHETYPES.filter(
+    (archetype) => !wardrobe.some((item) => isRedundantWith(archetype.spec, item.spec)),
+  );
+  if (missing.length === 0) return null;
+  // If they're shopping for shoes, the useful answer is other shoes.
+  return missing.find((a) => a.spec.category === category) ?? missing[0];
 }
